@@ -77,7 +77,7 @@ export default async function AboutPage({
       name: 'Maximiliano Brito Torres',
       url: `${SITE_URL}/${locale}/about`,
       description:
-        'Full-Stack Developer based in Vientiane, Laos, specializing in Next.js, React, and Node.js.',
+        'Fractional CTO and Technical Advisor based in Vientiane, Laos, specializing in technical strategy, architecture, and full-stack development.',
       sameAs: [
         'https://www.linkedin.com/in/maxontorres/',
         'https://github.com/maxonreid',

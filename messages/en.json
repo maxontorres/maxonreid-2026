@@ -5,19 +5,19 @@
     "about": "About",
     "services": "Services",
     "contact": "Contact",
-    "referral": "Get Paid",
-    "websites": "Websites"
+    "referral": "Get Paid"
   },
   "hero": {
     "brand": "MAXON TORRES",
-    "location": "[ VIENTIANE : LAOS PDR ]  -  FREELANCE SOFTWARE DEVELOPER",
-    "heroTitle": "I build websites that <highlight>get international buyers</highlight>.",
-    "heroTitlePrefix": "I build websites that",
+    "location": "[ VIENTIANE : LAOS PDR ]  -  FRACTIONAL CTO & TECHNICAL ADVISOR",
+    "heroTitle": "I help startups and teams <highlight>make the right technical decisions</highlight>.",
+    "heroTitlePrefix": "I help startups and teams",
     "heroHighlights": [
-      "get international buyers",
-      "get worldwide customers and automate their operations"
+      "make the right technical decisions",
+      "ship systems that don't fall apart",
+      "avoid costly engineering mistakes"
     ],
-    "heroSub": "From high-converting websites to custom tools and automation, I help you grow without wasting time on manual work.",
+    "heroSub": "Strategic technical leadership for founders and teams who need senior judgment on architecture, vendors, and delivery — without hiring a full-time CTO.",
     "ctaStart": "START A PROJECT",
     "ctaView": "VIEW MY WORK"
   },
@@ -58,9 +58,9 @@
   "aboutHome": {
     "label": "[ WHO I AM ]",
     "title": "About Me",
-    "intro": "I’m Maximiliano Brito Torres, a Freelance Software Developer in Vientiane, Laos, specializing in building robust and scalable web applications for businesses worldwide.",
-    "description": "As a freelance developer based in Vientiane, I help businesses turn ideas into reliable digital tools  -  from high-converting websites to internal dashboards to full-scale platforms  -  combining clean architecture, performance, and user-focused design.",
-    "imageAlt": "Maximiliano Brito Torres - Freelance Software Developer in Vientiane",
+    "intro": "I'm Maximiliano Brito Torres — a Fractional CTO and Technical Advisor based in Vientiane, Laos, helping startups and SMBs make sound technical decisions and ship reliable software.",
+    "description": "I step in where businesses need senior technical judgment without committing to a full-time hire — architecture and technology decisions, vendor and dev-team oversight, and hands-on build work when it's the right call. From internal platforms to full-scale systems, the focus is always clean architecture and long-term maintainability.",
+    "imageAlt": "Maximiliano Brito Torres - Fractional CTO and Technical Advisor in Vientiane",
     "learnMore": "More About Me",
     "stats": {
       "experience": "10+",
@@ -72,14 +72,14 @@
     }
   },
   "about": {
-    "heroLabel": "[ DEVELOPER PROFILE ]",
+    "heroLabel": "[ TECHNICAL ADVISOR PROFILE ]",
     "heroTitle": "About Me",
-    "heroSubtitle": "Freelance Software Developer in Vientiane | React & Next.js Specialist | Full-Stack Developer since 2017",
+    "heroSubtitle": "Fractional CTO & Technical Advisor in Vientiane | Full-Stack Architecture, Automation & Delivery Oversight | Building software since 2017",
     "bio": {
-      "title": "Building Reliable, Scalable Web Systems",
-      "p1": "I’m Maximiliano Torres, a Full-Stack Developer based in Southeast Asia, specializing in building production-ready web applications with React and Next.js. Since 2017, I’ve been creating tools and systems that prioritize clean architecture, performance, and maintainability.",
-      "p2": "As a freelance software developer in Vientiane, I design and develop digital solutions that automate workflows, manage complex data, and support business growth  -  from internal dashboards to full web platforms. My focus is delivering reliable systems that solve real operational challenges.",
-      "p3": "In addition to development, I have experience teaching IT and Web Design at different Universities in China and Laos. I collaborate with international clients and remote teams, ensuring consistent delivery and long-term success."
+      "title": "Strategic Technical Leadership, Grounded in Real Engineering",
+      "p1": "I'm Maximiliano Torres, a Fractional CTO and Technical Advisor based in Southeast Asia. For over 8 years across Mexico, Thailand, China, and Laos, I've helped businesses make the right technical calls — architecture, tooling, vendor and team oversight — and I still build hands-on when that's what the problem needs.",
+      "p2": "I work with founders and small teams who need senior technical judgment without hiring a full-time CTO: choosing the right architecture, reviewing and directing outside developers or agencies, and stepping in to build critical pieces myself — from internal dashboards to full platforms. The goal is always reliable systems that solve real operational problems, not resume-driven technology choices.",
+      "p3": "That breadth comes from working across the full stack — JavaScript/TypeScript, PHP/Laravel, Python/Django, and .NET — plus time teaching IT and Web Design at universities in China and Laos. I collaborate with international clients and remote teams, keeping delivery consistent regardless of who's actually writing the code."
     },
     "skills": {
       "title": "Technologies & Tools",
@@ -98,6 +98,9 @@
         "items": [
           "Node.js",
           "Express",
+          "Laravel",
+          ".NET",
+          "Django",
           "PostgreSQL",
           "MySQL",
           "REST APIs"
@@ -161,8 +164,8 @@
   },
   "services": {
     "title": "Services",
-    "subtitle": "I design and build scalable software tools.",
-    "subtitleSecondary": "From MVP to production, I help founders turn product ideas into structured, reliable web applications built for scale.",
+    "subtitle": "Technical leadership and hands-on delivery for growing businesses.",
+    "subtitleSecondary": "From technical strategy to production code, I help founders and teams make the right calls and ship reliable systems built to last.",
     "deliverLabel": "What I deliver",
     "toolsLabel": "Tools:",
     "items": {
@@ -291,8 +294,8 @@
     }
   },
   "footer": {
-    "tagline": "Workflow Automation & Integration Development",
-    "connect": "Software Development · Connecting systems · Eliminating manual work · Remote from Vientiane, Laos.",
+    "tagline": "Fractional CTO & Technical Advisory",
+    "connect": "Technical strategy · Architecture · Systems & automation · Remote from Vientiane, Laos.",
     "copyright": "© {year} Maxon Torres. All rights reserved.",
     "builtWith": "Built with Next.js & TypeScript"
   },

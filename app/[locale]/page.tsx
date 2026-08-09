@@ -47,7 +47,7 @@ export default async function HomePage({
         url: SITE_URL,
         name: 'Maxon Torres',
         description:
-          'Freelance Software Developer in Vientiane, Laos specializing in Next.js, React, Node.js.',
+          'Fractional CTO and Technical Advisor in Vientiane, Laos specializing in technical strategy, architecture, and full-stack delivery.',
         inLanguage: locale,
       },
       {
@@ -57,8 +57,8 @@ export default async function HomePage({
         alternateName: 'Maxon Torres',
         url: SITE_URL,
         image: `${SITE_URL}/profile.jpg`,
-        jobTitle: 'Freelance Software Developer',
-        description: 'Freelance Software Developer in Vientiane, Laos specializing in Next.js, React, Node.js',
+        jobTitle: 'Fractional CTO / Technical Advisor',
+        description: 'Fractional CTO and Technical Advisor in Vientiane, Laos helping startups and SMBs with technical strategy and full-stack delivery',
         workLocation: {
           '@type': 'Place',
           name: 'Vientiane',
@@ -77,10 +77,10 @@ export default async function HomePage({
           'https://www.linkedin.com/in/maxontorres/',
           'https://github.com/maxonreid',
         ],
-        knowsAbout: ['Next.js', 'React', 'Node.js', 'TypeScript'],
+        knowsAbout: ['Next.js', 'React', 'Node.js', 'TypeScript', 'Laravel', '.NET', 'Django', 'AWS', 'Technical Strategy', 'Software Architecture'],
         hasOccupation: {
           '@type': 'Occupation',
-          name: 'Freelance Software Developer',
+          name: 'Fractional CTO / Technical Advisor',
           occupationLocation: {
             '@type': 'City',
             name: 'Vientiane',
@@ -90,8 +90,8 @@ export default async function HomePage({
       {
         '@type': 'ProfessionalService',
         '@id': `${SITE_URL}/#service`,
-        name: 'Freelance Software Development Services',
-        description: 'Professional freelance software development services in Vientiane, Laos. Specializing in web application development, full-stack development.',
+        name: 'Fractional CTO & Technical Advisory Services',
+        description: 'Fractional CTO and technical advisory services in Vientiane, Laos — technical strategy, architecture, vendor and dev-team oversight, and full-stack development.',
         provider: {
           '@id': `${SITE_URL}/#person`,
         },
@@ -100,7 +100,7 @@ export default async function HomePage({
           name: 'Vientiane',
           '@id': 'https://www.wikidata.org/wiki/Q9326',
         },
-        serviceType: ['Web Development', 'Software Development', 'Full Stack Development', 'Freelance Development'],
+        serviceType: ['Technical Advisory', 'Fractional CTO Services', 'Software Architecture', 'Full Stack Development', 'Technical Due Diligence'],
       },
     ],
   };

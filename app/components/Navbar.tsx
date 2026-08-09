@@ -150,16 +150,6 @@ export default function Navbar() {
             {t('contact')}
           </Link>
 
-          {/* Websites Link */}
-          <Link
-            href="/websites"
-            className={`nav-link ${pathname?.includes('/websites') ? 'nav-link-active' : ''}`}
-            locale={locale}
-          >
-            {t('websites')}
-          </Link>
-
-
         </div>
 
         {/* Mobile menu toggle */}
@@ -241,15 +231,6 @@ export default function Navbar() {
               <span className="relative font-mono text-[0.6rem] font-bold leading-none">$</span>
             </span>
             {t('referral')}
-          </Link>
-
-          <Link
-            href="/websites"
-            className={`rounded-lg px-3 py-2 text-left text-sm font-semibold no-underline transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--nav-active)] ${pathname?.includes('/websites') ? 'text-[var(--nav-active)] bg-[var(--nav-hover-bg)]' : 'text-[var(--text-primary)] hover:bg-[var(--hover-bg)]'}`}
-            locale={locale}
-            onClick={() => setIsMenuOpen(false)}
-          >
-            {t('websites')}
           </Link>
 
         </div>

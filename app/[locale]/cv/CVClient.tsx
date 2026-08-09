@@ -107,7 +107,7 @@ export default function CVClient() {
             <div className="flex gap-6 items-start">
               <div className="flex-1">
                 <h1 className="text-3xl font-bold tracking-tight text-gray-900 mb-1">MAXIMILIANO BRITO TORRES</h1>
-                <p className="text-base font-medium text-gray-700 mb-3">Full Stack Engineer | Next.js, React, Node.js</p>
+                <p className="text-base font-medium text-gray-700 mb-3">Fractional CTO / Technical Advisor | Full-Stack Engineer — Next.js, React, Node.js</p>
                 <address className="not-italic grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1 text-sm text-gray-600">
                   <span>Vientiane, Laos (GMT+7)</span>
                   <span>+856 20 52 373 435</span>
@@ -147,10 +147,10 @@ export default function CVClient() {
               Professional Summary
             </h2>
             <p className="text-gray-700 text-[0.98rem] leading-relaxed">
-              Full Stack Developer with 8+ years of international experience (Mexico, Thailand, China, Laos)
-              building scalable web architectures. Experience in JavaScript ecosystems (Next.js, React, Node.js), PHP Laravel, Python Django and
+              Full Stack Developer and Technical Advisor with 8+ years of international experience (Mexico, Thailand, China, Laos)
+              building scalable web architectures. Experience across JavaScript ecosystems (Next.js, React, Node.js), PHP Laravel, .NET, Python Django, and
               AWS Serverless environments. Proven track record of transitioning traditional businesses into high-performance
-              digital entities and mentoring the next generation of technical talent (Yango University, China and ComCenter College, Laos).
+              digital entities, guiding technical strategy and delivery, and mentoring the next generation of technical talent (Yango University, China and ComCenter College, Laos).
             </p>
           </section>
 
@@ -159,9 +159,9 @@ export default function CVClient() {
               Technical Expertise
             </h2>
             <div className="space-y-1.5 text-gray-700 text-[0.96rem]">
-              <p><strong className="text-gray-900">Languages:</strong> JavaScript (ES6+), TypeScript, PHP, SQL, HTML5/CSS3.</p>
+              <p><strong className="text-gray-900">Languages:</strong> JavaScript (ES6+), TypeScript, PHP, C#, SQL, HTML5/CSS3.</p>
               <p><strong className="text-gray-900">Frontend:</strong> Next.js (App Router), React, Vue.js, Angular, Tailwind CSS.</p>
-              <p><strong className="text-gray-900">Backend and API:</strong> Node.js, Express, GraphQL, Laravel, RESTful API Design.</p>
+              <p><strong className="text-gray-900">Backend and API:</strong> Node.js, Express, GraphQL, Laravel, .NET / ASP.NET Core, Django, RESTful API Design.</p>
               <p><strong className="text-gray-900">Cloud and DevOps:</strong> AWS (Lambda, API Gateway, DynamoDB, S3, Rekognition), Docker.</p>
               <p><strong className="text-gray-900">Specialized:</strong> AI Integration (AWS Rekognition), Technical Education.</p>
             </div>
@@ -174,14 +174,14 @@ export default function CVClient() {
 
             <div className="mb-5">
               <div className="flex justify-between items-baseline gap-3 mb-1">
-                <h3 className="text-base font-bold text-gray-900">Thavisub Group | Full Stack Engineer</h3>
+                <h3 className="text-base font-bold text-gray-900">Technical Project Manager | Software Delivery & Architecture</h3>
                 <span className="text-sm text-gray-600">Oct 2025 - Present</span>
               </div>
               <p className="text-sm text-gray-600 mb-2 italic">Vientiane, Laos</p>
               <ul className="list-disc pl-5 space-y-1 text-gray-700 text-[0.96rem]">
-                <li>Architecting enterprise-level web applications using Next.js and GraphQL, focusing on modularity and high-speed data fetching.</li>
-                <li>Leading the digital transition of group assets by implementing a unified Node.js/Express backend ecosystem.</li>
-                <li>Optimizing frontend performance for the Southeast Asian market, ensuring high usability on low-bandwidth mobile networks.</li>
+                <li>Leading end-to-end delivery of software projects, aligning technical strategy with business goals across cross-functional teams.</li>
+                <li>Directing architecture and technology decisions for web applications and internal systems, drawing on hands-on experience with Next.js, Laravel, .NET, and Django.</li>
+                <li>Overseeing vendor and developer teams to ensure delivery quality, timelines, and long-term maintainability.</li>
               </ul>
             </div>
 

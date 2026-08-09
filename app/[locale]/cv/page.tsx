@@ -12,12 +12,13 @@ export async function generateMetadata({ params }: CVPageProps): Promise<Metadat
   const localePath = `/${locale}/cv`;
 
   return {
-    title: "CV | Maximiliano Brito Torres - Full Stack Engineer",
+    title: "CV | Maximiliano Brito Torres - Fractional CTO & Technical Advisor",
     description:
-      "Curriculum Vitae of Maximiliano Brito Torres, Full Stack Engineer with 8+ years of experience in Next.js, React, Node.js, GraphQL, and AWS.",
+      "Curriculum Vitae of Maximiliano Brito Torres, Fractional CTO and Technical Advisor with 8+ years of experience across Next.js, React, Node.js, Laravel, .NET, Django, and AWS.",
     keywords: [
       "Maximiliano Brito Torres CV",
-      "Full Stack Engineer CV",
+      "Fractional CTO CV",
+      "Technical Advisor CV",
       "Next.js developer resume",
       "React Node.js engineer",
       "Software engineer Laos",
@@ -33,7 +34,7 @@ export async function generateMetadata({ params }: CVPageProps): Promise<Metadat
     openGraph: {
       title: "CV | Maximiliano Brito Torres",
       description:
-        "Professional profile and experience of Maximiliano Brito Torres, Full Stack Engineer focused on modern web architecture.",
+        "Professional profile and experience of Maximiliano Brito Torres, Fractional CTO and Technical Advisor focused on technical strategy and modern web architecture.",
       url: localePath,
       siteName: "Maxon Torres",
       type: "profile",
@@ -42,7 +43,7 @@ export async function generateMetadata({ params }: CVPageProps): Promise<Metadat
           url: "/og-image.jpg",
           width: 1200,
           height: 630,
-          alt: "Maximiliano Brito Torres CV and Full Stack Engineer profile",
+          alt: "Maximiliano Brito Torres CV and Fractional CTO / Technical Advisor profile",
         },
       ],
     },
@@ -50,7 +51,7 @@ export async function generateMetadata({ params }: CVPageProps): Promise<Metadat
       card: "summary_large_image",
       title: "CV | Maximiliano Brito Torres",
       description:
-        "Curriculum Vitae and professional background of a Full Stack Engineer specializing in Next.js, React, Node.js, and AWS.",
+        "Curriculum Vitae and professional background of a Fractional CTO and Technical Advisor specializing in Next.js, React, Node.js, Laravel, .NET, and AWS.",
       images: ["/og-image.jpg"],
     },
     robots: {
@@ -73,7 +74,7 @@ export default async function CVPage({ params }: CVPageProps) {
         "@type": "Person",
         "@id": `${siteUrl}/#person`,
         name: "Maximiliano Brito Torres",
-        jobTitle: "Full Stack Engineer",
+        jobTitle: "Fractional CTO / Technical Advisor",
         url: siteUrl,
         image: `${siteUrl}/cv-pic.png`,
         email: "mailto:hello@maxontorres.com",
@@ -88,10 +89,13 @@ export default async function CVPage({ params }: CVPageProps) {
           "Next.js",
           "React",
           "Node.js",
-          "GraphQL",
+          "Laravel",
+          ".NET",
+          "Django",
           "AWS Serverless",
           "TypeScript",
-          "Full Stack Development",
+          "Technical Strategy",
+          "Software Architecture",
         ],
       },
       {
@@ -100,7 +104,7 @@ export default async function CVPage({ params }: CVPageProps) {
         url: `${siteUrl}/${locale}/cv`,
         name: "Curriculum Vitae | Maximiliano Brito Torres",
         description:
-          "Curriculum Vitae of Maximiliano Brito Torres, Full Stack Engineer with international experience in web architecture and cloud applications.",
+          "Curriculum Vitae of Maximiliano Brito Torres, Fractional CTO and Technical Advisor with international experience in technical strategy, web architecture, and cloud applications.",
         inLanguage: locale,
         about: {
           "@id": `${siteUrl}/#person`,

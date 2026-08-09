@@ -5,19 +5,19 @@
     "about": "Acerca de",
     "services": "Servicios",
     "contact": "Contacto",
-    "referral": "Gana dinero",
-    "websites": "Sitios Web"
+    "referral": "Gana dinero"
   },
   "hero": {
     "brand": "MAXON TORRES",
-    "location": "[ VIENTIANE : LAOS PDR ] — DESARROLLADOR WEB FULL STACK",
-    "heroTitle": "Yo <highlight>automatizo</highlight> el trabajo que tu equipo no debería estar haciendo a mano.",
-    "heroTitlePrefix": "Construyo sitios web que",
+    "location": "[ VIENTIANE : LAOS PDR ] — CTO FRACCIONAL Y ASESOR TÉCNICO",
+    "heroTitle": "Ayudo a startups y equipos a <highlight>tomar las decisiones técnicas correctas</highlight>.",
+    "heroTitlePrefix": "Ayudo a startups y equipos a",
     "heroHighlights": [
-      "consiguen compradores internacionales",
-      "automatizan las operaciones de tu negocio"
+      "tomar las decisiones técnicas correctas",
+      "construir sistemas que no se caen",
+      "evitar errores de ingeniería costosos"
     ],
-    "heroSub": "Integraciones personalizadas, automatización de flujos y herramientas internas.",
+    "heroSub": "Liderazgo técnico estratégico para fundadores y equipos que necesitan criterio experto en arquitectura, proveedores y entregas — sin contratar un CTO de tiempo completo.",
     "ctaStart": "INICIAR UN PROYECTO",
     "ctaView": "VER MI TRABAJO"
   },
@@ -58,9 +58,9 @@
   "aboutHome": {
     "label": "[ QUIÉN SOY ]",
     "title": "Acerca de Mí",
-    "intro": "Soy Maximiliano Torres, Desarrollador de Software Full-Stack con base en Vientiane, Laos, enfocado en construir aplicaciones web robustas, organizadas y escalables.",
-    "description": "Ayudo a negocios a convertir ideas en herramientas digitales confiables — desde dashboards internos hasta plataformas completas — combinando arquitectura limpia, rendimiento y diseño centrado en el usuario.",
-    "imageAlt": "Maximiliano Torres - Desarrollador Full Stack",
+    "intro": "Soy Maximiliano Brito Torres — CTO Fraccional y Asesor Técnico con base en Vientiane, Laos, ayudando a startups y pymes a tomar decisiones técnicas acertadas y entregar software confiable.",
+    "description": "Entro donde los negocios necesitan criterio técnico experto sin comprometerse a una contratación de tiempo completo — decisiones de arquitectura y tecnología, supervisión de proveedores y equipos de desarrollo, y trabajo práctico cuando es la decisión correcta. Desde plataformas internas hasta sistemas a gran escala, el enfoque siempre es arquitectura limpia y mantenibilidad a largo plazo.",
+    "imageAlt": "Maximiliano Brito Torres - CTO Fraccional y Asesor Técnico en Vientiane",
     "learnMore": "Más Sobre Mí",
     "stats": {
       "experience": "10+",
@@ -72,14 +72,14 @@
     }
   },
   "about": {
-    "heroLabel": "[ PERFIL DEL DESARROLLADOR ]",
+    "heroLabel": "[ PERFIL DE ASESOR TÉCNICO ]",
     "heroTitle": "Acerca de Mí",
-    "heroSubtitle": "Especialista en React & Next.js | Desarrollador Full-Stack desde 2017",
+    "heroSubtitle": "CTO Fraccional y Asesor Técnico en Vientiane | Arquitectura Full-Stack, Automatización y Supervisión de Entregas | Construyendo software desde 2017",
     "bio": {
-      "title": "Construyendo Sistemas Web Confiables y Escalables",
-      "p1": "Soy Maximiliano Torres, Desarrollador Full-Stack con base en el Sudeste Asiático, especializado en construir aplicaciones web listas para producción con React y Next.js. Desde 2017, he creado herramientas y sistemas que priorizan arquitectura limpia, rendimiento y mantenibilidad.",
-      "p2": "Diseño y desarrollo soluciones digitales que automatizan flujos de trabajo, gestionan datos complejos y apoyan el crecimiento del negocio — desde dashboards internos hasta plataformas web completas. Mi enfoque es entregar sistemas confiables que resuelvan retos operativos reales.",
-      "p3": "Además del desarrollo, tengo experiencia enseñando TI y Diseño Web en distintas universidades en China y Laos. Colaboro con clientes internacionales y equipos remotos, garantizando entregas consistentes y éxito a largo plazo."
+      "title": "Liderazgo Técnico Estratégico, con Base en Ingeniería Real",
+      "p1": "Soy Maximiliano Torres, CTO Fraccional y Asesor Técnico con base en el Sudeste Asiático. Durante más de 8 años en México, Tailandia, China y Laos, he ayudado a negocios a tomar las decisiones técnicas correctas — arquitectura, herramientas, supervisión de proveedores y equipos — y sigo construyendo de forma práctica cuando el problema lo requiere.",
+      "p2": "Trabajo con fundadores y equipos pequeños que necesitan criterio técnico experto sin contratar un CTO de tiempo completo: elegir la arquitectura correcta, revisar y dirigir desarrolladores o agencias externas, y construir piezas críticas yo mismo cuando es necesario — desde dashboards internos hasta plataformas completas. El objetivo siempre son sistemas confiables que resuelvan problemas operativos reales, no decisiones tecnológicas de currículum.",
+      "p3": "Esa amplitud viene de trabajar en todo el stack — JavaScript/TypeScript, PHP/Laravel, Python/Django y .NET — además de tiempo enseñando TI y Diseño Web en universidades de China y Laos. Colaboro con clientes internacionales y equipos remotos, manteniendo entregas consistentes sin importar quién escriba el código."
     },
     "skills": {
       "title": "Tecnologías y Herramientas",
@@ -98,6 +98,9 @@
         "items": [
           "Node.js",
           "Express",
+          "Laravel",
+          ".NET",
+          "Django",
           "PostgreSQL",
           "MySQL",
           "REST APIs"
@@ -161,8 +164,8 @@
   },
   "services": {
     "title": "Servicios",
-    "subtitle": "Diseño y construyo plataformas SaaS y marketplaces escalables para startups en etapa temprana listas para lanzar y crecer.",
-    "subtitleSecondary": "Del MVP a producción, ayudo a fundadores a convertir ideas de producto en aplicaciones web estructuradas y confiables, construidas para escalar.",
+    "subtitle": "Liderazgo técnico y entrega práctica para negocios en crecimiento.",
+    "subtitleSecondary": "De la estrategia técnica al código en producción, ayudo a fundadores y equipos a tomar las decisiones correctas y entregar sistemas confiables hechos para durar.",
     "deliverLabel": "Lo que entrego",
     "toolsLabel": "Herramientas:",
     "items": {
@@ -291,8 +294,8 @@
     }
   },
   "footer": {
-    "tagline": "Automatización de Flujos e Integración de Sistemas",
-    "connect": "Conectando sistemas. Eliminando trabajo manual. Remoto desde Vientiane, Laos.",
+    "tagline": "CTO Fraccional y Asesoría Técnica",
+    "connect": "Estrategia técnica · Arquitectura · Sistemas y automatización · Remoto desde Vientiane, Laos.",
     "copyright": "© {year} Maxon Torres. Todos los derechos reservados.",
     "builtWith": "Construido con Next.js & TypeScript"
   },
