@@ -57,7 +57,7 @@ export default function TerminalDevice() {
             blue: '#00d4ff',
             magenta: '#ff007f',
             cyan: '#00ffff',
-            white: '#e6e7ea',
+            white: '#F0EDE6',
             brightBlack: '#4a5568',
             brightRed: '#ff5588',
             brightGreen: '#33ffbb',
@@ -490,7 +490,7 @@ export default function TerminalDevice() {
 
   return (
     <div className="terminal-en-only relative w-full  max-w-[900px]" role="img" aria-label="Terminal mockup card" lang="en" dir="ltr" translate="no">
-      <div className="bg-[#1a1d23]  rounded-xl border border-white/[0.08] overflow-hidden">
+      <div className="bg-[#111111]  rounded-xl border border-white/[0.08] overflow-hidden">
         <div
           id="xterm"
           className="h-[480px] m-2 overflow-hidden"

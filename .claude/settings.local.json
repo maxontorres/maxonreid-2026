@@ -8,7 +8,12 @@
       "Bash(node -e \"JSON.parse\\(require\\(''fs''\\).readFileSync\\(''C:/Users/USER/Desktop/PROJECTS/maxonreid-2026/messages/lo.json'', ''utf8''\\)\\); console.log\\(''lo.json OK''\\)\")",
       "Bash(node:*)",
       "Bash(npx postcss:*)",
-      "Bash(wait)"
+      "Bash(wait)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/en)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(powershell -Command 'Get-Process -Name node -ErrorAction SilentlyContinue | Where-Object {$_.Path -like '\\\\''*'\\\\''} | Stop-Process -Force')",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(pkill -f \"next-server\")"
     ]
   }
 }

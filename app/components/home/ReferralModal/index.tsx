@@ -40,7 +40,7 @@ export default function ReferralModal() {
       aria-label={t('modal.ariaLabel')}
     >
       <div
-        className="w-full max-w-[560px] bg-[#0f1113] border border-white/[0.08] rounded-xl relative shadow-[0_40px_80px_rgba(0,0,0,0.8)] animate-[modalIn_0.35s_cubic-bezier(0.16,1,0.3,1)_both] max-sm:max-w-full max-sm:rounded-b-none max-sm:max-h-[92dvh] max-sm:overflow-y-auto overflow-hidden"
+        className="w-full max-w-[560px] bg-[#111111] border border-white/[0.08] rounded-xl relative shadow-[0_40px_80px_rgba(0,0,0,0.8)] animate-[modalIn_0.35s_cubic-bezier(0.16,1,0.3,1)_both] max-sm:max-w-full max-sm:rounded-b-none max-sm:max-h-[92dvh] max-sm:overflow-y-auto overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* ── DECORATIVE DOLLAR SIGN ── */}
@@ -53,9 +53,9 @@ export default function ReferralModal() {
         >
           <defs>
             <linearGradient id="dollarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#d6b46b" stopOpacity="1" />
+              <stop offset="0%" stopColor="#D4A843" stopOpacity="1" />
               <stop offset="50%" stopColor="#f4d799" stopOpacity="1" />
-              <stop offset="100%" stopColor="#d6b46b" stopOpacity="1" />
+              <stop offset="100%" stopColor="#D4A843" stopOpacity="1" />
             </linearGradient>
             <filter id="glow">
               <feGaussianBlur stdDeviation="3" result="coloredBlur" />
@@ -81,24 +81,24 @@ export default function ReferralModal() {
 
         {/* ── TOP BAR ── */}
         <div className="flex justify-between items-center pl-5 pr-12 py-3 border-b border-white/[0.06] rounded-t-xl bg-white/[0.02]">
-          <span className="font-mono text-[0.6rem] tracking-widest text-[#9ea0a8]">
+          <span className="font-mono text-[0.6rem] tracking-widest text-[#AEACA6]">
             MAXONTORRES.COM
           </span>
-          <div className="flex items-center gap-1.5 font-mono text-[0.6rem] text-[#d6b46b]">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#d6b46b] animate-[blink_2s_step-end_infinite]" />
+          <div className="flex items-center gap-1.5 font-mono text-[0.6rem] text-[#D4A843]">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#D4A843] animate-[blink_2s_step-end_infinite]" />
             {t('modal.badge')}
           </div>
         </div>
 
         {/* ── CONTENT ── */}
         <div className="px-6 pt-6 max-sm:px-4 max-sm:pt-4">
-          <span className="font-mono text-[0.6rem] tracking-widest text-[#9ea0a8] block mb-5">
+          <span className="font-mono text-[0.6rem] tracking-widest text-[#AEACA6] block mb-5">
             {t('label')}
           </span>
 
-          <h2 className="text-2xl font-bold text-[#e6e7ea] leading-snug tracking-tight mb-4">
+          <h2 className="text-2xl font-bold text-[#F0EDE6] leading-snug tracking-tight mb-4">
             {t('title')}{' '}
-            <span className="text-[#d6b46b]">{t('titleAlt')}</span>
+            <span className="text-[#D4A843]">{t('titleAlt')}</span>
           </h2>
 
           <div className="h-px bg-white/[0.06] -mx-6 mb-5" />
@@ -109,23 +109,23 @@ export default function ReferralModal() {
             {/* Option A - cash */}
             <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-4 hover:bg-white/[0.03] transition-colors">
               <div className="flex justify-between items-start mb-3">
-                <span className="font-mono text-[0.55rem] tracking-widest text-[#9ea0a8]">
+                <span className="font-mono text-[0.55rem] tracking-widest text-[#AEACA6]">
                   {t('optionA.label')}
                 </span>
                 <div className="text-right leading-none">
-                  <span className="font-mono text-3xl font-bold text-[#d6b46b] tracking-tight block max-sm:text-2xl">
+                  <span className="font-mono text-3xl font-bold text-[#D4A843] tracking-tight block max-sm:text-2xl">
                     {t('optionA.amount')}
                   </span>
-                  <span className="font-mono text-[0.55rem] tracking-widest text-[#9ea0a8]">
+                  <span className="font-mono text-[0.55rem] tracking-widest text-[#AEACA6]">
                     {t('optionA.unit')}
                   </span>
                 </div>
               </div>
               <div className="h-px bg-white/[0.06] mb-3" />
-              <p className="text-sm text-[#9ea0a8] leading-relaxed">
+              <p className="text-sm text-[#AEACA6] leading-relaxed">
                 {t.rich('optionA.desc', {
                   highlight: (chunks) => (
-                    <span className="font-semibold text-[#d6b46b] bg-[#d6b46b]/12 px-1.5 py-0.5 rounded">
+                    <span className="font-semibold text-[#D4A843] bg-[#D4A843]/12 px-1.5 py-0.5 rounded">
                       {chunks}
                     </span>
                   ),
@@ -136,23 +136,23 @@ export default function ReferralModal() {
             {/* Option B */}
             <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-4 hover:bg-white/[0.03] transition-colors">
               <div className="flex justify-between items-start mb-3">
-                <span className="font-mono text-[0.55rem] tracking-widest text-[#9ea0a8]">
+                <span className="font-mono text-[0.55rem] tracking-widest text-[#AEACA6]">
                   {t('optionB.label')}
                 </span>
                 <div className="text-right leading-none">
-                  <span className="font-mono text-3xl font-bold text-[#d6b46b] tracking-tight block max-sm:text-2xl">
+                  <span className="font-mono text-3xl font-bold text-[#D4A843] tracking-tight block max-sm:text-2xl">
                     {t('optionB.amount')}
                   </span>
-                  <span className="font-mono text-[0.55rem] tracking-widest text-[#9ea0a8]">
+                  <span className="font-mono text-[0.55rem] tracking-widest text-[#AEACA6]">
                     {t('optionB.unit')}
                   </span>
                 </div>
               </div>
               <div className="h-px bg-white/[0.06] mb-3" />
-              <p className="text-sm text-[#9ea0a8] leading-relaxed">
+              <p className="text-sm text-[#AEACA6] leading-relaxed">
                 {t.rich('optionB.desc', {
                   highlight: (chunks) => (
-                    <span className="font-semibold text-[#d6b46b] bg-[#d6b46b]/12 px-1.5 py-0.5 rounded">
+                    <span className="font-semibold text-[#D4A843] bg-[#D4A843]/12 px-1.5 py-0.5 rounded">
                       {chunks}
                     </span>
                   ),
@@ -169,19 +169,19 @@ export default function ReferralModal() {
             href="https://wa.me/8562052373435"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full py-3 px-6 rounded-lg font-semibold transition-all bg-[#d6b46b] hover:bg-[#b99046] text-[#0a0a0c] flex items-center justify-center gap-2"
+            className="w-full py-3 px-6 rounded-lg font-semibold transition-all bg-[#D4A843] hover:bg-[#B8902F] text-[#080808] flex items-center justify-center gap-2"
             onClick={dismiss}
           >
             <MessageCircle size={18} strokeWidth={2} aria-hidden="true" />
             {t('cta')}
           </a>
           <div className="flex justify-between items-center">
-            <span className="font-mono text-[0.6rem] text-[#9ea0a8] tracking-wide">
+            <span className="font-mono text-[0.6rem] text-[#AEACA6] tracking-wide">
               {t('phone')}
             </span>
             <button
               onClick={dismiss}
-              className="font-mono text-[0.6rem] tracking-widest text-[#9ea0a8] bg-transparent border-none cursor-pointer transition-colors hover:text-[#e6e7ea]"
+              className="font-mono text-[0.6rem] tracking-widest text-[#AEACA6] bg-transparent border-none cursor-pointer transition-colors hover:text-[#F0EDE6]"
             >
               {t('modal.dismiss')}
             </button>
@@ -190,10 +190,10 @@ export default function ReferralModal() {
 
         {/* ── FOOTER BAR ── */}
         <div className="flex justify-between items-center px-5 py-3 border-t border-white/[0.06] rounded-b-xl bg-white/[0.02]">
-          <span className="font-mono text-[0.55rem] text-[#9ea0a8] tracking-wide">
+          <span className="font-mono text-[0.55rem] text-[#AEACA6] tracking-wide">
             MAXON TORRES · VIENTIANE : LAOS PDR
           </span>
-          <span className="font-mono text-[0.55rem] text-[#9ea0a8]/60">
+          <span className="font-mono text-[0.55rem] text-[#AEACA6]/60">
             {t('fine')}
           </span>
         </div>
@@ -202,7 +202,7 @@ export default function ReferralModal() {
         <button
           onClick={dismiss}
           aria-label="Close"
-          className="absolute top-3 right-4 text-[#9ea0a8] bg-transparent border-none cursor-pointer p-0.5 transition-colors hover:text-[#e6e7ea]"
+          className="absolute top-3 right-4 text-[#AEACA6] bg-transparent border-none cursor-pointer p-0.5 transition-colors hover:text-[#F0EDE6]"
         >
           <X size={14} strokeWidth={2} />
         </button>

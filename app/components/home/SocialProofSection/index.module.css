@@ -15,31 +15,31 @@
 }
 
 .sectionLabel {
-  font-family: var(--font-geist-mono), monospace;
+  font-family: var(--font-space-mono), monospace;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #9ea0a8;
+  color: #AEACA6;
   margin: 0 0 16px;
 }
 
 .title {
-  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  font-family: var(--font-lora), Georgia, serif;
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
-  color: #e6e7ea;
+  color: #F0EDE6;
   margin: 0 0 12px;
   line-height: 1.2;
   letter-spacing: -0.01em;
 }
 
 .subtitle {
-  font-family: var(--font-geist-sans), sans-serif;
+  font-family: var(--font-space-mono), sans-serif;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.65;
-  color: #9ea0a8;
+  color: #AEACA6;
   margin: 0;
   max-width: 560px;
 }
@@ -54,7 +54,7 @@
 }
 
 .card {
-  background-color: #0a0a0c;
+  background-color: #080808;
   padding: 36px 32px;
   display: flex;
   flex-direction: column;
@@ -63,24 +63,24 @@
 }
 
 .card:hover {
-  background-color: rgba(214, 180, 107, 0.03);
+  background-color: rgba(212, 168, 67, 0.03);
 }
 
 /* ── Quote ──────────────────────────────────────────── */
 .quote {
-  font-family: var(--font-geist-sans), sans-serif;
+  font-family: var(--font-space-mono), sans-serif;
   font-size: 0.95rem;
   font-weight: 300;
   line-height: 1.75;
-  color: #e6e7ea;
+  color: #F0EDE6;
   margin: 0;
   flex: 1;
 }
 
 .quoteOpenMark {
-  font-family: var(--font-playfair), serif;
+  font-family: var(--font-lora), serif;
   font-size: 3rem;
-  color: rgba(214, 180, 107, 0.2);
+  color: rgba(212, 168, 67, 0.2);
   line-height: 0;
   vertical-align: -0.6rem;
   margin-right: 2px;
@@ -98,18 +98,18 @@
 
 .projectLink {
   margin-left: auto;
-  font-family: var(--font-geist-mono), monospace;
+  font-family: var(--font-space-mono), monospace;
   font-size: 0.72rem;
   font-weight: 500;
   letter-spacing: 0.06em;
-  color: #d6b46b;
+  color: #D4A843;
   text-decoration: none;
   white-space: nowrap;
   transition: color 0.2s ease;
 }
 
 .projectLink:hover {
-  color: #b99046;
+  color: #B8902F;
 }
 
 .avatar {
@@ -118,7 +118,7 @@
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
-  border: 1px solid rgba(214, 180, 107, 0.2);
+  border: 1px solid rgba(212, 168, 67, 0.2);
 }
 
 .authorInfo {
@@ -128,20 +128,20 @@
 }
 
 .authorName {
-  font-family: var(--font-geist-sans), sans-serif;
+  font-family: var(--font-space-mono), sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
-  color: #e6e7ea;
+  color: #F0EDE6;
   display: block;
 }
 
 .authorRole {
-  font-family: var(--font-geist-mono), monospace;
+  font-family: var(--font-space-mono), monospace;
   font-size: 0.65rem;
   font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #9ea0a8;
+  color: #AEACA6;
   display: block;
 }
 

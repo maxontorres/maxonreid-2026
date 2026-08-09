@@ -16,33 +16,33 @@ export default function HeroSection() {
     <section className="py-24 px-0 pb-30 relative overflow-hidden" aria-labelledby="hero-heading">
       <div className="w-[92%] max-w-[1200px] mx-auto grid gap-9 grid-cols-1 lg:grid-cols-[1fr_420px] items-center">
         <div className="max-w-[720px] hero-content">
-          <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold mb-2">{t('brand')}</div>
-          <div className="font-mono text-[13px] text-[#9ea0a8] tracking-[2px] mb-4">
+          <div className="font-mono text-sm text-[#AEACA6] tracking-[8px] font-semibold mb-2">{t('brand')}</div>
+          <div className="font-mono text-[13px] text-[#AEACA6] tracking-[2px] mb-4">
             {t('location')}
           </div>
 
           {/* The Main Website Headline */}
-          <h1 id="hero-heading" className="text-[52px] leading-tight my-1.5 font-bold tracking-tight">
+          <h1 id="hero-heading" className="text-[52px] leading-tight my-1.5 font-black tracking-tight font-display">
             {t('heroTitlePrefix')}{' '}
-            <span className="text-[#d6b46b] inline-block min-w-[420px]">
+            <span className="text-[#D4A843] inline-block min-w-[420px]">
               {typewriterText}
-              <span className="inline-block w-[3px] h-[1.1em] bg-[#d6b46b] ml-[2px] align-middle animate-[blink_1s_step-end_infinite]"></span>
+              <span className="inline-block w-[3px] h-[1.1em] bg-[#D4A843] ml-[2px] align-middle animate-[blink_1s_step-end_infinite]"></span>
             </span>
           </h1>
 
-          <p className="text-[#9ea0a8] max-w-[560px] mb-4.5">
+          <p className="text-[#AEACA6] max-w-[560px] mb-4.5">
             {t('heroSub')}
           </p>
 
           <div className="flex gap-3.5 mt-4.5">
 
             {/* Start a Project */}
-            <a className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#d6b46b] no-underline font-mono tracking-wide transition-all hover:bg-gradient-to-b hover:from-[#d6b46b]/[0.06] hover:to-transparent hover:text-[#e6e7ea] hover:border-[#d6b46b]" href="#contact">
+            <a className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#D4A843] no-underline font-mono tracking-wide transition-all hover:bg-gradient-to-b hover:from-[#D4A843]/[0.06] hover:to-transparent hover:text-[#F0EDE6] hover:border-[#D4A843]" href="#contact">
               {t('ctaStart')}
             </a>
 
             {/* View my work */}
-            <a className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#e6e7ea] no-underline font-mono tracking-wide transition-all opacity-90 hover:bg-gradient-to-b hover:from-[#d6b46b]/[0.06] hover:to-transparent hover:border-[#d6b46b]" href="#work">
+            <a className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#F0EDE6] no-underline font-mono tracking-wide transition-all opacity-90 hover:bg-gradient-to-b hover:from-[#D4A843]/[0.06] hover:to-transparent hover:border-[#D4A843]" href="#work">
               {t('ctaView')}
             </a>
 

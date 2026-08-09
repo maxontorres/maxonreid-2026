@@ -1,4 +1,4 @@
-import { ImageResponse } from 'next/og';
+﻿import { ImageResponse } from 'next/og';
 import { articles } from '@/app/lib/articles';
 
 export const runtime = 'edge';
@@ -26,13 +26,13 @@ export default async function Image({ params }: Props) {
         <div
           style={{
             fontSize: 64,
-            background: '#0a0a0c',
+            background: '#080808',
             width: '100%',
             height: '100%',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            color: '#d6b46b',
+            color: '#D4A843',
             fontWeight: 'bold',
           }}
         >
@@ -47,7 +47,7 @@ export default async function Image({ params }: Props) {
     (
       <div
         style={{
-          background: '#0a0a0c',
+          background: '#080808',
           width: '100%',
           height: '100%',
           display: 'flex',
@@ -88,7 +88,7 @@ export default async function Image({ params }: Props) {
               <div
                 style={{
                   fontSize: 28,
-                  color: '#d6b46b',
+                  color: '#D4A843',
                   fontWeight: '600',
                   display: 'flex',
                 }}
@@ -101,7 +101,7 @@ export default async function Image({ params }: Props) {
               style={{
                 fontSize: 52,
                 fontWeight: 'bold',
-                color: '#e6e7ea',
+                color: '#F0EDE6',
                 lineHeight: 1.2,
                 margin: 0,
                 letterSpacing: '-0.01em',
@@ -113,7 +113,7 @@ export default async function Image({ params }: Props) {
             <p
               style={{
                 fontSize: 22,
-                color: '#9ea0a8',
+                color: '#AEACA6',
                 margin: 0,
                 lineHeight: 1.5,
               }}
@@ -127,14 +127,14 @@ export default async function Image({ params }: Props) {
               display: 'flex',
               flexDirection: 'column',
               gap: '16px',
-              // borderTop: '2px solid rgba(214, 180, 107, 0.2)',
+              // borderTop: '2px solid rgba(212, 168, 67, 0.2)',
               paddingTop: '24px',
             }}
           >
             <div
               style={{
                 fontSize: 20,
-                color: '#9ea0a8',
+                color: '#AEACA6',
                 display: 'flex',
               }}
             >
@@ -154,7 +154,7 @@ export default async function Image({ params }: Props) {
               right: '60px',
               top: '60px',
               borderRadius: '12px',
-              // border: '2px solid rgba(214, 180, 107, 0.15)',
+              // border: '2px solid rgba(212, 168, 67, 0.15)',
               objectFit: 'contain',
             }}
           />

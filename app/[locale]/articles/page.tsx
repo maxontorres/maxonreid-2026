@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
@@ -60,15 +60,15 @@ export default function ArticlesPage() {
 
         {/* ── Hero ─────────────────────────────────────────────────────────── */}
         <section className="pt-32 pb-16 w-[92%] max-w-[1200px] mx-auto">
-          <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold mb-6">
+          <div className="font-mono text-sm text-[#AEACA6] tracking-[8px] font-semibold mb-6">
             {t('heroLabel')} — {allArticles.length} {allArticles.length === 1 ? t('articleSingular') : t('articlePlural')}
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-[#e6e7ea] leading-none mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold text-[#F0EDE6] leading-none mb-6">
             {t('heroTitle').split(' & ')[0]}{' '}
             &{' '}
-            <span className="text-[#d6b46b]">{t('heroTitle').split(' & ')[1]}</span>
+            <span className="text-[#D4A843]">{t('heroTitle').split(' & ')[1]}</span>
           </h1>
-          <p className="text-xl text-[#9ea0a8] max-w-2xl leading-relaxed">
+          <p className="text-xl text-[#AEACA6] max-w-2xl leading-relaxed">
             {t('heroSubtitle')}
           </p>
         </section>
@@ -85,7 +85,7 @@ export default function ArticlesPage() {
               <div className="relative flex-1">
                 <Search
                   size={16}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 text-[#9ea0a8] pointer-events-none"
+                  className="absolute left-3 top-1/2 -translate-y-1/2 text-[#AEACA6] pointer-events-none"
                   aria-hidden="true"
                 />
                 <input
@@ -94,13 +94,13 @@ export default function ArticlesPage() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   aria-label="Search articles"
-                  className="w-full pl-9 pr-9 py-2.5 rounded-lg border border-white/[0.06] bg-white/[0.02] text-[#e6e7ea] text-sm font-mono placeholder:text-[#9ea0a8] focus:outline-none focus:border-[#d6b46b]/50 transition-colors"
+                  className="w-full pl-9 pr-9 py-2.5 rounded-lg border border-white/[0.06] bg-white/[0.02] text-[#F0EDE6] text-sm font-mono placeholder:text-[#AEACA6] focus:outline-none focus:border-[#D4A843]/50 transition-colors"
                 />
                 {searchQuery && (
                   <button
                     onClick={() => setSearchQuery('')}
                     aria-label="Clear search"
-                    className="absolute right-3 top-1/2 -translate-y-1/2 text-[#9ea0a8] hover:text-[#e6e7ea] transition-colors"
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-[#AEACA6] hover:text-[#F0EDE6] transition-colors"
                   >
                     <X size={14} />
                   </button>
@@ -109,13 +109,13 @@ export default function ArticlesPage() {
 
               {/* Sort */}
               <div className="flex items-center gap-2 shrink-0">
-                <span className="font-mono text-xs text-[#9ea0a8] whitespace-nowrap">
+                <span className="font-mono text-xs text-[#AEACA6] whitespace-nowrap">
                   {t('sortBy')}
                 </span>
                 <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value as SortOption)}
-                  className="bg-white/[0.02] border border-white/[0.06] text-[#9ea0a8] text-sm font-mono rounded-lg px-3 py-2.5 focus:outline-none focus:border-[#d6b46b]/50 transition-colors cursor-pointer"
+                  className="bg-white/[0.02] border border-white/[0.06] text-[#AEACA6] text-sm font-mono rounded-lg px-3 py-2.5 focus:outline-none focus:border-[#D4A843]/50 transition-colors cursor-pointer"
                   style={{ backgroundColor: 'var(--bg-secondary)' }}
                 >
                   {SORT_OPTIONS.map((id) => (
@@ -137,15 +137,15 @@ export default function ArticlesPage() {
                   onClick={() => setActiveCategory(cat.id)}
                   className={`px-4 py-2 rounded-lg border font-mono text-sm transition-all flex items-center gap-2 ${
                     activeCategory === cat.id
-                      ? 'bg-[#d6b46b]/10 border-[#d6b46b] text-[#d6b46b]'
-                      : 'bg-transparent border-white/[0.06] text-[#9ea0a8] hover:border-[#d6b46b]/50 hover:text-[#e6e7ea]'
+                      ? 'bg-[#D4A843]/10 border-[#D4A843] text-[#D4A843]'
+                      : 'bg-transparent border-white/[0.06] text-[#AEACA6] hover:border-[#D4A843]/50 hover:text-[#F0EDE6]'
                   }`}
                 >
                   {cat.label}
                   <span className={`text-xs px-1.5 py-0.5 rounded-full font-mono ${
                     activeCategory === cat.id
-                      ? 'bg-[#d6b46b]/20 text-[#d6b46b]'
-                      : 'bg-white/[0.06] text-[#9ea0a8]'
+                      ? 'bg-[#D4A843]/20 text-[#D4A843]'
+                      : 'bg-white/[0.06] text-[#AEACA6]'
                   }`}>
                     {cat.count}
                   </span>
@@ -159,7 +159,7 @@ export default function ArticlesPage() {
         <section className="py-16 w-[92%] max-w-[1200px] mx-auto" role="tabpanel">
           {filteredArticles.length > 0 ? (
             <>
-              <p className="font-mono text-xs text-[#9ea0a8] mb-8">
+              <p className="font-mono text-xs text-[#AEACA6] mb-8">
                 {filteredArticles.length === 1
                   ? t('showing', { count: filteredArticles.length })
                   : t('showingPlural', { count: filteredArticles.length })}
@@ -179,17 +179,17 @@ export default function ArticlesPage() {
           ) : (
             <div className="flex flex-col items-center justify-center py-24 text-center gap-4">
               <div className="w-16 h-16 rounded-full border border-white/[0.06] flex items-center justify-center mb-2">
-                <Search size={24} className="text-[#9ea0a8]" aria-hidden="true" />
+                <Search size={24} className="text-[#AEACA6]" aria-hidden="true" />
               </div>
-              <h3 className="text-xl font-bold text-[#e6e7ea]">
+              <h3 className="text-xl font-bold text-[#F0EDE6]">
                 {t('noResults.title')}
               </h3>
-              <p className="text-[#9ea0a8] max-w-sm leading-relaxed">
+              <p className="text-[#AEACA6] max-w-sm leading-relaxed">
                 {t('noResults.message')}
               </p>
               <button
                 onClick={() => { setSearchQuery(''); setActiveCategory('all'); }}
-                className="mt-2 px-5 py-2.5 rounded-lg border border-white/[0.06] font-mono text-sm text-[#9ea0a8] hover:border-[#d6b46b]/50 hover:text-[#e6e7ea] transition-all"
+                className="mt-2 px-5 py-2.5 rounded-lg border border-white/[0.06] font-mono text-sm text-[#AEACA6] hover:border-[#D4A843]/50 hover:text-[#F0EDE6] transition-all"
               >
                 {t('noResults.clearFilters')}
               </button>

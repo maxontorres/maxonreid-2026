@@ -16,7 +16,7 @@ export default function ContactSection() {
         <h2 id="contact-heading" className="text-4xl md:text-5xl font-bold mb-4">
           {t('title')}
         </h2>
-        <p className="text-xl text-[#9ea0a8] max-w-2xl mx-auto">
+        <p className="text-xl text-[#AEACA6] max-w-2xl mx-auto">
           {t('subtitle')}
         </p>
       </div>
@@ -24,13 +24,13 @@ export default function ContactSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="space-y-6">
           <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 flex gap-4 hover:bg-white/[0.03] transition-colors">
-            <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#d6b46b]/10 flex items-center justify-center text-[#d6b46b]">
+            <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#D4A843]/10 flex items-center justify-center text-[#D4A843]">
               <Mail size={20} strokeWidth={2} aria-hidden="true" />
             </div>
             <div className="flex-1">
-              <div className="font-mono text-xs text-[#9ea0a8] tracking-wider mb-1">{t('labels.email')}</div>
-              <div className="text-[#e6e7ea]">
-                <a href="mailto:hello@maxontorres.com" className="hover:text-[#d6b46b] transition-colors">
+              <div className="font-mono text-xs text-[#AEACA6] tracking-wider mb-1">{t('labels.email')}</div>
+              <div className="text-[#F0EDE6]">
+                <a href="mailto:hello@maxontorres.com" className="hover:text-[#D4A843] transition-colors">
                   hello@MaxonTorres.com
                 </a>
               </div>
@@ -38,38 +38,38 @@ export default function ContactSection() {
           </div>
 
           <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 flex gap-4 hover:bg-white/[0.03] transition-colors">
-            <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#d6b46b]/10 flex items-center justify-center text-[#d6b46b]">
+            <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#D4A843]/10 flex items-center justify-center text-[#D4A843]">
               <MapPin size={20} strokeWidth={2} aria-hidden="true" />
             </div>
             <div className="flex-1">
-              <div className="font-mono text-xs text-[#9ea0a8] tracking-wider mb-1">{t('labels.location')}</div>
-              <div className="text-[#e6e7ea]">
+              <div className="font-mono text-xs text-[#AEACA6] tracking-wider mb-1">{t('labels.location')}</div>
+              <div className="text-[#F0EDE6]">
                 {t('location.city')}
-                <div className="text-sm text-[#9ea0a8] mt-1">{t('location.timezone')}</div>
+                <div className="text-sm text-[#AEACA6] mt-1">{t('location.timezone')}</div>
               </div>
             </div>
           </div>
 
           <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 flex gap-4 hover:bg-white/[0.03] transition-colors">
-            <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#d6b46b]/10 flex items-center justify-center text-[#d6b46b]">
+            <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#D4A843]/10 flex items-center justify-center text-[#D4A843]">
               <Link2 size={20} strokeWidth={2} aria-hidden="true" />
             </div>
             <div className="flex-1">
-              <div className="font-mono text-xs text-[#9ea0a8] tracking-wider mb-1">{t('labels.connect')}</div>
-              <div className="text-[#e6e7ea] flex gap-2">
-                <a href="https://github.com/maxonreid" target="_blank" rel="noopener" className="hover:text-[#d6b46b] transition-colors">
+              <div className="font-mono text-xs text-[#AEACA6] tracking-wider mb-1">{t('labels.connect')}</div>
+              <div className="text-[#F0EDE6] flex gap-2">
+                <a href="https://github.com/maxonreid" target="_blank" rel="noopener" className="hover:text-[#D4A843] transition-colors">
                   GitHub
                 </a>
-                <span className="text-[#9ea0a8]">·</span>
-                <a href="https://www.linkedin.com/in/maxontorres/" target="_blank" rel="noopener" className="hover:text-[#d6b46b] transition-colors">
+                <span className="text-[#AEACA6]">·</span>
+                <a href="https://www.linkedin.com/in/maxontorres/" target="_blank" rel="noopener" className="hover:text-[#D4A843] transition-colors">
                   {t('links.linkedin')}
                 </a>
-                <span className="text-[#9ea0a8]">·</span>
-                <a href="https://www.facebook.com/maxontorresweb" target="_blank" rel="noopener" className="hover:text-[#d6b46b] transition-colors">
+                <span className="text-[#AEACA6]">·</span>
+                <a href="https://www.facebook.com/maxontorresweb" target="_blank" rel="noopener" className="hover:text-[#D4A843] transition-colors">
                   Facebook
                 </a>
-                <span className="text-[#9ea0a8]">·</span>
-                <a href="https://www.instagram.com/maxontorresweb/" target="_blank" rel="noopener" className="hover:text-[#d6b46b] transition-colors">
+                <span className="text-[#AEACA6]">·</span>
+                <a href="https://www.instagram.com/maxontorresweb/" target="_blank" rel="noopener" className="hover:text-[#D4A843] transition-colors">
                   Instagram
                 </a>
               </div>
@@ -77,13 +77,13 @@ export default function ContactSection() {
           </div>
 
           <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 flex gap-4 hover:bg-white/[0.03] transition-colors">
-            <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#d6b46b]/10 flex items-center justify-center text-[#d6b46b]">
+            <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#D4A843]/10 flex items-center justify-center text-[#D4A843]">
               <Phone size={20} strokeWidth={2} aria-hidden="true" />
             </div>
             <div className="flex-1">
-              <div className="font-mono text-xs text-[#9ea0a8] tracking-wider mb-1">{t('labels.phoneWhatsapp')}</div>
-              <div className="text-[#e6e7ea]">
-                <a href="tel:+8562052373435" className="hover:text-[#d6b46b] transition-colors">
+              <div className="font-mono text-xs text-[#AEACA6] tracking-wider mb-1">{t('labels.phoneWhatsapp')}</div>
+              <div className="text-[#F0EDE6]">
+                <a href="tel:+8562052373435" className="hover:text-[#D4A843] transition-colors">
                   +856 20 52 373 435
                 </a>
               </div>
@@ -94,7 +94,7 @@ export default function ContactSection() {
         <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-8 flex flex-col justify-between gap-8">
           <div className="space-y-3">
             <h3 className="text-2xl font-bold">{t('card.title')}</h3>
-            <p className="text-[#9ea0a8]">
+            <p className="text-[#AEACA6]">
               {t('card.subtitle')}
             </p>
           </div>
@@ -104,7 +104,7 @@ export default function ContactSection() {
               href="https://wa.me/8562052373435"
               target="_blank"
               rel="noopener"
-              className="w-full py-3 px-6 rounded-lg font-semibold transition-all bg-[#d6b46b] hover:bg-[#b99046] text-[#0a0a0c] flex items-center justify-center gap-2"
+              className="w-full py-3 px-6 rounded-lg font-semibold transition-all bg-[#D4A843] hover:bg-[#B8902F] text-[#080808] flex items-center justify-center gap-2"
             >
               <MessageCircle size={18} strokeWidth={2} aria-hidden="true" />
               {t('cta.whatsapp')}
@@ -112,15 +112,15 @@ export default function ContactSection() {
 
             <a
               href="tel:+8562052373435"
-              className="w-full py-3 px-6 rounded-lg font-semibold transition-all bg-white/[0.06] hover:bg-white/[0.1] text-[#e6e7ea] border border-white/[0.12] flex items-center justify-center gap-2"
+              className="w-full py-3 px-6 rounded-lg font-semibold transition-all bg-white/[0.06] hover:bg-white/[0.1] text-[#F0EDE6] border border-white/[0.12] flex items-center justify-center gap-2"
             >
               <Phone size={18} strokeWidth={2} aria-hidden="true" />
               {t('cta.callNow')}
             </a>
           </div>
 
-          <div className="font-mono text-xs text-[#9ea0a8]">
-            {t('card.numberLabel')} <span className="text-[#d6b46b]">+856 20 52 373 435</span>
+          <div className="font-mono text-xs text-[#AEACA6]">
+            {t('card.numberLabel')} <span className="text-[#D4A843]">+856 20 52 373 435</span>
           </div>
         </div>
 

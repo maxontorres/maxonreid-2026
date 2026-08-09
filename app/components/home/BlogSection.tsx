@@ -41,7 +41,7 @@ export default function BlogSection() {
       <div className="flex justify-center mt-12">
         <Link
           href={`/${locale}/articles`}
-          className="inline-flex items-center gap-2 py-3 px-6 rounded-lg bg-transparent border border-white/[0.06] text-text-primary font-mono hover:border-[#d6b46b] hover:text-gold transition-all"
+          className="inline-flex items-center gap-2 py-3 px-6 rounded-lg bg-transparent border border-white/[0.06] text-text-primary font-mono hover:border-[#D4A843] hover:text-gold transition-all"
           aria-label="View all articles"
         >
           <span>{t('viewAll')}</span>

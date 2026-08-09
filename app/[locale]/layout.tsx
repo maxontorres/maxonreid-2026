@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { Inter, IBM_Plex_Mono, Noto_Sans_Lao } from "next/font/google";
+import { Big_Shoulders, Space_Mono, Lora, Noto_Sans_Lao } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import MetaPixel from '@/app/components/MetaPixel';
 import { getMessages } from 'next-intl/server';
@@ -8,26 +7,22 @@ import "@/app/globals.css";
 import "xterm/css/xterm.css";
 import WhatsAppWidget from '@/app/components/WhatsAppWidget';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const bigShouldersDisplay = Big_Shoulders({
+  variable: "--font-big-shoulders",
   subsets: ["latin"],
+  weight: ["900"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const spaceMono = Space_Mono({
+  variable: "--font-space-mono",
   subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
-const inter = Inter({
-  variable: "--font-inter",
+const lora = Lora({
+  variable: "--font-lora",
   subsets: ["latin"],
-  weight: ["300", "400", "600", "700"],
-});
-
-const ibmPlexMono = IBM_Plex_Mono({
-  variable: "--font-ibm-plex-mono",
-  subsets: ["latin"],
-  weight: ["300", "400", "500"],
+  weight: ["400", "500"],
 });
 
 const notoSansLao = Noto_Sans_Lao({
@@ -100,7 +95,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} data-theme="dark" className={locale === 'lo' ? 'locale-lao' : 'locale-en'}>
       <head>
-        <meta name="theme-color" content="#0a0a0c" id="meta-theme-color" />
+        <meta name="theme-color" content="#080808" id="meta-theme-color" />
         <link
           rel="alternate"
           type="application/rss+xml"
@@ -110,7 +105,7 @@ export default async function LocaleLayout({
         <script defer src="https://cloud.umami.is/script.js" data-website-id="8e2ec7e3-5bce-4088-b18c-966a6ba4f468"></script>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${ibmPlexMono.variable} ${notoSansLao.variable} antialiased min-h-screen overflow-x-hidden transition-colors duration-300`}
+        className={`${bigShouldersDisplay.variable} ${spaceMono.variable} ${lora.variable} ${notoSansLao.variable} antialiased min-h-screen overflow-x-hidden`}
         style={{
           backgroundColor: 'var(--bg-primary)',
           color: 'var(--text-primary)'

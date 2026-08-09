@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import Image from 'next/image';
@@ -37,7 +37,7 @@ function Lightbox({
       onClick={onClose}
     >
       <button
-        className="absolute top-6 right-6 text-[#9ea0a8] hover:text-[#e6e7ea] font-mono text-sm transition-colors"
+        className="absolute top-6 right-6 text-[#AEACA6] hover:text-[#F0EDE6] font-mono text-sm transition-colors"
         onClick={onClose}
         aria-label="Close lightbox"
       >
@@ -45,7 +45,7 @@ function Lightbox({
       </button>
 
       <button
-        className="absolute left-6 text-[#9ea0a8] hover:text-[#d6b46b] font-mono text-2xl transition-colors"
+        className="absolute left-6 text-[#AEACA6] hover:text-[#D4A843] font-mono text-2xl transition-colors"
         onClick={(e) => { e.stopPropagation(); onPrev(); }}
         aria-label="Previous image"
       >
@@ -63,7 +63,7 @@ function Lightbox({
           height={750}
           className="w-full rounded-xl border border-white/[0.06]"
         />
-        <p className="text-center font-mono text-sm text-[#9ea0a8]">
+        <p className="text-center font-mono text-sm text-[#AEACA6]">
           {images[activeIndex].caption}
         </p>
         <div className="flex justify-center gap-2">
@@ -71,7 +71,7 @@ function Lightbox({
             <div
               key={i}
               className={`w-1.5 h-1.5 rounded-full transition-colors ${
-                i === activeIndex ? 'bg-[#d6b46b]' : 'bg-white/20'
+                i === activeIndex ? 'bg-[#D4A843]' : 'bg-white/20'
               }`}
             />
           ))}
@@ -79,7 +79,7 @@ function Lightbox({
       </div>
 
       <button
-        className="absolute right-6 text-[#9ea0a8] hover:text-[#d6b46b] font-mono text-2xl transition-colors"
+        className="absolute right-6 text-[#AEACA6] hover:text-[#D4A843] font-mono text-2xl transition-colors"
         onClick={(e) => { e.stopPropagation(); onNext(); }}
         aria-label="Next image"
       >
@@ -157,12 +157,12 @@ export default function LaoMaiTravelCaseStudy() {
         <section className="pt-32 pb-0 w-[92%] max-w-[1200px] mx-auto">
 
           {/* Breadcrumb */}
-          <div className="flex items-center gap-2 font-mono text-sm text-[#9ea0a8] mb-10">
-            <Link href="/" className="hover:text-[#d6b46b] transition-colors">{t('breadcrumbHome')}</Link>
+          <div className="flex items-center gap-2 font-mono text-sm text-[#AEACA6] mb-10">
+            <Link href="/" className="hover:text-[#D4A843] transition-colors">{t('breadcrumbHome')}</Link>
             <span>/</span>
-            <Link href="/#work" className="hover:text-[#d6b46b] transition-colors">{t('breadcrumbWork')}</Link>
+            <Link href="/#work" className="hover:text-[#D4A843] transition-colors">{t('breadcrumbWork')}</Link>
             <span>/</span>
-            <span className="text-[#d6b46b]">Lao Mai Travel</span>
+            <span className="text-[#D4A843]">Lao Mai Travel</span>
           </div>
 
           {/* Meta row */}
@@ -170,7 +170,7 @@ export default function LaoMaiTravelCaseStudy() {
             {['2025', 'Web', 'Bilingual', 'SEO', 'Analytics'].map((tag) => (
               <span
                 key={tag}
-                className="font-mono text-xs border border-white/[0.06] text-[#9ea0a8] px-3 py-1 rounded-full"
+                className="font-mono text-xs border border-white/[0.06] text-[#AEACA6] px-3 py-1 rounded-full"
               >
                 {tag}
               </span>
@@ -178,12 +178,12 @@ export default function LaoMaiTravelCaseStudy() {
           </div>
 
           {/* Title */}
-          <h1 className="text-5xl md:text-7xl font-bold text-[#e6e7ea] leading-none mb-6">
-            Lao Mai<span className="text-[#d6b46b]"> Travel</span>
+          <h1 className="text-5xl md:text-7xl font-bold text-[#F0EDE6] leading-none mb-6">
+            Lao Mai<span className="text-[#D4A843]"> Travel</span>
           </h1>
 
           {/* Tagline */}
-          <p className="text-xl md:text-2xl text-[#9ea0a8] max-w-2xl leading-relaxed mb-10">
+          <p className="text-xl md:text-2xl text-[#AEACA6] max-w-2xl leading-relaxed mb-10">
             {t('tagline')}
           </p>
 
@@ -193,7 +193,7 @@ export default function LaoMaiTravelCaseStudy() {
               href="https://laomaitravel.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#d6b46b] text-[#0a0a0c] px-6 py-3 rounded-lg font-semibold hover:bg-[#b99046] transition-colors"
+              className="inline-flex items-center gap-2 bg-[#D4A843] text-[#080808] px-6 py-3 rounded-lg font-semibold hover:bg-[#B8902F] transition-colors"
             >
               {t('viewLive')}
               <span aria-hidden="true">→</span>
@@ -221,10 +221,10 @@ export default function LaoMaiTravelCaseStudy() {
                 key={o.label}
                 className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 text-center"
               >
-                <div className="text-2xl md:text-3xl font-bold text-[#d6b46b] mb-2 font-mono">
+                <div className="text-2xl md:text-3xl font-bold text-[#D4A843] mb-2 font-mono">
                   {o.value}
                 </div>
-                <div className="text-sm text-[#9ea0a8] leading-snug">{o.label}</div>
+                <div className="text-sm text-[#AEACA6] leading-snug">{o.label}</div>
               </div>
             ))}
           </div>
@@ -234,19 +234,19 @@ export default function LaoMaiTravelCaseStudy() {
         <section className="py-20 border-t border-white/[0.06]">
           <div className="w-[92%] max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-12">
             <div>
-              <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold sticky top-8">
+              <div className="font-mono text-sm text-[#AEACA6] tracking-[8px] font-semibold sticky top-8">
                 {t('problem.sectionLabel')}
               </div>
             </div>
             <div className="space-y-6 max-w-2xl">
-              <p className="text-lg text-[#9ea0a8] leading-relaxed">{t('problem.p1')}</p>
-              <p className="text-lg text-[#9ea0a8] leading-relaxed">{t('problem.p2')}</p>
+              <p className="text-lg text-[#AEACA6] leading-relaxed">{t('problem.p1')}</p>
+              <p className="text-lg text-[#AEACA6] leading-relaxed">{t('problem.p2')}</p>
               <div>
-                <p className="text-lg text-[#9ea0a8] leading-relaxed mb-4">{t('problem.p3')}</p>
+                <p className="text-lg text-[#AEACA6] leading-relaxed mb-4">{t('problem.p3')}</p>
                 <ul className="space-y-3">
                   {problems.map((problem, i) => (
-                    <li key={i} className="flex items-start gap-3 text-[#9ea0a8]">
-                      <span className="font-mono text-[#d6b46b] mt-0.5 shrink-0">0{i + 1}</span>
+                    <li key={i} className="flex items-start gap-3 text-[#AEACA6]">
+                      <span className="font-mono text-[#D4A843] mt-0.5 shrink-0">0{i + 1}</span>
                       <span className="leading-relaxed">{problem}</span>
                     </li>
                   ))}
@@ -260,14 +260,14 @@ export default function LaoMaiTravelCaseStudy() {
         <section className="py-20 border-t border-white/[0.06]">
           <div className="w-[92%] max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-12">
             <div>
-              <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold sticky top-8">
+              <div className="font-mono text-sm text-[#AEACA6] tracking-[8px] font-semibold sticky top-8">
                 {t('design.sectionLabel')}
               </div>
             </div>
-            <div className="space-y-6 text-lg text-[#9ea0a8] leading-relaxed max-w-2xl">
+            <div className="space-y-6 text-lg text-[#AEACA6] leading-relaxed max-w-2xl">
               <p>{t('design.p1')}</p>
               <p>
-                <span className="text-[#d6b46b] font-semibold">Navy and gold</span>
+                <span className="text-[#D4A843] font-semibold">Navy and gold</span>
                 {' — '}{t('design.p2').replace('Navy and gold — ', '')}
               </p>
               <p>{t('design.p3')}</p>
@@ -279,23 +279,23 @@ export default function LaoMaiTravelCaseStudy() {
         {/* ── Why Next.js ──────────────────────────────────────────────────── */}
         <section className="py-20 border-t border-white/[0.06]">
           <div className="w-[92%] max-w-[1200px] mx-auto">
-            <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold mb-4">
+            <div className="font-mono text-sm text-[#AEACA6] tracking-[8px] font-semibold mb-4">
               {t('nextjs.sectionLabel')}
             </div>
-            <p className="text-lg text-[#9ea0a8] mb-12 max-w-2xl leading-relaxed">
+            <p className="text-lg text-[#AEACA6] mb-12 max-w-2xl leading-relaxed">
               {t('nextjs.intro')}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {nextjsReasons.map((reason, i) => (
                 <div
                   key={i}
-                  className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 hover:border-[#d6b46b]/30 transition-colors"
+                  className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 hover:border-[#D4A843]/30 transition-colors"
                 >
-                  <div className="font-mono text-4xl font-bold text-[#d6b46b]/20 mb-4">
+                  <div className="font-mono text-4xl font-bold text-[#D4A843]/20 mb-4">
                     0{i + 1}
                   </div>
-                  <h3 className="text-base font-bold text-[#e6e7ea] mb-3">{reason.title}</h3>
-                  <p className="text-sm text-[#9ea0a8] leading-relaxed">{reason.desc}</p>
+                  <h3 className="text-base font-bold text-[#F0EDE6] mb-3">{reason.title}</h3>
+                  <p className="text-sm text-[#AEACA6] leading-relaxed">{reason.desc}</p>
                 </div>
               ))}
             </div>
@@ -305,26 +305,26 @@ export default function LaoMaiTravelCaseStudy() {
         {/* ── Analytics ────────────────────────────────────────────────────── */}
         <section className="py-20 border-t border-white/[0.06]">
           <div className="w-[92%] max-w-[1200px] mx-auto">
-            <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold mb-6">
+            <div className="font-mono text-sm text-[#AEACA6] tracking-[8px] font-semibold mb-6">
               {t('analytics.sectionLabel')}
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-12 mb-16">
               <div className="space-y-6">
-                <h2 className="text-3xl font-bold text-[#e6e7ea]">{t('analytics.heading')}</h2>
-                <p className="text-[#9ea0a8] leading-relaxed">{t('analytics.p1')}</p>
-                <p className="text-[#9ea0a8] leading-relaxed">{t('analytics.p2')}</p>
-                <p className="text-[#9ea0a8] leading-relaxed">{t('analytics.p3')}</p>
+                <h2 className="text-3xl font-bold text-[#F0EDE6]">{t('analytics.heading')}</h2>
+                <p className="text-[#AEACA6] leading-relaxed">{t('analytics.p1')}</p>
+                <p className="text-[#AEACA6] leading-relaxed">{t('analytics.p2')}</p>
+                <p className="text-[#AEACA6] leading-relaxed">{t('analytics.p3')}</p>
               </div>
 
               <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-6">
-                <div className="font-mono text-xs text-[#9ea0a8] tracking-wider mb-5">
+                <div className="font-mono text-xs text-[#AEACA6] tracking-wider mb-5">
                   {t('analytics.questionsLabel')}
                 </div>
                 <ul className="space-y-4">
                   {analyticsQuestions.map((q, i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm text-[#9ea0a8] leading-relaxed">
-                      <span className="text-[#d6b46b] font-mono shrink-0 mt-0.5">→</span>
+                    <li key={i} className="flex items-start gap-3 text-sm text-[#AEACA6] leading-relaxed">
+                      <span className="text-[#D4A843] font-mono shrink-0 mt-0.5">→</span>
                       <span>{q}</span>
                     </li>
                   ))}
@@ -337,7 +337,7 @@ export default function LaoMaiTravelCaseStudy() {
               {analyticsImages.map((img, i) => (
                 <button
                   key={i}
-                  className="group relative aspect-video rounded-xl overflow-hidden border border-white/[0.06] hover:border-[#d6b46b]/50 transition-all text-left"
+                  className="group relative aspect-video rounded-xl overflow-hidden border border-white/[0.06] hover:border-[#D4A843]/50 transition-all text-left"
                   onClick={() => setAnalyticsLightbox(i)}
                   aria-label={`View analytics screenshot: ${img.caption}`}
                 >
@@ -349,8 +349,8 @@ export default function LaoMaiTravelCaseStudy() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0c]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                    <p className="font-mono text-xs text-[#e6e7ea]">{img.caption}</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#080808]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                    <p className="font-mono text-xs text-[#F0EDE6]">{img.caption}</p>
                   </div>
                 </button>
               ))}
@@ -361,14 +361,14 @@ export default function LaoMaiTravelCaseStudy() {
         {/* ── Screenshots ──────────────────────────────────────────────────── */}
         <section className="py-20 border-t border-white/[0.06]">
           <div className="w-[92%] max-w-[1200px] mx-auto">
-            <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold mb-12">
+            <div className="font-mono text-sm text-[#AEACA6] tracking-[8px] font-semibold mb-12">
               {t('screenshots.sectionLabel')}
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {screenshotImages.map((img, i) => (
                 <button
                   key={i}
-                  className="group relative aspect-video rounded-xl overflow-hidden border border-white/[0.06] hover:border-[#d6b46b]/50 transition-all text-left"
+                  className="group relative aspect-video rounded-xl overflow-hidden border border-white/[0.06] hover:border-[#D4A843]/50 transition-all text-left"
                   onClick={() => setScreenshotLightbox(i)}
                   aria-label={`View screenshot: ${img.caption}`}
                 >
@@ -380,8 +380,8 @@ export default function LaoMaiTravelCaseStudy() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0c]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                    <p className="font-mono text-xs text-[#e6e7ea]">{img.caption}</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#080808]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                    <p className="font-mono text-xs text-[#F0EDE6]">{img.caption}</p>
                   </div>
                 </button>
               ))}
@@ -393,7 +393,7 @@ export default function LaoMaiTravelCaseStudy() {
         <section className="py-20 border-t border-white/[0.06]">
           <div className="w-[92%] max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-12">
             <div>
-              <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold sticky top-8">
+              <div className="font-mono text-sm text-[#AEACA6] tracking-[8px] font-semibold sticky top-8">
                 {t('techStack.sectionLabel')}
               </div>
             </div>
@@ -401,12 +401,12 @@ export default function LaoMaiTravelCaseStudy() {
               {techStackItems.map((tech) => (
                 <div
                   key={tech.name}
-                  className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-[#d6b46b]/30 transition-colors"
+                  className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 hover:border-[#D4A843]/30 transition-colors"
                 >
-                  <div className="font-mono text-sm font-semibold text-[#d6b46b] mb-2">
+                  <div className="font-mono text-sm font-semibold text-[#D4A843] mb-2">
                     {tech.name}
                   </div>
-                  <p className="text-sm text-[#9ea0a8] leading-relaxed">{tech.reason}</p>
+                  <p className="text-sm text-[#AEACA6] leading-relaxed">{tech.reason}</p>
                 </div>
               ))}
             </div>
@@ -416,26 +416,26 @@ export default function LaoMaiTravelCaseStudy() {
         {/* ── CTA ──────────────────────────────────────────────────────────── */}
         <section className="py-20 border-t border-white/[0.06]">
           <div className="w-[92%] max-w-[1200px] mx-auto text-center">
-            <div className="font-mono text-sm text-[#9ea0a8] tracking-[8px] font-semibold mb-6">
+            <div className="font-mono text-sm text-[#AEACA6] tracking-[8px] font-semibold mb-6">
               {t('cta.sectionLabel')}
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#e6e7ea] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#F0EDE6] mb-4">
               {t('cta.heading')}
             </h2>
-            <p className="text-[#9ea0a8] mb-10 max-w-lg mx-auto leading-relaxed">
+            <p className="text-[#AEACA6] mb-10 max-w-lg mx-auto leading-relaxed">
               {t('cta.subtitle')}
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link
                 href="/#contact"
-                className="inline-flex items-center gap-2 bg-[#d6b46b] text-[#0a0a0c] px-8 py-3 rounded-lg font-semibold hover:bg-[#b99046] transition-colors"
+                className="inline-flex items-center gap-2 bg-[#D4A843] text-[#080808] px-8 py-3 rounded-lg font-semibold hover:bg-[#B8902F] transition-colors"
               >
                 {t('cta.talkButton')}
                 <span aria-hidden="true">→</span>
               </Link>
               <Link
                 href="/#work"
-                className="inline-flex items-center gap-2 border border-white/[0.06] text-[#9ea0a8] px-8 py-3 rounded-lg font-mono text-sm hover:border-[#d6b46b]/50 hover:text-[#e6e7ea] transition-all"
+                className="inline-flex items-center gap-2 border border-white/[0.06] text-[#AEACA6] px-8 py-3 rounded-lg font-mono text-sm hover:border-[#D4A843]/50 hover:text-[#F0EDE6] transition-all"
               >
                 {t('cta.backToWork')}
               </Link>

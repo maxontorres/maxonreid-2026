@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --color-gold: #d6b46b;
-  --color-gold-strong: #b99046;
-  --color-text-primary: #e6e7ea;
-  --color-text-secondary: #9ea0a8;
-  --color-bg-dark: #0a0a0c;
+  --font-sans: var(--font-space-mono);
+  --font-mono: var(--font-space-mono);
+  --font-display: var(--font-big-shoulders);
+  --font-body: var(--font-lora);
+  --color-gold: #D4A843;
+  --color-gold-strong: #B8902F;
+  --color-text-primary: #F0EDE6;
+  --color-text-secondary: #AEACA6;
+  --color-bg-dark: #080808;
 
   @keyframes fadeIn {
     from {
@@ -17,7 +19,7 @@
       opacity: 1;
     }
   }
-  
+
   @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -28,7 +30,7 @@
       transform: translateY(0);
     }
   }
-  
+
   @keyframes slideDown {
     from {
       opacity: 0;
@@ -65,138 +67,32 @@
   .card-hover {
     @apply border border-white/[0.06] transition-all duration-300
            hover:border-gold/50 hover:-translate-y-1
-           hover:shadow-[0_12px_40px_rgba(214,180,107,0.1)];
+           hover:shadow-[0_12px_40px_rgba(212,168,67,0.1)];
   }
 }
 
 /* Theme Colors */
-:root,
-[data-theme="dark"] {
-  --bg-primary: #0a0a0c;
-  --bg-secondary: #0f1113;
-  --text-primary: #e6e7ea;
-  --text-secondary: #9ea0a8;
-  --border-color: rgba(255, 255, 255, 0.06);
-  --card-bg: rgba(255, 255, 255, 0.02);
-  --hover-bg: rgba(255, 255, 255, 0.03);
-  --nav-text: #9ea0a8;
-  --nav-active: #d6b46b;
-  --nav-hover-bg: rgba(255, 255, 255, 0.03);
-}
-
-[data-theme="light"] {
-  --bg-primary: #ffffff;
-  --bg-secondary: #f5f5f7;
-  --text-primary: #000000;
-  --text-secondary: #2d2f35;
-  --border-color: rgba(0, 0, 0, 0.12);
-  --card-bg: rgba(0, 0, 0, 0.03);
-  --hover-bg: rgba(0, 0, 0, 0.05);
-  
-  /* Navbar colors - Much darker for better visibility */
-  --nav-text: #1a1a1a;
-  --nav-active: #b8860b;
-  --nav-hover-bg: rgba(184, 134, 11, 0.1);
-}
-
-/* Override hardcoded colors in light theme (for legacy components) */
-[data-theme="light"] {
-  /* Text overrides - excluding nav-link class */
-  .text-\[\#9ea0a8\]:not(.nav-link),
-  [class*="text-[#9ea0a8]"]:not(.nav-link) {
-    color: #2d2f35 !important;
-  }
-
-  .text-\[\#9ea0a8\]\/40:not(.nav-link),
-  [class*="text-[#9ea0a8]/40"]:not(.nav-link) {
-    color: rgba(45, 47, 53, 0.68) !important;
-  }
-
-  .text-\[\#9ea0a8\]\/30:not(.nav-link),
-  [class*="text-[#9ea0a8]/30"]:not(.nav-link) {
-    color: rgba(45, 47, 53, 0.6) !important;
-  }
-  
-  .text-\[\#e6e7ea\]:not(.nav-link),
-  [class*="text-[#e6e7ea]"]:not(.nav-link) {
-    color: #000000 !important;
-  }
-
-  .text-\[\#b8bcc4\]:not(.nav-link),
-  [class*="text-[#b8bcc4]"]:not(.nav-link),
-  .group:hover .group-hover\:text-\[\#b8bcc4\] {
-    color: #4a4d55 !important;
-  }
-  
-  /* Background overrides */
-  .bg-\[\#0a0a0c\],
-  [class*="bg-[#0a0a0c]"] {
-    background-color: #ffffff !important;
-  }
-  
-  .bg-\[\#1a1d23\],
-  [class*="bg-[#1a1d23]"] {
-    background-color: #f0f0f0 !important;
-  }
-  
-  /* Border overrides */
-  [class*="border-white/"] {
-    border-color: rgba(0, 0, 0, 0.12) !important;
-  }
-  
-  /* Card backgrounds - excluding nav-link class */
-  .bg-white\/\[0\.02\]:not(.nav-link),
-  .bg-white\/\[0\.03\]:not(.nav-link),
-  [class*="bg-white/[0.02]"]:not(.nav-link),
-  [class*="bg-white/[0.03]"]:not(.nav-link) {
-    background-color: rgba(0, 0, 0, 0.03) !important;
-  }
-  
-  /* Hover states - excluding nav-link class */
-  [class*="hover:bg-white/[0.03]"]:hover:not(.nav-link),
-  [class*="hover:bg-white/[0.06]"]:hover:not(.nav-link) {
-    background-color: rgba(0, 0, 0, 0.05) !important;
-  }
-  
-  /* Gradients */
-  [class*="from-[#0a0a0c]"] {
-    --tw-gradient-from: #ffffff !important;
-  }
-
-  [class*="to-[#0a0a0c]"] {
-    --tw-gradient-to: #f5f5f7 !important;
-  }
-
-  /* Gold accent text — darken for WCAG contrast on white */
-  .text-\[\#d6b46b\],
-  .text-gold {
-    color: #8B6914 !important;
-  }
-
-  /* Semantic token overrides */
-  .text-text-primary:not(.nav-link) { color: #000000 !important; }
-  .text-text-secondary:not(.nav-link) { color: #2d2f35 !important; }
-  .bg-bg-dark { background-color: #ffffff !important; }
-
-  /* Step number decorators (20% / 40% opacity gold) — boost opacity on white */
-  .text-\[\#d6b46b\]\/20 {
-    color: rgba(139, 105, 20, 0.35) !important;
-  }
-
-  .group:hover .group-hover\:text-\[\#d6b46b\]\/40 {
-    color: rgba(139, 105, 20, 0.55) !important;
-  }
-
-  /* Gold hover borders — darken for visibility */
-  [class*="hover:border-[#d6b46b]"]:hover,
-  .card-hover:hover {
-    border-color: rgba(139, 105, 20, 0.5) !important;
-  }
+:root {
+  --bg-primary: #080808;
+  --bg-secondary: #111111;
+  --bg-primary-rgb: 8, 8, 8;
+  --text-primary: #F0EDE6;
+  --text-secondary: #AEACA6;
+  --border-color: #161616;
+  --border-2: #2A2A2A;
+  --dim: #3A3A3A;
+  --mid: #666666;
+  --card-bg: #111111;
+  --hover-bg: rgba(212, 168, 67, 0.04);
+  --nav-text: #AEACA6;
+  --nav-active: #D4A843;
+  --nav-hover-bg: rgba(212, 168, 67, 0.04);
 }
 
 /* ── Article prose styles ─────────────────────────────────────────────────── */
 .prose-article {
-  color: #9ea0a8;
+  color: #AEACA6;
+  font-family: var(--font-lora), Georgia, serif;
   font-size: 1.0625rem;
   line-height: 1.8;
   max-width: 68ch;
@@ -218,27 +114,14 @@
 }
 
 .prose-article em {
-  color: #c8cad0;
+  color: #F0EDE6;
   font-style: italic;
-}
-
-[data-theme="light"] .prose-article {
-  color: var(--text-secondary);
-}
-
-[data-theme="light"] .prose-article em {
-  color: #1f2126;
 }
 
 /* ── Architecture flow node colours ───────────────────────────────────────── */
 .arch-node-platform   { color: #ff3008; border-color: rgba(255, 48,   8, 0.25); }
-.arch-node-middleware { color: #d6b46b; border-color: rgba(214, 180, 107, 0.25); }
+.arch-node-middleware { color: #D4A843; border-color: rgba(212, 168,  67, 0.25); }
 .arch-node-pos        { color: #16a34a; border-color: rgba(22,  163,  74, 0.25); }
-
-[data-theme="light"] .arch-node-middleware {
-  color: #8B6914;
-  border-color: rgba(139, 105, 20, 0.35);
-}
 
 /* Hide scrollbars for terminal */
 #xterm::-webkit-scrollbar {
@@ -293,12 +176,12 @@
 
 .terminal-en-only,
 .terminal-en-only * {
-  font-family: "IBM Plex Mono", "Consolas", "Courier New", monospace !important;
+  font-family: "Space Mono", "Consolas", "Courier New", monospace !important;
 }
 
 .locale-lao .terminal-en-only,
 .locale-lao .terminal-en-only * {
-  font-family: "IBM Plex Mono", "Consolas", "Courier New", monospace !important;
+  font-family: "Space Mono", "Consolas", "Courier New", monospace !important;
   font-feature-settings: "liga" 0;
 }
 

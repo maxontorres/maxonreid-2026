@@ -20,8 +20,8 @@ export default function NotFoundContent() {
           style={{ opacity: 0 }}
         >
           <div
-            className="text-[#9ea0a8] text-sm tracking-[6px] font-semibold"
-            style={{ fontFamily: 'var(--font-ibm-plex-mono)' }}
+            className="text-[#AEACA6] text-sm tracking-[6px] font-semibold"
+            style={{ fontFamily: 'var(--font-space-mono)' }}
           >
             {t('label')}
           </div>
@@ -32,28 +32,28 @@ export default function NotFoundContent() {
           >
             {t.rich('title', {
               highlight: (chunks) => (
-                <span className="text-[#d6b46b]">{chunks}</span>
+                <span className="text-[#D4A843]">{chunks}</span>
               ),
             })}
           </h1>
 
-          <p className="text-[#9ea0a8] max-w-[520px] leading-relaxed">
+          <p className="text-[#AEACA6] max-w-[520px] leading-relaxed">
             {t('description')}
           </p>
 
           <div className="flex flex-wrap gap-3.5 pt-2">
             <Link
               href="/"
-              className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#d6b46b] no-underline font-mono tracking-wide transition-all hover:bg-gradient-to-b hover:from-[#d6b46b]/[0.06] hover:to-transparent hover:text-[#e6e7ea] hover:border-[#d6b46b]"
-              style={{ fontFamily: 'var(--font-ibm-plex-mono)' }}
+              className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#D4A843] no-underline font-mono tracking-wide transition-all hover:bg-gradient-to-b hover:from-[#D4A843]/[0.06] hover:to-transparent hover:text-[#F0EDE6] hover:border-[#D4A843]"
+              style={{ fontFamily: 'var(--font-space-mono)' }}
             >
               {t('ctaHome')}
             </Link>
 
             <Link
               href="/#work"
-              className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#e6e7ea] no-underline font-mono tracking-wide transition-all opacity-90 hover:bg-gradient-to-b hover:from-[#d6b46b]/[0.06] hover:to-transparent hover:border-[#d6b46b]"
-              style={{ fontFamily: 'var(--font-ibm-plex-mono)' }}
+              className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#F0EDE6] no-underline font-mono tracking-wide transition-all opacity-90 hover:bg-gradient-to-b hover:from-[#D4A843]/[0.06] hover:to-transparent hover:border-[#D4A843]"
+              style={{ fontFamily: 'var(--font-space-mono)' }}
             >
               {t('ctaWork')}
             </Link>
