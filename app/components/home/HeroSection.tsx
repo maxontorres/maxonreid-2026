@@ -1,8 +1,7 @@
 'use client';
 
-import { NextIntlClientProvider, useLocale, useTranslations } from 'next-intl';
-import enMessages from '@/messages/en.json';
-import TerminalDevice from './TerminalDevice';
+import Image from 'next/image';
+import { useLocale, useTranslations } from 'next-intl';
 import { useTypewriter } from './useTypewriter';
 
 export default function HeroSection() {
@@ -53,9 +52,29 @@ export default function HeroSection() {
           className={`${locale === 'lo' ? 'hidden lg:flex' : 'flex'} justify-center items-center`}
           aria-hidden="false"
         >
-          <NextIntlClientProvider locale="en">
-            <TerminalDevice />
-          </NextIntlClientProvider>
+          <div className="relative w-full max-w-[360px]">
+            {/* Ambient gold glow */}
+            <div className="absolute -inset-6 bg-[#D4A843]/[0.12] blur-[60px] rounded-full pointer-events-none" />
+
+            <div className="relative rounded-2xl border border-white/[0.08] bg-[#111111] p-2.5 shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
+              <div className="relative aspect-[637/1079] rounded-xl overflow-hidden">
+                <Image
+                  src="/maxontorres-suit-jacket.png"
+                  alt="Maximiliano Brito Torres"
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 80vw, 360px"
+                  className="object-cover"
+                />
+                {/* Subtle bottom-up vignette for depth */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#080808]/70 via-transparent to-transparent" />
+              </div>
+
+              {/* Corner accents */}
+              <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-[#D4A843] rounded-tl-2xl pointer-events-none" />
+              <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-[#D4A843] rounded-br-2xl pointer-events-none" />
+            </div>
+          </div>
         </div>
         
       </div>
