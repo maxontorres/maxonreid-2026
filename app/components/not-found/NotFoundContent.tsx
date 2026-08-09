@@ -20,7 +20,7 @@ export default function NotFoundContent() {
           style={{ opacity: 0 }}
         >
           <div
-            className="text-[#AEACA6] text-sm tracking-[6px] font-semibold"
+            className="text-[#8A8FA0] text-sm tracking-[6px] font-semibold"
             style={{ fontFamily: 'var(--font-space-mono)' }}
           >
             {t('label')}
@@ -32,19 +32,19 @@ export default function NotFoundContent() {
           >
             {t.rich('title', {
               highlight: (chunks) => (
-                <span className="text-[#D4A843]">{chunks}</span>
+                <span className="text-[#628DFF]">{chunks}</span>
               ),
             })}
           </h1>
 
-          <p className="text-[#AEACA6] max-w-[520px] leading-relaxed">
+          <p className="text-[#8A8FA0] max-w-[520px] leading-relaxed">
             {t('description')}
           </p>
 
           <div className="flex flex-wrap gap-3.5 pt-2">
             <Link
               href="/"
-              className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#D4A843] no-underline font-mono tracking-wide transition-all hover:bg-gradient-to-b hover:from-[#D4A843]/[0.06] hover:to-transparent hover:text-[#F0EDE6] hover:border-[#D4A843]"
+              className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#628DFF] no-underline font-mono tracking-wide transition-all hover:bg-gradient-to-b hover:from-[#628DFF]/[0.06] hover:to-transparent hover:text-[#E8E9EC] hover:border-[#628DFF]"
               style={{ fontFamily: 'var(--font-space-mono)' }}
             >
               {t('ctaHome')}
@@ -52,7 +52,7 @@ export default function NotFoundContent() {
 
             <Link
               href="/#work"
-              className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#F0EDE6] no-underline font-mono tracking-wide transition-all opacity-90 hover:bg-gradient-to-b hover:from-[#D4A843]/[0.06] hover:to-transparent hover:border-[#D4A843]"
+              className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#E8E9EC] no-underline font-mono tracking-wide transition-all opacity-90 hover:bg-gradient-to-b hover:from-[#628DFF]/[0.06] hover:to-transparent hover:border-[#628DFF]"
               style={{ fontFamily: 'var(--font-space-mono)' }}
             >
               {t('ctaWork')}

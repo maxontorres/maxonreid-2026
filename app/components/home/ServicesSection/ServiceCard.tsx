@@ -25,7 +25,7 @@ export default function ServiceCard({ service, deliverLabel = 'What I deliver', 
   const cardContent = (
     <>
       <div className="flex items-start gap-4 mb-4">
-        <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#D4A843]/10 flex items-center justify-center text-gold" aria-hidden="true">
+        <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#628DFF]/10 flex items-center justify-center text-gold" aria-hidden="true">
           {service.icon}
         </div>
         <h3 className="text-xl font-bold text-text-primary flex-1">{service.title}</h3>

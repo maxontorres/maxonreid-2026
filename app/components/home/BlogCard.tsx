@@ -32,7 +32,7 @@ export default function BlogCard({ article }: BlogCardProps) {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover transition-transform duration-500 group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#080808]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#050608]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true"></div>
       </div>
       <div className="p-6">
         <div className="font-mono text-xs text-text-secondary mb-3 flex items-center gap-2">
@@ -73,7 +73,7 @@ export default function BlogCard({ article }: BlogCardProps) {
         </div>
       </div>
       
-      <div className="absolute inset-0 bg-[#D4A843]/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none rounded-xl" aria-hidden="true"></div>
+      <div className="absolute inset-0 bg-[#628DFF]/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none rounded-xl" aria-hidden="true"></div>
     </article>
     </Link>
   );

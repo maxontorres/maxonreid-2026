@@ -13,31 +13,31 @@
 }
 
 .eyebrow {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #c8943a;
+  color: #628DFF;
   margin: 0 0 16px;
 }
 
 .title {
-  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  font-family: var(--font-display), 'Playfair Display', Georgia, serif;
   font-size: clamp(1.8rem, 3vw, 2.6rem);
   font-weight: 700;
-  color: #e8e5df;
+  color: #E8E9EC;
   margin: 0 0 16px;
   line-height: 1.2;
   letter-spacing: -0.01em;
 }
 
 .intro {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
   line-height: 1.65;
-  color: #7a7671;
+  color: #8A8FA0;
   margin: 0;
   max-width: 540px;
 }
@@ -66,15 +66,15 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(200, 148, 58, 0.08), transparent 50%);
+  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(98, 141, 255, 0.08), transparent 50%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .card:hover {
-  background-color: rgba(200, 148, 58, 0.04);
+  background-color: rgba(98, 141, 255, 0.04);
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(200, 148, 58, 0.12);
+  box-shadow: 0 8px 24px rgba(98, 141, 255, 0.12);
 }
 
 .card:hover::before {
@@ -85,7 +85,7 @@
   display: block;
   width: 28px;
   height: 28px;
-  color: #c8943a;
+  color: #628DFF;
   margin-bottom: 20px;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -100,19 +100,19 @@
 }
 
 .cardTitle {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  color: #e8e5df;
+  color: #E8E9EC;
   margin: 0 0 10px;
 }
 
 .cardDesc {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
   line-height: 1.65;
-  color: #7a7671;
+  color: #8A8FA0;
   margin: 0;
 }
 

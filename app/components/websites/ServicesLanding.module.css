@@ -1,15 +1,15 @@
 /* Design tokens scoped to the services landing */
 .root {
-  --bg: #0f0e0c;
-  --bg-card: #161410;
-  --accent: #c8943a;
-  --accent-dim: rgba(200, 148, 58, 0.15);
-  --accent-border: rgba(200, 148, 58, 0.35);
-  --text: #e8e5df;
-  --text-muted: #7a7671;
+  --bg: #050608;
+  --bg-card: #0D0F16;
+  --accent: #628DFF;
+  --accent-dim: rgba(98, 141, 255, 0.15);
+  --accent-border: rgba(98, 141, 255, 0.35);
+  --text: #E8E9EC;
+  --text-muted: #8A8FA0;
   --border: rgba(255, 255, 255, 0.08);
-  --font-body: var(--font-dm-sans), 'DM Sans', system-ui, sans-serif;
-  --font-heading: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  --font-body: var(--font-body), 'DM Sans', system-ui, sans-serif;
+  --font-heading: var(--font-display), 'Playfair Display', Georgia, serif;
 
   background-color: var(--bg);
   color: var(--text);

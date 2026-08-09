@@ -90,8 +90,8 @@ export default function WorkSection() {
               aria-controls="projects-grid"
               className={`px-4 py-2 rounded-lg border font-mono text-sm transition-all ${
                 activeFilter === cat.id
-                  ? 'bg-[#D4A843]/10 border-[#D4A843] text-gold'
-                  : 'bg-transparent border-white/[0.06] text-text-secondary hover:border-[#D4A843]/50 hover:text-text-primary'
+                  ? 'bg-[#628DFF]/10 border-[#628DFF] text-gold'
+                  : 'bg-transparent border-white/[0.06] text-text-secondary hover:border-[#628DFF]/50 hover:text-text-primary'
               }`}
               onClick={() => setActiveFilter(cat.id)}
             >

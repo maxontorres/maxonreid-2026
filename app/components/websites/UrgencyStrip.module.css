@@ -1,5 +1,5 @@
 .strip {
-  background-color: #c8943a;
+  background-color: #628DFF;
   padding: 14px 24px;
   text-align: center;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -7,10 +7,10 @@
 }
 
 .text {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
-  color: #0f0e0c;
+  color: #050608;
   margin: 0;
   line-height: 1.5;
   text-transform: uppercase;

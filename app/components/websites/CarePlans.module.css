@@ -36,7 +36,7 @@
   right: -14px;
   bottom: -14px;
   left: 14px;
-  border: 1px solid rgba(200, 148, 58, 0.18);
+  border: 1px solid rgba(98, 141, 255, 0.18);
   pointer-events: none;
   z-index: 0;
 }
@@ -47,31 +47,31 @@
 }
 
 .eyebrow {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #c8943a;
+  color: #628DFF;
   margin: 0 0 16px;
 }
 
 .title {
-  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  font-family: var(--font-display), 'Playfair Display', Georgia, serif;
   font-size: clamp(1.8rem, 3vw, 2.6rem);
   font-weight: 700;
-  color: #e8e5df;
+  color: #E8E9EC;
   margin: 0 0 16px;
   line-height: 1.2;
   letter-spacing: -0.01em;
 }
 
 .subtitle {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.65;
-  color: #7a7671;
+  color: #8A8FA0;
   margin: 0;
 }
 
@@ -82,8 +82,8 @@
 .mediaFrame {
   position: relative;
   overflow: hidden;
-  border: 0.5px solid rgba(200, 148, 58, 0.28);
-  background: rgba(200, 148, 58, 0.04);
+  border: 0.5px solid rgba(98, 141, 255, 0.28);
+  background: rgba(98, 141, 255, 0.04);
   box-shadow:
     0 4px 8px rgba(0, 0, 0, 0.15),
     0 20px 50px rgba(0, 0, 0, 0.45),
@@ -101,7 +101,7 @@
   background: linear-gradient(
     to bottom,
     transparent 55%,
-    rgba(15, 14, 12, 0.45) 100%
+    rgba(5, 6, 8, 0.45) 100%
   );
   pointer-events: none;
   z-index: 2;
@@ -118,13 +118,13 @@
 .mediaCaption {
   margin: 14px 0 0;
   padding-left: 10px;
-  border-left: 2px solid rgba(200, 148, 58, 0.35);
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  border-left: 2px solid rgba(98, 141, 255, 0.35);
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.72rem;
   font-weight: 400;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #7a7671;
+  color: #8A8FA0;
   line-height: 1.5;
 }
 
@@ -153,28 +153,28 @@
 }
 
 .cardHighlight {
-  background-color: rgba(200, 148, 58, 0.04);
-  border: 0.5px solid rgba(200, 148, 58, 0.25);
+  background-color: rgba(98, 141, 255, 0.04);
+  border: 0.5px solid rgba(98, 141, 255, 0.25);
 }
 
 .cardHighlight:hover {
-  background-color: rgba(200, 148, 58, 0.06);
-  border-color: rgba(200, 148, 58, 0.35);
-  box-shadow: 0 12px 40px rgba(200, 148, 58, 0.15);
+  background-color: rgba(98, 141, 255, 0.06);
+  border-color: rgba(98, 141, 255, 0.35);
+  box-shadow: 0 12px 40px rgba(98, 141, 255, 0.15);
 }
 
 .badge {
   position: absolute;
   top: 20px;
   right: 20px;
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.625rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #c8943a;
-  background: rgba(200, 148, 58, 0.12);
-  border: 0.5px solid rgba(200, 148, 58, 0.3);
+  color: #628DFF;
+  background: rgba(98, 141, 255, 0.12);
+  border: 0.5px solid rgba(98, 141, 255, 0.3);
   padding: 6px 12px;
   border-radius: 2px;
 }
@@ -186,20 +186,20 @@
 }
 
 .planName {
-  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  font-family: var(--font-display), 'Playfair Display', Georgia, serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #e8e5df;
+  color: #E8E9EC;
   margin: 0 0 8px;
   letter-spacing: -0.01em;
 }
 
 .planFor {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
   letter-spacing: 0.06em;
-  color: #7a7671;
+  color: #8A8FA0;
   text-transform: uppercase;
   margin: 0 0 20px;
 }
@@ -211,27 +211,27 @@
 }
 
 .price {
-  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  font-family: var(--font-display), 'Playfair Display', Georgia, serif;
   font-size: 2.8rem;
   font-weight: 700;
-  color: #c8943a;
+  color: #628DFF;
   line-height: 1;
   letter-spacing: -0.02em;
 }
 
 .period {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.95rem;
   font-weight: 400;
-  color: #7a7671;
+  color: #8A8FA0;
 }
 
 .planDesc {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.6;
-  color: #7a7671;
+  color: #8A8FA0;
   margin: 0;
 }
 
@@ -247,7 +247,7 @@
 }
 
 .listItem {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   color: #b8b3ad;
@@ -261,7 +261,7 @@
   display: inline-flex;
   width: 18px;
   height: 18px;
-  color: #c8943a;
+  color: #628DFF;
   flex-shrink: 0;
   margin-top: 2px;
 }
@@ -279,7 +279,7 @@
 }
 
 .quip {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.85rem;
   font-style: italic;
   color: #8a857f;
@@ -289,29 +289,29 @@
 
 .cta {
   display: block;
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
-  color: #c8943a;
+  color: #628DFF;
   text-decoration: none;
-  border: 0.5px solid #c8943a;
+  border: 0.5px solid #628DFF;
   padding: 13px 20px;
   text-align: center;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .cta:hover {
-  background-color: rgba(200, 148, 58, 0.1);
+  background-color: rgba(98, 141, 255, 0.1);
 }
 
 .ctaSolid {
-  background-color: #c8943a;
-  color: #0f0e0c;
+  background-color: #628DFF;
+  color: #050608;
 }
 
 .ctaSolid:hover {
   background-color: transparent;
-  color: #c8943a;
+  color: #628DFF;
 }
 
 @media (max-width: 768px) {

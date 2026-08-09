@@ -1,25 +1,5 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
-import { DM_Sans, Playfair_Display, Noto_Sans_Lao } from 'next/font/google';
-
-const dmSans = DM_Sans({
-  variable: '--font-dm-sans',
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-});
-
-const playfairDisplay = Playfair_Display({
-  variable: '--font-playfair',
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
-  style: ['normal', 'italic'],
-});
-
-const notoSansLao = Noto_Sans_Lao({
-  variable: '--font-noto-sans-lao',
-  subsets: ['lao'],
-  weight: ['300', '400', '500', '600', '700'],
-});
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://maxontorres.com';
 
@@ -86,17 +66,9 @@ export async function generateMetadata({
 
 export default async function ServicesLayout({
   children,
-  params,
 }: {
   children: React.ReactNode;
   params: Promise<Record<string, string>>;
 }) {
-  const { locale } = await params;
-  const isLao = locale === 'lo';
-
-  return (
-    <div className={`${isLao ? notoSansLao.variable : `${dmSans.variable} ${playfairDisplay.variable}`}`}>
-      {children}
-    </div>
-  );
+  return <>{children}</>;
 }

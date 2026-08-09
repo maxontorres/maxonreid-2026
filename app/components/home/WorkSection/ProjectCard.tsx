@@ -88,7 +88,7 @@ export default function ProjectCard({ project, style }: ProjectCardProps) {
           )}
 
           {/* Hover overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-6">
+          <div className="absolute inset-0 bg-gradient-to-t from-[#050608] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-6">
             <div>
               <div className="text-2xl font-bold text-text-primary mb-1">{project.title}</div>
               <div className="font-mono text-sm text-text-secondary">{project.year}</div>
@@ -106,7 +106,7 @@ export default function ProjectCard({ project, style }: ProjectCardProps) {
               </div>
             </div>
             <div
-              className="bg-gold text-[#080808] px-4 py-2 rounded-lg font-semibold flex items-center gap-2 hover:bg-[#B8902F] transition-colors text-sm"
+              className="bg-gold text-[#050608] px-4 py-2 rounded-lg font-semibold flex items-center gap-2 hover:bg-[#675DFF] transition-colors text-sm"
               aria-hidden="true"
             >
               {t('caseStudy')}

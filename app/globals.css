@@ -1,15 +1,32 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans: var(--font-space-mono);
+  --font-sans: var(--font-manrope);
   --font-mono: var(--font-space-mono);
-  --font-display: var(--font-big-shoulders);
-  --font-body: var(--font-lora);
-  --color-gold: #D4A843;
-  --color-gold-strong: #B8902F;
-  --color-text-primary: #F0EDE6;
-  --color-text-secondary: #AEACA6;
-  --color-bg-dark: #080808;
+  --font-display: var(--font-michroma);
+  --font-body: var(--font-manrope);
+
+  --color-bg-void: #050608;
+  --color-bg-base: #080A10;
+  --color-bg-elevated: #0D0F16;
+  --color-bg-elevated-2: #12151F;
+
+  --color-text-primary: #E8E9EC;
+  --color-text-secondary: #8A8FA0;
+  --color-text-muted: #747985;
+
+  --color-accent-electric: #628DFF;
+  --color-accent-ice: #B7D7FF;
+  --color-accent-violet: #675DFF;
+  --color-accent-amber: #E58945;
+
+  /* legacy alias kept so any un-migrated `text-gold`/`border-gold` utility still resolves to the new primary accent */
+  --color-gold: #628DFF;
+  --color-gold-strong: #675DFF;
+
+  --color-border-subtle: rgba(232, 233, 236, 0.06);
+  --color-border-strong: rgba(232, 233, 236, 0.12);
+  --color-border-accent: rgba(98, 141, 255, 0.4);
 
   @keyframes fadeIn {
     from {
@@ -61,38 +78,170 @@
       opacity: 0;
     }
   }
+
+  @keyframes glow-pulse {
+    0%, 100% { opacity: 0.8; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.12); }
+  }
+
+  @keyframes glint-sweep {
+    0%, 78%, 100% { left: -80%; opacity: 0; }
+    80% { opacity: 1; }
+    93% { left: 140%; opacity: 1; }
+    95%, 100% { opacity: 0; }
+  }
+
+  @keyframes grain-shift {
+    0%, 100% { transform: translate(0, 0); }
+    10% { transform: translate(-1%, -2%); }
+    30% { transform: translate(2%, 1%); }
+    50% { transform: translate(-2%, 2%); }
+    70% { transform: translate(1%, -1%); }
+    90% { transform: translate(-1%, 1%); }
+  }
 }
 
 @layer components {
   .card-hover {
     @apply border border-white/[0.06] transition-all duration-300
-           hover:border-gold/50 hover:-translate-y-1
-           hover:shadow-[0_12px_40px_rgba(212,168,67,0.1)];
+           hover:border-[#628DFF]/50 hover:-translate-y-1
+           hover:shadow-[0_12px_40px_rgba(98,141,255,0.12)];
+  }
+
+  /* Technical metadata / eyebrow labels — coordinates, timestamps, system tags */
+  .meta-label {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  /* Uppercase geometric display heading treatment */
+  .heading-display {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    line-height: 1.15;
+  }
+
+  :lang(lo) .heading-display {
+    letter-spacing: normal;
+    text-transform: none;
+  }
+
+  /* Thin divider / interface rule lines */
+  .divider-line {
+    height: 1px;
+    width: 100%;
+    background: var(--color-border-subtle);
+  }
+
+  .divider-fade {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, var(--color-border-strong) 20%, var(--color-border-strong) 80%, transparent);
+  }
+
+  /* Parameterized ambient glow orb */
+  .glow-orb {
+    position: absolute;
+    border-radius: 9999px;
+    pointer-events: none;
+    filter: blur(60px);
+    animation: glow-pulse 7s ease-in-out infinite;
+  }
+
+  .glow-orb--electric {
+    background: radial-gradient(ellipse at center, rgba(98, 141, 255, 0.22) 0%, transparent 70%);
+  }
+
+  .glow-orb--violet {
+    background: radial-gradient(ellipse at center, rgba(103, 93, 255, 0.20) 0%, transparent 70%);
+  }
+
+  .glow-orb--duo {
+    background:
+      radial-gradient(ellipse 60% 60% at 35% 40%, rgba(98, 141, 255, 0.20) 0%, transparent 70%),
+      radial-gradient(ellipse 60% 60% at 65% 60%, rgba(103, 93, 255, 0.16) 0%, transparent 70%);
+  }
+
+  /* Diagonal light-streak sweep */
+  .light-streak {
+    position: absolute;
+    inset: 0 auto 0 -80%;
+    width: 55%;
+    background: linear-gradient(108deg, transparent 25%, rgba(183, 215, 255, 0.10) 48%, rgba(183, 215, 255, 0.20) 53%, rgba(183, 215, 255, 0.10) 58%, transparent 72%);
+    animation: glint-sweep 5.5s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  /* Grain overlay — feTurbulence SVG data-URI, mounted once at body level */
+  .grain-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0.035;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    animation: grain-shift 8s steps(8) infinite;
+  }
+
+  /* Scanline overlay — opt-in per section, used very lightly */
+  .scanlines-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(to bottom, rgba(232, 233, 236, 0.025) 0px, rgba(232, 233, 236, 0.025) 1px, transparent 1px, transparent 4px);
+    opacity: 0.5;
+  }
+
+  /* Cool duotone color-grade for photos — see HeroSection.tsx for usage pattern */
+  .duotone-photo {
+    filter: grayscale(0.35) contrast(1.08) brightness(0.95);
+  }
+
+  .duotone-photo-tint {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, rgba(103, 93, 255, 0.35) 0%, rgba(98, 141, 255, 0.18) 45%, transparent 75%);
+    mix-blend-mode: color;
+    pointer-events: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grain-overlay,
+  .glow-orb,
+  .light-streak {
+    animation: none;
   }
 }
 
 /* Theme Colors */
 :root {
-  --bg-primary: #080808;
-  --bg-secondary: #111111;
-  --bg-primary-rgb: 8, 8, 8;
-  --text-primary: #F0EDE6;
-  --text-secondary: #AEACA6;
-  --border-color: #161616;
-  --border-2: #2A2A2A;
-  --dim: #3A3A3A;
-  --mid: #666666;
-  --card-bg: #111111;
-  --hover-bg: rgba(212, 168, 67, 0.04);
-  --nav-text: #AEACA6;
-  --nav-active: #D4A843;
-  --nav-hover-bg: rgba(212, 168, 67, 0.04);
+  --bg-primary: #050608;
+  --bg-secondary: #0D0F16;
+  --bg-primary-rgb: 5, 6, 8;
+  --text-primary: #E8E9EC;
+  --text-secondary: #8A8FA0;
+  --border-color: #12151A;
+  --border-2: #232838;
+  --dim: #2A3040;
+  --mid: #565C6B;
+  --card-bg: #0D0F16;
+  --hover-bg: rgba(98, 141, 255, 0.05);
+  --nav-text: #8A8FA0;
+  --nav-active: #628DFF;
+  --nav-hover-bg: rgba(98, 141, 255, 0.05);
 }
 
 /* ── Article prose styles ─────────────────────────────────────────────────── */
 .prose-article {
-  color: #AEACA6;
-  font-family: var(--font-lora), Georgia, serif;
+  color: #8A8FA0;
+  font-family: var(--font-body), Georgia, serif;
   font-size: 1.0625rem;
   line-height: 1.8;
   max-width: 68ch;
@@ -114,23 +263,14 @@
 }
 
 .prose-article em {
-  color: #F0EDE6;
+  color: #E8E9EC;
   font-style: italic;
 }
 
 /* ── Architecture flow node colours ───────────────────────────────────────── */
-.arch-node-platform   { color: #ff3008; border-color: rgba(255, 48,   8, 0.25); }
-.arch-node-middleware { color: #D4A843; border-color: rgba(212, 168,  67, 0.25); }
-.arch-node-pos        { color: #16a34a; border-color: rgba(22,  163,  74, 0.25); }
-
-/* Hide scrollbars for terminal */
-#xterm::-webkit-scrollbar {
-  display: none;
-}
-
-#xterm .xterm-viewport::-webkit-scrollbar {
-  display: none;
-}
+.arch-node-platform   { color: #B7D7FF; border-color: rgba(183, 215, 255, 0.25); }
+.arch-node-middleware { color: #628DFF; border-color: rgba(98,  141, 255, 0.25); }
+.arch-node-pos        { color: #675DFF; border-color: rgba(103,  93, 255, 0.25); }
 
 /* Navigation Links */
 .nav-link {
@@ -172,30 +312,6 @@
 [lang="lo"],
 [lang^="lo-"] {
   font-family: "Noto Sans Lao", "Phetsarath OT", "Saysettha OT", Arial, sans-serif;
-}
-
-.terminal-en-only,
-.terminal-en-only * {
-  font-family: "Space Mono", "Consolas", "Courier New", monospace !important;
-}
-
-.locale-lao .terminal-en-only,
-.locale-lao .terminal-en-only * {
-  font-family: "Space Mono", "Consolas", "Courier New", monospace !important;
-  font-feature-settings: "liga" 0;
-}
-
-.terminal-en-only #xterm .xterm-rows {
-  line-height: 1.18 !important;
-  letter-spacing: 0 !important;
-}
-
-.terminal-en-only #xterm .xterm,
-.terminal-en-only #xterm .xterm-screen,
-.terminal-en-only #xterm .xterm-rows {
-  text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 /* ── Websites page scroll-reveal & shimmer animations ───────────────────── */

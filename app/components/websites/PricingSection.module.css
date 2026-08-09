@@ -13,10 +13,10 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  border: 0.5px solid rgba(200, 148, 58, 0.35);
+  border: 0.5px solid rgba(98, 141, 255, 0.35);
   padding: 14px 20px;
   margin-bottom: 56px;
-  background-color: rgba(200, 148, 58, 0.06);
+  background-color: rgba(98, 141, 255, 0.06);
 }
 
 .pulse {
@@ -24,7 +24,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #c8943a;
+  background-color: #628DFF;
   flex-shrink: 0;
   animation: pulse 2s ease-in-out infinite;
 }
@@ -35,10 +35,10 @@
 }
 
 .bannerText {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
-  color: #e8e5df;
+  color: #E8E9EC;
   margin: 0;
 }
 
@@ -48,30 +48,30 @@
 }
 
 .eyebrow {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #c8943a;
+  color: #628DFF;
   margin: 0 0 16px;
 }
 
 .title {
-  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  font-family: var(--font-display), 'Playfair Display', Georgia, serif;
   font-size: clamp(1.8rem, 3vw, 2.6rem);
   font-weight: 700;
-  color: #e8e5df;
+  color: #E8E9EC;
   margin: 0 0 12px;
   line-height: 1.2;
   letter-spacing: -0.01em;
 }
 
 .intro {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
-  color: #7a7671;
+  color: #8A8FA0;
   margin: 0;
 }
 
@@ -97,8 +97,8 @@
 }
 
 .tierHighlight {
-  background-color: rgba(200, 148, 58, 0.04);
-  border-left: 0.5px solid rgba(200, 148, 58, 0.35) !important;
+  background-color: rgba(98, 141, 255, 0.04);
+  border-left: 0.5px solid rgba(98, 141, 255, 0.35) !important;
 }
 
 .tierHighlight::before {
@@ -108,17 +108,17 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, #c8943a, rgba(200, 148, 58, 0.3));
+  background: linear-gradient(90deg, #628DFF, rgba(98, 141, 255, 0.3));
 }
 
 .badge {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.65rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #0f0e0c;
-  background-color: #c8943a;
+  color: #050608;
+  background-color: #628DFF;
   padding: 4px 10px;
   position: absolute;
   top: -1px;
@@ -130,28 +130,28 @@
 }
 
 .tierLabel {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.65rem;
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #7a7671;
+  color: #8A8FA0;
   margin: 0 0 10px;
 }
 
 .tierName {
-  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  font-family: var(--font-display), 'Playfair Display', Georgia, serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #e8e5df;
+  color: #E8E9EC;
   margin: 0 0 10px;
 }
 
 .tierTagline {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
-  color: #7a7671;
+  color: #8A8FA0;
   margin: 0 0 24px;
 }
 
@@ -162,7 +162,7 @@
 }
 
 .regularPrice {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   color: #4a4440;
@@ -171,26 +171,26 @@
 }
 
 .price {
-  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  font-family: var(--font-display), 'Playfair Display', Georgia, serif;
   font-size: 2.8rem;
   font-weight: 700;
-  color: #c8943a;
+  color: #628DFF;
   line-height: 1;
 }
 
 .priceNote {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.8rem;
   font-weight: 400;
-  color: #7a7671;
+  color: #8A8FA0;
   letter-spacing: 0.04em;
 }
 
 .platformNote {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
-  color: #7a7671;
+  color: #8A8FA0;
   line-height: 1.65;
   border: 0.5px solid rgba(255, 255, 255, 0.08);
   padding: 20px 24px;
@@ -198,7 +198,7 @@
 }
 
 .platformNote strong {
-  color: #e8e5df;
+  color: #E8E9EC;
   font-weight: 500;
 }
 
@@ -214,10 +214,10 @@
 }
 
 .includesItem {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
-  color: #e8e5df;
+  color: #E8E9EC;
   display: flex;
   align-items: flex-start;
   gap: 10px;
@@ -227,7 +227,7 @@
   display: block;
   width: 16px;
   height: 16px;
-  color: #c8943a;
+  color: #628DFF;
   flex-shrink: 0;
   margin-top: 1px;
 }
@@ -240,35 +240,35 @@
 /* CTA */
 .tierCta {
   display: block;
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
-  color: #c8943a;
+  color: #628DFF;
   text-decoration: none;
-  border: 0.5px solid #c8943a;
+  border: 0.5px solid #628DFF;
   padding: 14px 20px;
   text-align: center;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .tierCta:hover {
-  background-color: rgba(200, 148, 58, 0.1);
+  background-color: rgba(98, 141, 255, 0.1);
 }
 
 .tierCtaSolid {
-  background-color: #c8943a;
-  color: #0f0e0c;
+  background-color: #628DFF;
+  color: #050608;
 }
 
 .tierCtaSolid:hover {
   background-color: transparent;
-  color: #c8943a;
+  color: #628DFF;
 }
 
 .currencyNote {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.8rem;
-  color: #7a7671;
+  color: #8A8FA0;
   text-align: center;
   margin: 0;
 }

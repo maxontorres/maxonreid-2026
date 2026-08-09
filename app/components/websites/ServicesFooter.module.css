@@ -19,24 +19,24 @@
 }
 
 .logo {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
-  color: #e8e5df;
+  color: #E8E9EC;
   letter-spacing: -0.02em;
   display: block;
   margin-bottom: 8px;
 }
 
 .dot {
-  color: #c8943a;
+  color: #628DFF;
 }
 
 .tagline {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.8rem;
   font-weight: 300;
-  color: #7a7671;
+  color: #8A8FA0;
   margin: 0;
 }
 
@@ -50,24 +50,24 @@
 }
 
 .link {
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.8rem;
   font-weight: 400;
-  color: #7a7671;
+  color: #8A8FA0;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .link:hover {
-  color: #c8943a;
+  color: #628DFF;
 }
 
 .copy {
   grid-row: 2;
   grid-column: 1 / -1;
-  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+  font-family: var(--font-body), 'DM Sans', sans-serif;
   font-size: 0.75rem;
-  color: #7a7671;
+  color: #8A8FA0;
   margin: 0;
   border-top: 0.5px solid rgba(255, 255, 255, 0.08);
   padding-top: 24px;
