@@ -169,7 +169,7 @@ export default function ReferralModal() {
             href="https://wa.me/8562052373435"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full py-3 px-6 rounded-lg font-semibold transition-all bg-[#628DFF] hover:bg-[#675DFF] text-[#050608] flex items-center justify-center gap-2"
+            className="w-full py-3 px-6 rounded-lg font-display uppercase transition-all bg-[#628DFF] hover:bg-[#675DFF] text-[#050608] flex items-center justify-center gap-2"
             onClick={dismiss}
           >
             <MessageCircle size={18} strokeWidth={2} aria-hidden="true" />

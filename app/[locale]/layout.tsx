@@ -5,6 +5,7 @@ import MetaPixel from '@/app/components/MetaPixel';
 import { getMessages } from 'next-intl/server';
 import "@/app/globals.css";
 import WhatsAppWidget from '@/app/components/WhatsAppWidget';
+import ParticleBackground from '@/app/components/ParticleBackground';
 
 const michroma = Michroma({
   variable: "--font-michroma",
@@ -112,6 +113,7 @@ export default async function LocaleLayout({
           color: 'var(--text-primary)'
         }}
       >
+        <ParticleBackground />
         <div className="grain-overlay" aria-hidden="true" />
         <MetaPixel />
         <NextIntlClientProvider messages={messages}>

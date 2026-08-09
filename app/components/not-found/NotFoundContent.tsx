@@ -44,16 +44,14 @@ export default function NotFoundContent() {
           <div className="flex flex-wrap gap-3.5 pt-2">
             <Link
               href="/"
-              className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#628DFF] no-underline font-mono tracking-wide transition-all hover:bg-gradient-to-b hover:from-[#628DFF]/[0.06] hover:to-transparent hover:text-[#E8E9EC] hover:border-[#628DFF]"
-              style={{ fontFamily: 'var(--font-space-mono)' }}
+              className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#628DFF] no-underline font-display uppercase tracking-wide transition-all hover:bg-gradient-to-b hover:from-[#628DFF]/[0.06] hover:to-transparent hover:text-[#E8E9EC] hover:border-[#628DFF]"
             >
               {t('ctaHome')}
             </Link>
 
             <Link
               href="/#work"
-              className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#E8E9EC] no-underline font-mono tracking-wide transition-all opacity-90 hover:bg-gradient-to-b hover:from-[#628DFF]/[0.06] hover:to-transparent hover:border-[#628DFF]"
-              style={{ fontFamily: 'var(--font-space-mono)' }}
+              className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#E8E9EC] no-underline font-display uppercase tracking-wide transition-all opacity-90 hover:bg-gradient-to-b hover:from-[#628DFF]/[0.06] hover:to-transparent hover:border-[#628DFF]"
             >
               {t('ctaWork')}
             </Link>

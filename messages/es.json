@@ -9,7 +9,7 @@
   },
   "hero": {
     "brand": "MAXON TORRES",
-    "location": "[ VIENTIANE : LAOS PDR ] — CTO FRACCIONAL Y ASESOR TÉCNICO",
+    "location": "[ VIENTIANE : LAOS PDR ] - CTO FRACCIONAL Y ASESOR TÉCNICO",
     "heroTitle": "Ayudo a startups y equipos a <highlight>tomar las decisiones técnicas correctas</highlight>.",
     "heroTitlePrefix": "Ayudo a startups y equipos a",
     "heroHighlights": [
@@ -17,7 +17,7 @@
       "construir sistemas que no se caen",
       "evitar errores de ingeniería costosos"
     ],
-    "heroSub": "Liderazgo técnico estratégico para fundadores y equipos que necesitan criterio experto en arquitectura, proveedores y entregas — sin contratar un CTO de tiempo completo.",
+    "heroSub": "Liderazgo técnico estratégico para fundadores y equipos que necesitan criterio experto en arquitectura, proveedores y entregas - sin contratar un CTO de tiempo completo.",
     "ctaStart": "INICIAR UN PROYECTO",
     "ctaView": "VER MI TRABAJO"
   },
@@ -36,10 +36,10 @@
     "noProjects": "Aún no hay proyectos en esta categoría.",
     "projects": {
       "orderbridge": {
-        "desc": "Un sistema middleware que conecta plataformas de delivery como DoorDash y Uber Eats directamente a los sistemas POS de restaurantes — eliminando la entrada manual de pedidos y reduciendo errores en cocinas de alto volumen."
+        "desc": "Un sistema middleware que conecta plataformas de delivery como DoorDash y Uber Eats directamente a los sistemas POS de restaurantes - eliminando la entrada manual de pedidos y reduciendo errores en cocinas de alto volumen."
       },
       "laomaitravel": {
-        "desc": "Un sitio web de turismo bilingüe EN/TH para un operador turístico en Vientián — construido para SEO, sistema de reservas y analíticas web en tiempo real con Umami."
+        "desc": "Un sitio web de turismo bilingüe EN/TH para un operador turístico en Vientián - construido para SEO, sistema de reservas y analíticas web en tiempo real con Umami."
       },
       "pmlaos": {
         "desc": "A trilingual EN/LO/ZH real estate listing platform for a Vientiane agency  -  with a full admin dashboard, property gallery, and Google OAuth-secured CMS."
@@ -58,8 +58,8 @@
   "aboutHome": {
     "label": "[ QUIÉN SOY ]",
     "title": "Acerca de Mí",
-    "intro": "Soy Maximiliano Brito Torres — CTO Fraccional y Asesor Técnico con base en Vientiane, Laos, ayudando a startups y pymes a tomar decisiones técnicas acertadas y entregar software confiable.",
-    "description": "Entro donde los negocios necesitan criterio técnico experto sin comprometerse a una contratación de tiempo completo — decisiones de arquitectura y tecnología, supervisión de proveedores y equipos de desarrollo, y trabajo práctico cuando es la decisión correcta. Desde plataformas internas hasta sistemas a gran escala, el enfoque siempre es arquitectura limpia y mantenibilidad a largo plazo.",
+    "intro": "Soy Maximiliano Brito Torres - CTO Fraccional y Asesor Técnico con base en Vientiane, Laos, ayudando a startups y pymes a tomar decisiones técnicas acertadas y entregar software confiable.",
+    "description": "Entro donde los negocios necesitan criterio técnico experto sin comprometerse a una contratación de tiempo completo - decisiones de arquitectura y tecnología, supervisión de proveedores y equipos de desarrollo, y trabajo práctico cuando es la decisión correcta. Desde plataformas internas hasta sistemas a gran escala, el enfoque siempre es arquitectura limpia y mantenibilidad a largo plazo.",
     "imageAlt": "Maximiliano Brito Torres - CTO Fraccional y Asesor Técnico en Vientiane",
     "learnMore": "Más Sobre Mí",
     "stats": {
@@ -77,9 +77,9 @@
     "heroSubtitle": "CTO Fraccional y Asesor Técnico en Vientiane | Arquitectura Full-Stack, Automatización y Supervisión de Entregas | Construyendo software desde 2017",
     "bio": {
       "title": "Liderazgo Técnico Estratégico, con Base en Ingeniería Real",
-      "p1": "Soy Maximiliano Torres, CTO Fraccional y Asesor Técnico con base en el Sudeste Asiático. Durante más de 8 años en México, Tailandia, China y Laos, he ayudado a negocios a tomar las decisiones técnicas correctas — arquitectura, herramientas, supervisión de proveedores y equipos — y sigo construyendo de forma práctica cuando el problema lo requiere.",
-      "p2": "Trabajo con fundadores y equipos pequeños que necesitan criterio técnico experto sin contratar un CTO de tiempo completo: elegir la arquitectura correcta, revisar y dirigir desarrolladores o agencias externas, y construir piezas críticas yo mismo cuando es necesario — desde dashboards internos hasta plataformas completas. El objetivo siempre son sistemas confiables que resuelvan problemas operativos reales, no decisiones tecnológicas de currículum.",
-      "p3": "Esa amplitud viene de trabajar en todo el stack — JavaScript/TypeScript, PHP/Laravel, Python/Django y .NET — además de tiempo enseñando TI y Diseño Web en universidades de China y Laos. Colaboro con clientes internacionales y equipos remotos, manteniendo entregas consistentes sin importar quién escriba el código."
+      "p1": "Soy Maximiliano Torres, CTO Fraccional y Asesor Técnico con base en el Sudeste Asiático. Durante más de 8 años en México, Tailandia, China y Laos, he ayudado a negocios a tomar las decisiones técnicas correctas - arquitectura, herramientas, supervisión de proveedores y equipos - y sigo construyendo de forma práctica cuando el problema lo requiere.",
+      "p2": "Trabajo con fundadores y equipos pequeños que necesitan criterio técnico experto sin contratar un CTO de tiempo completo: elegir la arquitectura correcta, revisar y dirigir desarrolladores o agencias externas, y construir piezas críticas yo mismo cuando es necesario - desde dashboards internos hasta plataformas completas. El objetivo siempre son sistemas confiables que resuelvan problemas operativos reales, no decisiones tecnológicas de currículum.",
+      "p3": "Esa amplitud viene de trabajar en todo el stack - JavaScript/TypeScript, PHP/Laravel, Python/Django y .NET - además de tiempo enseñando TI y Diseño Web en universidades de China y Laos. Colaboro con clientes internacionales y equipos remotos, manteniendo entregas consistentes sin importar quién escriba el código."
     },
     "skills": {
       "title": "Tecnologías y Herramientas",
@@ -260,12 +260,12 @@
     "label": "[ PROGRAMA DE REFERIDOS ]",
     "title": "Refiere un cliente.",
     "titleAlt": "Gana dinero.",
-    "desc": "¿Conoces a alguien que necesite un sitio web o una integración? Mándamelo — y yo me encargo de que valga la pena. Sin formularios, sin procesos. Solo un mensaje.",
+    "desc": "¿Conoces a alguien que necesite un sitio web o una integración? Mándamelo - y yo me encargo de que valga la pena. Sin formularios, sin procesos. Solo un mensaje.",
     "stepsLabel": "// CÓMO FUNCIONA",
     "steps": [
       "Cuéntale a un amigo sobre mis servicios",
       "Ellos contactan a Maxon y mencionan tu nombre",
-      "Firman — tú cobras tu recompensa"
+      "Firman - tú cobras tu recompensa"
     ],
     "cta": "WhatsApp a Maxon",
     "phone": "+856 20 52 373 435 · maxontorres.com",
@@ -283,7 +283,7 @@
       "label": "OPCIÓN B",
       "amount": "3",
       "unit": "MESES GRATIS",
-      "desc": "Refiere a alguien que firme cualquier paquete web — obtienes <highlight>3 meses de mantenimiento gratis</highlight> de inmediato cuando firmen.",
+      "desc": "Refiere a alguien que firme cualquier paquete web - obtienes <highlight>3 meses de mantenimiento gratis</highlight> de inmediato cuando firmen.",
       "footer": "Se acredita al momento de firmar"
     },
     "fine": "Sin vencimiento · Aplica para todos · Un premio por referido",
@@ -340,12 +340,12 @@
     "titleMain": "Por Qué los Negocios en Vientiane",
     "titleHighlight": "Necesitan un Sitio Web",
     "lede": "Si tienes un negocio en Vientiane y solo tienes una página de Facebook, estás perdiendo dinero. Mucho dinero.",
-    "figHero": "PM Laos apareciendo en Google — ejemplo real de un negocio en Vientiane con presencia digital profesional",
+    "figHero": "PM Laos apareciendo en Google - ejemplo real de un negocio en Vientiane con presencia digital profesional",
     "google": {
       "label": "[ GOOGLE vs FACEBOOK ]",
       "heading": "Primero Google, Después Facebook",
       "p1": "La forma en que la gente busca negocios en el mundo es así: cuando alguien necesita un servicio, un restaurante, un hotel o un proveedor, no hace scroll interminable en Facebook. Va a Google.",
-      "p2": "Piensa en tu propio comportamiento. Cuando necesitas algo específico — \"mejor café en Vientiane\", \"apartamento en alquiler Vientiane\", \"desarrollador web Laos\" — buscas en Google. Tus clientes hacen lo mismo.",
+      "p2": "Piensa en tu propio comportamiento. Cuando necesitas algo específico - \"mejor café en Vientiane\", \"apartamento en alquiler Vientiane\", \"desarrollador web Laos\" - buscas en Google. Tus clientes hacen lo mismo.",
       "p3": "Facebook es donde la gente va a socializar. Google es donde la gente va con intención: lista para comprar, lista para contactar, lista para decidir.",
       "p4": "Si tu negocio solo existe en Facebook, estás perdiendo a esos clientes con alta intención de compra."
     },
@@ -363,7 +363,7 @@
       "p3": "Ahora compara eso con un sitio web. Tu nombre de dominio (como PMLaos.com) es único. Sin duplicados. Sin confusión. Una fuente oficial de verdad.",
       "p4": "Esa claridad genera confianza al instante."
     },
-    "figCopycats": "Páginas de Facebook imitadoras — uno de los problemas más comunes que enfrentan los negocios sin un sitio web real",
+    "figCopycats": "Páginas de Facebook imitadoras - uno de los problemas más comunes que enfrentan los negocios sin un sitio web real",
     "ownership": {
       "label": "[ NO ES TUYO ]",
       "heading": "No Eres Dueño de Facebook",
@@ -378,7 +378,7 @@
       "p3": "Un sitio web es diferente. Lo posees. Lo controlas. Ningún algoritmo decide si tus clientes pueden ver tu negocio.",
       "p4": "Cuando eso pasa con Facebook, toda tu presencia online puede desaparecer de la noche a la mañana."
     },
-    "figUrl": "PMLaos.com — un dominio único que no puede ser duplicado, reportado ni quitado",
+    "figUrl": "PMLaos.com - un dominio único que no puede ser duplicado, reportado ni quitado",
     "friction": {
       "label": "[ ELIMINA LA FRICCIÓN ]",
       "heading": "Deja de Hacer que los Clientes Trabajen para Encontrar Información",
@@ -390,18 +390,18 @@
         "Y aún no encontrar lo que necesita"
       ],
       "p2": "La mayoría de las personas no hará eso. Se irán con la competencia.",
-      "p3": "Un sitio web organiza todo claramente: servicios, precios, datos de contacto, ubicación y preguntas frecuentes — todo en un solo lugar, fácil de acceder."
+      "p3": "Un sitio web organiza todo claramente: servicios, precios, datos de contacto, ubicación y preguntas frecuentes - todo en un solo lugar, fácil de acceder."
     },
-    "figListing": "Página de listado de PM Laos — toda la información organizada, clara y accesible sin necesidad de hacer scroll",
+    "figListing": "Página de listado de PM Laos - toda la información organizada, clara y accesible sin necesidad de hacer scroll",
     "professionalism": {
       "label": "[ PROFESIONALISMO ]",
       "heading": "Tu Negocio Se Ve Más Profesional",
       "p1": "La percepción importa. Un negocio con un sitio web limpio y moderno se ve más establecido, más confiable y más serio.",
-      "p2": "Un negocio con solo una página de Facebook muchas veces parece pequeño, temporal o menos confiable — incluso si eso no es verdad. Y en mercados competitivos, esa percepción sola puede decidir quién se queda con el cliente.",
+      "p2": "Un negocio con solo una página de Facebook muchas veces parece pequeño, temporal o menos confiable - incluso si eso no es verdad. Y en mercados competitivos, esa percepción sola puede decidir quién se queda con el cliente.",
       "calloutLabel": "LA VERDAD",
       "calloutText": "Cualquiera puede crear una página de Facebook. No todos invierten en un sitio web real."
     },
-    "figHomepage": "Página de inicio del sitio web de PM Laos — una presencia online limpia y profesional que genera credibilidad al instante",
+    "figHomepage": "Página de inicio del sitio web de PM Laos - una presencia online limpia y profesional que genera credibilidad al instante",
     "storefront": {
       "label": "[ TU VITRINA DIGITAL ]",
       "heading": "Tu Sitio Web Es Tu Vitrina Digital",
@@ -409,7 +409,7 @@
       "benefits": [
         {
           "title": "Tu Hub Central",
-          "desc": "Todo el tráfico — desde Google, Facebook, TikTok o email — lleva de regreso a tu sitio web."
+          "desc": "Todo el tráfico - desde Google, Facebook, TikTok o email - lleva de regreso a tu sitio web."
         },
         {
           "title": "Credibilidad y Confianza",
@@ -421,7 +421,7 @@
         },
         {
           "title": "Marketing Rentable",
-          "desc": "El SEO atrae tráfico orgánico gratuito de Google — frecuentemente mejores clientes que los anuncios pagados."
+          "desc": "El SEO atrae tráfico orgánico gratuito de Google - frecuentemente mejores clientes que los anuncios pagados."
         },
         {
           "title": "Mensajes Dirigidos",
@@ -429,7 +429,7 @@
         },
         {
           "title": "Email Marketing",
-          "desc": "Capta leads y convierte visitantes en suscriptores de email — y luego en clientes que pagan."
+          "desc": "Capta leads y convierte visitantes en suscriptores de email - y luego en clientes que pagan."
         },
         {
           "title": "Datos e Insights",
@@ -441,7 +441,7 @@
       "label": "[ LA REALIDAD ]",
       "heading": "Los Negocios que Ganan",
       "p1": "He estado construyendo sitios web y sistemas digitales para negocios de todo el mundo desde 2015. El patrón siempre es el mismo: los negocios con un sitio web sólido crecen más rápido, atraen mejores clientes y construyen marcas más fuertes.",
-      "p2": "¿Sin sitio web? Estás perdiendo clientes. No porque tu negocio sea malo — sino porque la gente no puede encontrarte, no confía en lo que ve, o se rinde antes de contactarte.",
+      "p2": "¿Sin sitio web? Estás perdiendo clientes. No porque tu negocio sea malo - sino porque la gente no puede encontrarte, no confía en lo que ve, o se rinde antes de contactarte.",
       "p3": "Un sitio web ya no es opcional. Es la base de tu presencia online.",
       "p4": "En una ciudad en crecimiento como Vientiane, donde más personas dependen del internet cada día para tomar decisiones, los negocios que invierten en una presencia digital adecuada ganarán. Los demás se quedarán atrás poco a poco.",
       "calloutLabel": "REFLEXIÓN FINAL",
@@ -549,22 +549,22 @@
     "titleHighlight": "Conexión Delivery-a-POS",
     "lede": "Hace unos meses, un cliente llegó a mí con un problema simple de describir y que parecía bastante directo. Necesitaban conectar las principales plataformas de delivery con su propio sistema POS mediante un handshake automatizado con OAuth 2.0.",
     "introP1Pre": "Este proyecto comenzó como un brief real de cliente. La solicitud llegó en español:",
-    "introP1Post": "En resumen: necesitaban conectar las cuentas de delivery de sus clientes a su sistema POS a través de la API de socios de StreamOrder — de forma automática, vía OAuth, sin intervención manual. Analicé los requisitos, leí la documentación del partner de StreamOrder y me puse a trabajar.",
+    "introP1Post": "En resumen: necesitaban conectar las cuentas de delivery de sus clientes a su sistema POS a través de la API de socios de StreamOrder - de forma automática, vía OAuth, sin intervención manual. Analicé los requisitos, leí la documentación del partner de StreamOrder y me puse a trabajar.",
     "brief": {
       "label": "[ EL BRIEF ]",
       "heading": "La Propuesta al Cliente",
-      "p1": "Antes de escribir una sola línea de código, preparé una propuesta formal. Eso forzó claridad en ambos lados — el cliente entendía exactamente lo que iba a recibir, y yo entendía exactamente lo que iba a construir.",
+      "p1": "Antes de escribir una sola línea de código, preparé una propuesta formal. Eso forzó claridad en ambos lados - el cliente entendía exactamente lo que iba a recibir, y yo entendía exactamente lo que iba a construir.",
       "proposalLabel": "PROPUESTA DE PROYECTO",
       "proposalTitle": "Integración de Apps de Delivery al POS",
       "proposalSubtitle": "Middleware API · StreamOrder · OAuth 2.0",
       "descriptionLabel": "DESCRIPCIÓN",
-      "descriptionText": "Este proyecto establece un \"Puente Digital\" seguro y automatizado — una Middleware API entre el agregador StreamOrder y el sistema de Punto de Venta (POS) del cliente, permitiendo que los pedidos de delivery fluyan automáticamente al POS sin intervención manual.",
+      "descriptionText": "Este proyecto establece un \"Puente Digital\" seguro y automatizado - una Middleware API entre el agregador StreamOrder y el sistema de Punto de Venta (POS) del cliente, permitiendo que los pedidos de delivery fluyan automáticamente al POS sin intervención manual.",
       "objectiveLabel": "OBJETIVO",
       "objectiveText": "Implementar OAuth 2.0 como capa de autenticación, garantizando que los datos permanezcan seguros mientras los pedidos se sincronizan automáticamente desde las plataformas de delivery al POS.",
       "objectives": [
         {
           "label": "Conexión Segura",
-          "desc": "Handshake OAuth — sin contraseñas compartidas, datos protegidos por llaves digitales cifradas."
+          "desc": "Handshake OAuth - sin contraseñas compartidas, datos protegidos por llaves digitales cifradas."
         },
         {
           "label": "Sincronización Automática",
@@ -593,7 +593,7 @@
           "week": "Semana 2",
           "title": "El Puente de Automatización",
           "goal": "Hacer que los sistemas se comuniquen.",
-          "result": "Traductor y listener de webhooks funcionando en entorno de prueba — pedidos capturados y traducidos al instante."
+          "result": "Traductor y listener de webhooks funcionando en entorno de prueba - pedidos capturados y traducidos al instante."
         },
         {
           "week": "Semana 3",
@@ -624,7 +624,7 @@
         },
         {
           "name": "Renovación Automática de Tokens",
-          "desc": "Seguridad autogestionada — los tokens OAuth se renuevan automáticamente para que la conexión nunca expire."
+          "desc": "Seguridad autogestionada - los tokens OAuth se renuevan automáticamente para que la conexión nunca expire."
         },
         {
           "name": "Monitoreo de Confiabilidad",
@@ -660,7 +660,7 @@
       "mathHighlight": "más de $1,100 perdidos cada mes",
       "mathPost": "en una tarea que no debería involucrar a ningún humano."
     },
-    "figOrders": "Página de pedidos — filtrable, ordenable, actualizaciones en tiempo real",
+    "figOrders": "Página de pedidos - filtrable, ordenable, actualizaciones en tiempo real",
     "engineering": {
       "label": "[ INGENIERÍA ]",
       "heading": "Construyendo el Pipeline",
@@ -675,7 +675,7 @@
         {
           "n": "02",
           "title": "Verificar firmas",
-          "desc": "Verificación HMAC-SHA256 — seguridad antes que todo."
+          "desc": "Verificación HMAC-SHA256 - seguridad antes que todo."
         },
         {
           "n": "03",
@@ -690,19 +690,19 @@
         {
           "n": "05",
           "title": "Transmitir actualizaciones",
-          "desc": "Push WebSocket al dashboard en vivo — sin polling."
+          "desc": "Push WebSocket al dashboard en vivo - sin polling."
         }
       ]
     },
     "process": {
       "label": "[ EL PROCESO ]",
       "heading": "Primero Escribir el Spec",
-      "p1": "Empecé con una Especificación de Requisitos de Software (SRS) antes de escribir una sola línea de código. Es mucho más fácil corregir un error en un documento que reescribir código de producción después. El SRS forzó tanto a mí como al cliente a acordar exactamente qué significaba \"listo\" — sin ambigüedad, sin cambios de alcance.",
+      "p1": "Empecé con una Especificación de Requisitos de Software (SRS) antes de escribir una sola línea de código. Es mucho más fácil corregir un error en un documento que reescribir código de producción después. El SRS forzó tanto a mí como al cliente a acordar exactamente qué significaba \"listo\" - sin ambigüedad, sin cambios de alcance.",
       "requirements": [
         {
           "label": "FR-01",
           "title": "Servidor OAuth 2.0",
-          "desc": "El sistema debe actuar como proveedor OAuth 2.0 — emitiendo, validando y renovando tokens conforme al RFC 6749."
+          "desc": "El sistema debe actuar como proveedor OAuth 2.0 - emitiendo, validando y renovando tokens conforme al RFC 6749."
         },
         {
           "label": "FR-02",
@@ -717,7 +717,7 @@
         {
           "label": "FR-04",
           "title": "Inyección al POS",
-          "desc": "El sistema debe hacer POST de pedidos traducidos a la API del POS con reintentos de backoff exponencial — ningún pedido se pierde en silencio."
+          "desc": "El sistema debe hacer POST de pedidos traducidos a la API del POS con reintentos de backoff exponencial - ningún pedido se pierde en silencio."
         },
         {
           "label": "NFR-01",
@@ -731,7 +731,7 @@
         }
       ]
     },
-    "figDashboard": "Dashboard en vivo — feed de pedidos en tiempo real con seguimiento de estado",
+    "figDashboard": "Dashboard en vivo - feed de pedidos en tiempo real con seguimiento de estado",
     "techStack": {
       "label": "[ TECH STACK ]",
       "heading": "El Tech Stack",
@@ -750,13 +750,13 @@
     "deployment": {
       "label": "[ DESPLIEGUE ]",
       "heading": "Infraestructura",
-      "p1": "Los tres servicios están desplegados de forma independiente — cada uno con su propio host, su propio dominio y su propia responsabilidad. Esto refleja cómo se estructuraría una integración de producción real.",
+      "p1": "Los tres servicios están desplegados de forma independiente - cada uno con su propio host, su propio dominio y su propia responsabilidad. Esto refleja cómo se estructuraría una integración de producción real.",
       "infrastructureLabel": "VISIÓN GENERAL DE INFRAESTRUCTURA",
       "services": [
         {
           "host": "Vercel",
           "service": "Dashboard de OrderBridge",
-          "detail": "UI de monitoreo en tiempo real — desplegada en edge, disponible globalmente.",
+          "detail": "UI de monitoreo en tiempo real - desplegada en edge, disponible globalmente.",
           "tag": "Frontend"
         },
         {
@@ -768,24 +768,24 @@
         {
           "host": "Railway",
           "service": "Servidor MockPOS",
-          "detail": "Simulador de POS aislado ejecutándose como un servicio completamente separado — su propio flujo de consentimiento OAuth, su propio terminal de pedidos.",
+          "detail": "Simulador de POS aislado ejecutándose como un servicio completamente separado - su propio flujo de consentimiento OAuth, su propio terminal de pedidos.",
           "tag": "Simulador"
         }
       ],
       "whySeparateLabel": "POR QUÉ SERVICIOS SEPARADOS",
-      "whySeparate": "Mantener MockPOS en su propio servicio de Railway no era solo conveniente — era el punto. Demuestra que la integración funciona a través de un límite de red real, no solo entre dos funciones en el mismo proceso."
+      "whySeparate": "Mantener MockPOS en su propio servicio de Railway no era solo conveniente - era el punto. Demuestra que la integración funciona a través de un límite de red real, no solo entre dos funciones en el mismo proceso."
     },
     "hardParts": {
       "label": "[ LO DIFÍCIL ]",
       "heading": "Traducción y Confianza",
-      "p1": "El Traductor fue la parte más difícil de este proyecto. DoorDash, Uber Eats y GrabFood tienen ideas muy distintas de cómo describir una \"hamburguesa sin pepinillos\". Mapear estos payloads inconsistentes a un SKU de POS estandarizado mientras se mantiene una tabla de MenuMapping requirió un manejo profundo de casos extremos. Si el mapeo falla, el sistema tiene que fallar elegantemente — no dejar caer el pedido en el vacío.",
+      "p1": "El Traductor fue la parte más difícil de este proyecto. DoorDash, Uber Eats y GrabFood tienen ideas muy distintas de cómo describir una \"hamburguesa sin pepinillos\". Mapear estos payloads inconsistentes a un SKU de POS estandarizado mientras se mantiene una tabla de MenuMapping requirió un manejo profundo de casos extremos. Si el mapeo falla, el sistema tiene que fallar elegantemente - no dejar caer el pedido en el vacío.",
       "p2": "Luego estaba el Servidor OAuth 2.0. Una cosa es usar OAuth; otra muy distinta es ser el proveedor. Construir los endpoints de autorización, la lógica de tokens y el almacenamiento cifrado conforme a las especificaciones RFC costó más canas que el resto de la app combinado."
     },
-    "figMockPos": "Phing Kai Kitchen [Simulador POS] — pedidos llegando automáticamente desde OrderBridge",
+    "figMockPos": "Phing Kai Kitchen [Simulador POS] - pedidos llegando automáticamente desde OrderBridge",
     "portfolio": {
       "label": "[ EL BUILD DE PORTAFOLIO ]",
       "heading": "Presentando OrderBridge",
-      "p1": "Disfruté tanto la arquitectura del proyecto del cliente que construí OrderBridge — una versión refinada e independiente para mi portafolio. No es solo una copia; es una evolución. Un demo end-to-end completo que simula todo el flujo sin necesitar infraestructura real.",
+      "p1": "Disfruté tanto la arquitectura del proyecto del cliente que construí OrderBridge - una versión refinada e independiente para mi portafolio. No es solo una copia; es una evolución. Un demo end-to-end completo que simula todo el flujo sin necesitar infraestructura real.",
       "repos": [
         {
           "name": "Backend",
@@ -801,7 +801,7 @@
         }
       ]
     },
-    "figSimulator": "Simulador — lanza pedidos de prueba desde cualquier plataforma de delivery con un clic",
+    "figSimulator": "Simulador - lanza pedidos de prueba desde cualquier plataforma de delivery con un clic",
     "sourceCode": {
       "label": "[ CÓDIGO FUENTE ]",
       "heading": "El Codebase Completo",
@@ -849,7 +849,7 @@
   "orderbridgeCaseStudy": {
     "breadcrumbHome": "Inicio",
     "breadcrumbWork": "Trabajo",
-    "tagline": "Un sistema middleware que conecta plataformas de delivery con sistemas POS de restaurantes — eliminando la captura manual de pedidos.",
+    "tagline": "Un sistema middleware que conecta plataformas de delivery con sistemas POS de restaurantes - eliminando la captura manual de pedidos.",
     "viewLiveDemo": "Ver Demo en Vivo",
     "readBuildArticle": "Leer el Artículo",
     "diagramCaption": "Flujo general: plataformas de delivery → OrderBridge → POS del restaurante",
@@ -873,15 +873,15 @@
     ],
     "problem": {
       "sectionLabel": "[ EL PROBLEMA ]",
-      "p1": "Cada vez que llega un pedido de DoorDash, Uber Eats o Grubhub, alguien en el restaurante tiene que leerlo en una tablet y escribirlo manualmente en el POS. Con 50 pedidos al día, son más de dos horas de trabajo — cada día.",
+      "p1": "Cada vez que llega un pedido de DoorDash, Uber Eats o Grubhub, alguien en el restaurante tiene que leerlo en una tablet y escribirlo manualmente en el POS. Con 50 pedidos al día, son más de dos horas de trabajo - cada día.",
       "p2": "La captura manual genera errores. Un modificador omitido, una cantidad incorrecta, un artículo saltado. En una cocina de alto volumen, un pedido incorrecto desencadena quejas de clientes, reembolsos y desperdicio de comida.",
-      "p3": "La matemática es simple: con 50 pedidos por día, 2.5 minutos de captura cada uno y $18/hr de costo laboral — eso son más de",
+      "p3": "La matemática es simple: con 50 pedidos por día, 2.5 minutos de captura cada uno y $18/hr de costo laboral - eso son más de",
       "p3Highlight": "$1,100 perdidos cada mes",
       "p3End": "en un problema que debería estar automatizado."
     },
     "solution": {
       "sectionLabel": "[ LA SOLUCIÓN ]",
-      "p1": "OrderBridge se ubica entre las plataformas de delivery y el POS. Cuando llega un pedido, recibe el webhook, traduce el payload al formato del POS e inyecta el pedido automáticamente — en menos de 800ms, sin intervención humana.",
+      "p1": "OrderBridge se ubica entre las plataformas de delivery y el POS. Cuando llega un pedido, recibe el webhook, traduce el payload al formato del POS e inyecta el pedido automáticamente - en menos de 800ms, sin intervención humana.",
       "archTitle": "FLUJO DE ARQUITECTURA",
       "archNodes": [
         "Plataforma\nDelivery",
@@ -913,7 +913,7 @@
         {
           "step": "04",
           "title": "Sincronización en Tiempo Real",
-          "desc": "Cada cambio de estado se persiste en PostgreSQL y se transmite vía WebSocket a todos los clientes del dashboard conectados — sin polling, sin refrescar la página."
+          "desc": "Cada cambio de estado se persiste en PostgreSQL y se transmite vía WebSocket a todos los clientes del dashboard conectados - sin polling, sin refrescar la página."
         }
       ]
     },
@@ -922,19 +922,19 @@
       "images": [
         {
           "alt": "Dashboard de OrderBridge mostrando el flujo de pedidos en vivo",
-          "caption": "Dashboard en vivo — flujo de pedidos en tiempo real con seguimiento de estado"
+          "caption": "Dashboard en vivo - flujo de pedidos en tiempo real con seguimiento de estado"
         },
         {
           "alt": "Página de pedidos de OrderBridge con filtros",
-          "caption": "Página de pedidos — filtrable, ordenable, exportación CSV"
+          "caption": "Página de pedidos - filtrable, ordenable, exportación CSV"
         },
         {
           "alt": "Terminal MockPOS mostrando pedidos inyectados",
-          "caption": "Terminal MockPOS — pedidos llegando automáticamente desde OrderBridge"
+          "caption": "Terminal MockPOS - pedidos llegando automáticamente desde OrderBridge"
         },
         {
           "alt": "Página del simulador de OrderBridge",
-          "caption": "Simulador — envía pedidos de prueba desde cualquier plataforma de delivery"
+          "caption": "Simulador - envía pedidos de prueba desde cualquier plataforma de delivery"
         }
       ]
     },
@@ -955,7 +955,7 @@
         },
         {
           "name": "WebSockets (ws)",
-          "reason": "WebSocket nativo — sin el overhead de Socket.io para un canal de broadcast único."
+          "reason": "WebSocket nativo - sin el overhead de Socket.io para un canal de broadcast único."
         },
         {
           "name": "OAuth 2.0 + AES-256",
@@ -963,7 +963,7 @@
         },
         {
           "name": "HMAC-SHA256",
-          "reason": "Verificación de firma de webhook — solo se procesan los payloads legítimos de las plataformas de delivery."
+          "reason": "Verificación de firma de webhook - solo se procesan los payloads legítimos de las plataformas de delivery."
         }
       ]
     },
@@ -978,9 +978,9 @@
   "laomaitravelCaseStudy": {
     "breadcrumbHome": "Inicio",
     "breadcrumbWork": "Trabajo",
-    "tagline": "Un sitio web de turismo bilingüe EN/TH construido para SEO, analíticas sin cookies y sistema de reservas — sin backend.",
+    "tagline": "Un sitio web de turismo bilingüe EN/TH construido para SEO, analíticas sin cookies y sistema de reservas - sin backend.",
     "viewLive": "Visitar laomaitravel.com",
-    "heroImageAlt": "Sección hero de Lao Mai Travel — templo al atardecer con diseño navy y dorado",
+    "heroImageAlt": "Sección hero de Lao Mai Travel - templo al atardecer con diseño navy y dorado",
     "outcomes": [
       {
         "value": "EN + TH",
@@ -1002,18 +1002,18 @@
     "problem": {
       "sectionLabel": "[ EL PROBLEMA ]",
       "p1": "Antes de este sitio, Lao Mai Travel no sabía si su web funcionaba. Sin datos sobre visitantes, origen, páginas vistas ni dispositivos. Cada decisión sobre el sitio era una suposición.",
-      "p2": "Tampoco tenían rutas bilingües — los visitantes en tailandés no podían leer el sitio en su idioma. Y el único contacto era un número de teléfono al pie de página.",
+      "p2": "Tampoco tenían rutas bilingües - los visitantes en tailandés no podían leer el sitio en su idioma. Y el único contacto era un número de teléfono al pie de página.",
       "p3": "Tres problemas a resolver:",
       "problems": [
         "Sin visibilidad sobre quién visitaba o qué funcionaba",
         "Sin soporte para visitantes en tailandés",
-        "Sin sistema de reservas — solo un teléfono"
+        "Sin sistema de reservas - solo un teléfono"
       ]
     },
     "design": {
       "sectionLabel": "[ EL DISEÑO ]",
       "p1": "El brief era premium, local, confiable. Sin los colores brillantes genéricos de los sitios de viajes.",
-      "p2": "Navy y dorado — el navy transmite seriedad y profesionalismo, el dorado referencia directamente la arquitectura de templos laosianos y la herencia budista. La combinación genera confianza antes de leer una palabra.",
+      "p2": "Navy y dorado - el navy transmite seriedad y profesionalismo, el dorado referencia directamente la arquitectura de templos laosianos y la herencia budista. La combinación genera confianza antes de leer una palabra.",
       "p3": "Tipografía en tres capas: Cinzel para navegación (calidad clásica, como piedra tallada), Cormorant Garamond para titulares (editorial de lujo, alto contraste), Montserrat para el cuerpo (limpio, legible). Cada una tiene un rol. Ninguna compite.",
       "p4": "El hero muestra una fotografía de templo a pantalla completa al atardecer con el titular dividido entre romano blanco e itálica dorada. El sitio inmediatamente se siente como el lugar que vende."
     },
@@ -1023,43 +1023,43 @@
       "reasons": [
         {
           "title": "Renderizado orientado a SEO",
-          "desc": "Cada página de tour y destino se renderiza como HTML completo en el servidor. Los motores de búsqueda indexan todo — sin JavaScript requerido. Para un negocio donde los clientes buscan \"tours de trekking en Laos\", eso se traduce directamente en reservas."
+          "desc": "Cada página de tour y destino se renderiza como HTML completo en el servidor. Los motores de búsqueda indexan todo - sin JavaScript requerido. Para un negocio donde los clientes buscan \"tours de trekking en Laos\", eso se traduce directamente en reservas."
         },
         {
           "title": "Rutas bilingües de primer nivel",
-          "desc": "El App Router gestiona las rutas bilingües limpiamente — todas las páginas viven bajo app/[locale]/, así /en y /th son rutas reales con su propio metadata. next-intl gestiona las traducciones."
+          "desc": "El App Router gestiona las rutas bilingües limpiamente - todas las páginas viven bajo app/[locale]/, así /en y /th son rutas reales con su propio metadata. next-intl gestiona las traducciones."
         },
         {
           "title": "Sin backend que mantener",
-          "desc": "Resend gestiona los emails del formulario de reservas. Vercel gestiona el despliegue — sin servidor que configurar, sin mantenimiento, sin tiempo de inactividad. El sitio del cliente se gestiona solo."
+          "desc": "Resend gestiona los emails del formulario de reservas. Vercel gestiona el despliegue - sin servidor que configurar, sin mantenimiento, sin tiempo de inactividad. El sitio del cliente se gestiona solo."
         }
       ]
     },
     "analytics": {
       "sectionLabel": "[ ANALÍTICAS CON UMAMI ]",
       "heading": "De adivinar a saber.",
-      "p1": "Umami registra cada visita en tiempo real — páginas vistas, tiempo en el sitio, país de origen, fuente de referencia y tipo de dispositivo. El cliente lo ve todo en un dashboard limpio sin conocimientos técnicos.",
-      "p2": "Umami es también privacy-first — sin cookies, sin datos personales almacenados, cumple GDPR de serie. Sin banner de consentimiento que ensucie el sitio. Para un negocio que atiende turistas internacionales de Europa, eso no es solo ético — evita un problema legal.",
-      "p3": "El cliente accede a su dashboard con un solo enlace compartido. Sin cuenta, sin contraseña, sin suscripción mensual. Lo consulta como consulta su WhatsApp — de forma independiente, a su ritmo.",
+      "p1": "Umami registra cada visita en tiempo real - páginas vistas, tiempo en el sitio, país de origen, fuente de referencia y tipo de dispositivo. El cliente lo ve todo en un dashboard limpio sin conocimientos técnicos.",
+      "p2": "Umami es también privacy-first - sin cookies, sin datos personales almacenados, cumple GDPR de serie. Sin banner de consentimiento que ensucie el sitio. Para un negocio que atiende turistas internacionales de Europa, eso no es solo ético - evita un problema legal.",
+      "p3": "El cliente accede a su dashboard con un solo enlace compartido. Sin cuenta, sin contraseña, sin suscripción mensual. Lo consulta como consulta su WhatsApp - de forma independiente, a su ritmo.",
       "questionsLabel": "PREGUNTAS QUE UMAMI AHORA RESPONDE:",
       "questions": [
-        "La página del tour Bolaven Plateau recibe 600 visitas al mes pero casi ninguna reserva — ¿el precio es demasiado alto o la página no genera suficiente confianza?",
-        "El 65% de los visitantes usan móvil — ¿el formulario de reserva es fácil de completar en un teléfono?",
-        "El tráfico aumenta cada noviembre y diciembre — ese es el momento para hacer promociones.",
-        "El tráfico viene de Australia y Francia pero casi nada de EEUU — ¿dónde enfocar los esfuerzos en redes sociales?"
+        "La página del tour Bolaven Plateau recibe 600 visitas al mes pero casi ninguna reserva - ¿el precio es demasiado alto o la página no genera suficiente confianza?",
+        "El 65% de los visitantes usan móvil - ¿el formulario de reserva es fácil de completar en un teléfono?",
+        "El tráfico aumenta cada noviembre y diciembre - ese es el momento para hacer promociones.",
+        "El tráfico viene de Australia y Francia pero casi nada de EEUU - ¿dónde enfocar los esfuerzos en redes sociales?"
       ],
       "images": [
         {
           "alt": "Dashboard principal de analíticas Umami",
-          "caption": "Dashboard principal — visitas, tasa de rebote y duración de sesión en tiempo real"
+          "caption": "Dashboard principal - visitas, tasa de rebote y duración de sesión en tiempo real"
         },
         {
           "alt": "Páginas y fuentes de tráfico en Umami",
-          "caption": "Páginas y fuentes — qué tours reciben tráfico y de dónde viene"
+          "caption": "Páginas y fuentes - qué tours reciben tráfico y de dónde viene"
         },
         {
           "alt": "Mapa de ubicaciones de visitantes en Umami",
-          "caption": "Ubicaciones de visitantes — saber dónde enfocar los esfuerzos de marketing"
+          "caption": "Ubicaciones de visitantes - saber dónde enfocar los esfuerzos de marketing"
         }
       ]
     },
@@ -1068,19 +1068,19 @@
       "images": [
         {
           "alt": "Página de destinos de Lao Mai Travel",
-          "caption": "Destinos — lugares fuera de los circuitos habituales en Laos"
+          "caption": "Destinos - lugares fuera de los circuitos habituales en Laos"
         },
         {
           "alt": "Página de paquetes turísticos de Lao Mai Travel",
-          "caption": "Paquetes — treks, islas del Mekong, homestays culturales"
+          "caption": "Paquetes - treks, islas del Mekong, homestays culturales"
         },
         {
           "alt": "Formulario de reserva de Lao Mai Travel",
-          "caption": "Formulario de reserva — enviado directamente al cliente vía Resend"
+          "caption": "Formulario de reserva - enviado directamente al cliente vía Resend"
         },
         {
           "alt": "Versión en tailandés del sitio",
-          "caption": "Ruta en tailandés — ruta /th con su propio metadata"
+          "caption": "Ruta en tailandés - ruta /th con su propio metadata"
         }
       ]
     },
@@ -1093,7 +1093,7 @@
         },
         {
           "name": "TypeScript",
-          "reason": "Desarrollo type-safe en todo el código — detecta errores antes de llegar a producción."
+          "reason": "Desarrollo type-safe en todo el código - detecta errores antes de llegar a producción."
         },
         {
           "name": "CSS Modules",
@@ -1105,11 +1105,11 @@
         },
         {
           "name": "Resend",
-          "reason": "Gestiona los emails del formulario de reservas — sin servidor backend necesario."
+          "reason": "Gestiona los emails del formulario de reservas - sin servidor backend necesario."
         },
         {
           "name": "Umami",
-          "reason": "Analíticas privadas — sin cookies, cumple GDPR. El cliente accede al dashboard con un enlace."
+          "reason": "Analíticas privadas - sin cookies, cumple GDPR. El cliente accede al dashboard con un enlace."
         },
         {
           "name": "Vercel",
@@ -1120,7 +1120,7 @@
     "cta": {
       "sectionLabel": "[ TRABAJEMOS JUNTOS ]",
       "heading": "¿Necesitas un sitio web que funcione para tu negocio?",
-      "subtitle": "Construyo sitios web bilingües y orientados a SEO para negocios que necesitan una presencia web real — código limpio, sin complejidad de backend y analíticas reales desde el primer día.",
+      "subtitle": "Construyo sitios web bilingües y orientados a SEO para negocios que necesitan una presencia web real - código limpio, sin complejidad de backend y analíticas reales desde el primer día.",
       "talkButton": "Hablemos",
       "backToWork": "← Volver al Trabajo"
     }
@@ -1191,8 +1191,8 @@
         }
       },
       "analyticsTitle": "Umami Analytics · tu dashboard de tráfico",
-      "analyticsAlt": "Umami analytics — dashboard de ubicaciones",
-      "analyticsExplainer": "El tráfico web te dice quién está visitando, de dónde son y qué están mirando. Convierte adivinar en saber — para que puedas enfocar tu tiempo y dinero en lo que realmente funciona."
+      "analyticsAlt": "Umami analytics - dashboard de ubicaciones",
+      "analyticsExplainer": "El tráfico web te dice quién está visitando, de dónde son y qué están mirando. Convierte adivinar en saber - para que puedas enfocar tu tiempo y dinero en lo que realmente funciona."
     },
     "pwa": {
       "eyebrow": "Funciona como una app en tu teléfono",
@@ -1203,7 +1203,7 @@
       "chip": "No se necesita App Store",
       "features": [
         "Funciona aunque el internet sea lento o no haya",
-        "Agrégala al teléfono — sin App Store",
+        "Agrégala al teléfono - sin App Store",
         "Recibe aviso cuando algo cambie",
         "Se abre al instante, siempre"
       ],
@@ -1213,7 +1213,7 @@
       "eyebrow": "Inversión",
       "title": "Precios simples y transparentes",
       "intro": "Una tarifa plana. Sin costos ocultos. Sin sorpresas.",
-      "banner": "Recién lanzado — precios introductorios. Estos precios son más bajos de lo que serán. Una vez que se llenen los primeros espacios para clientes, las tarifas subirán. Si lo estás considerando, ahora es el momento adecuado.",
+      "banner": "Recién lanzado - precios introductorios. Estos precios son más bajos de lo que serán. Una vez que se llenen los primeros espacios para clientes, las tarifas subirán. Si lo estás considerando, ahora es el momento adecuado.",
       "tiers": {
         "website": {
           "label": "Presencia",
@@ -1236,7 +1236,7 @@
           "name": "Aplicación Web",
           "regularPrice": "$1,800",
           "price": "$900",
-          "tagline": "Para negocios que gestionan datos — listados, reservas, inventario, acceso de equipo y clientes potenciales.",
+          "tagline": "Para negocios que gestionan datos - listados, reservas, inventario, acceso de equipo y clientes potenciales.",
           "includes": [
             "Base de datos completa y panel de administración",
             "Roles de usuario e inicio de sesión seguro",
@@ -1306,9 +1306,9 @@
   "pmlaosCaseStudy": {
     "breadcrumbHome": "Inicio",
     "breadcrumbWork": "Trabajo",
-    "tagline": "Una plataforma inmobiliaria trilingüe EN/LO/ZH — instalable como PWA, admin asegurado con Google OAuth y páginas de propiedades renderizadas en servidor construidas para Vientiane.",
+    "tagline": "Una plataforma inmobiliaria trilingüe EN/LO/ZH - instalable como PWA, admin asegurado con Google OAuth y páginas de propiedades renderizadas en servidor construidas para Vientiane.",
     "viewLive": "Visitar pmlaos.com",
-    "heroImageAlt": "Página principal de PM Real Estate Laos — listados de propiedades con diseño limpio y profesional",
+    "heroImageAlt": "Página principal de PM Real Estate Laos - listados de propiedades con diseño limpio y profesional",
     "outcomes": [
       {
         "value": "EN + LO + ZH",
@@ -1329,20 +1329,20 @@
     ],
     "problem": {
       "sectionLabel": "[ EL PROBLEMA ]",
-      "p1": "Antes de esta plataforma, PM Real Estate Laos gestionaba sus listados a través de publicaciones en redes sociales y catálogos en PDF. No había un lugar central donde los compradores pudieran navegar todas las propiedades disponibles, filtrar por área o ver fotos de alta calidad — y cada actualización significaba editar un archivo y reenviarlo manualmente.",
+      "p1": "Antes de esta plataforma, PM Real Estate Laos gestionaba sus listados a través de publicaciones en redes sociales y catálogos en PDF. No había un lugar central donde los compradores pudieran navegar todas las propiedades disponibles, filtrar por área o ver fotos de alta calidad - y cada actualización significaba editar un archivo y reenviarlo manualmente.",
       "p2": "La agencia tampoco tenía un sistema para rastrear clientes o negocios. El estado del pipeline vivía en hojas de cálculo, se perdían seguimientos y no había forma de ver de un vistazo qué propiedades estaban activas, pendientes o vendidas.",
       "p3": "Tres problemas que necesitaban resolverse:",
       "problems": [
-        "Sin plataforma central de listados — propiedades dispersas en Facebook y archivos PDF",
-        "Sin pipeline de clientes o negocios — todo rastreado en hojas de cálculo desconectadas",
-        "Sin soporte multilingüe — perdiendo completamente los segmentos de compradores de habla china e internacionales"
+        "Sin plataforma central de listados - propiedades dispersas en Facebook y archivos PDF",
+        "Sin pipeline de clientes o negocios - todo rastreado en hojas de cálculo desconectadas",
+        "Sin soporte multilingüe - perdiendo completamente los segmentos de compradores de habla china e internacionales"
       ]
     },
     "design": {
       "sectionLabel": "[ EL DISEÑO ]",
-      "p1": "El brief era profesional, confiable y construido para una audiencia internacional. Los compradores de bienes raíces — especialmente inversores extranjeros — toman decisiones basadas en la legitimidad percibida antes de ver una propiedad.",
+      "p1": "El brief era profesional, confiable y construido para una audiencia internacional. Los compradores de bienes raíces - especialmente inversores extranjeros - toman decisiones basadas en la legitimidad percibida antes de ver una propiedad.",
       "p2": "Diseños limpios con fotografía de propiedades grande en el centro. La UI se mantiene fuera del camino y deja que los listados hagan el trabajo. Jerarquía tipográfica consistente asegura que los detalles de las propiedades sean escaneables de un vistazo.",
-      "p3": "El dashboard administrativo refleja el lenguaje de diseño público — oscuro, minimalista, denso en datos. Usar el mismo sistema visual para ambos lados significa que el cliente se siente como en casa en el CMS desde el primer día."
+      "p3": "El dashboard administrativo refleja el lenguaje de diseño público - oscuro, minimalista, denso en datos. Usar el mismo sistema visual para ambos lados significa que el cliente se siente como en casa en el CMS desde el primer día."
     },
     "nextjs": {
       "sectionLabel": "[ POR QUÉ NEXT.JS ]",
@@ -1350,7 +1350,7 @@
       "reasons": [
         {
           "title": "Páginas de listados SEO-first",
-          "desc": "Cada página de propiedad es renderizada en servidor con metadata completa, datos estructurados y etiquetas Open Graph. Cuando los compradores buscan 'apartamento en renta Vientiane' o 'terreno en venta Laos', aparecen páginas de listados individuales — no solo la página principal."
+          "desc": "Cada página de propiedad es renderizada en servidor con metadata completa, datos estructurados y etiquetas Open Graph. Cuando los compradores buscan 'apartamento en renta Vientiane' o 'terreno en venta Laos', aparecen páginas de listados individuales - no solo la página principal."
         },
         {
           "title": "Rutas trilingües que son first-class",
@@ -1367,22 +1367,22 @@
       "images": [
         {
           "alt": "Página principal de PM Real Estate Laos con listados de propiedades",
-          "caption": "Página principal — listados de propiedades con búsqueda y filtro"
+          "caption": "Página principal - listados de propiedades con búsqueda y filtro"
         },
         {
           "alt": "Múltiples listados de propiedades en vista de galería",
-          "caption": "Galería de listados — vista de cuadrícula con miniaturas de propiedades"
+          "caption": "Galería de listados - vista de cuadrícula con miniaturas de propiedades"
         },
         {
           "alt": "Página completa de listado de propiedad individual",
-          "caption": "Página de detalle de listado — fotos, especificaciones y formulario de contacto"
+          "caption": "Página de detalle de listado - fotos, especificaciones y formulario de contacto"
         }
       ]
     },
     "admin": {
       "sectionLabel": "[ EL DASHBOARD ADMINISTRATIVO ]",
       "heading": "Un CMS completo, integrado",
-      "p1": "La agencia necesitaba más que un sitio web — necesitaba un sistema. El dashboard administrativo es una herramienta completa de gestión de propiedades: agregar y editar listados, gestionar clientes, rastrear pipeline de negocios y controlar qué áreas aparecen en el sitio.",
+      "p1": "La agencia necesitaba más que un sitio web - necesitaba un sistema. El dashboard administrativo es una herramienta completa de gestión de propiedades: agregar y editar listados, gestionar clientes, rastrear pipeline de negocios y controlar qué áreas aparecen en el sitio.",
       "p2": "La autenticación se maneja mediante Google OAuth o nombre de usuario y contraseña. El equipo puede iniciar sesión con sus cuentas de Google existentes.",
       "images": [
         {
@@ -1395,11 +1395,11 @@
         },
         {
           "alt": "Página de gestión de clientes del admin",
-          "caption": "Gestión de clientes — base de datos de compradores y vendedores"
+          "caption": "Gestión de clientes - base de datos de compradores y vendedores"
         },
         {
           "alt": "Página de gestión de áreas del admin",
-          "caption": "Gestión de áreas — controla qué zonas aparecen en el sitio"
+          "caption": "Gestión de áreas - controla qué zonas aparecen en el sitio"
         },
         {
           "alt": "Pantalla de inicio de sesión Google OAuth del admin",
@@ -1407,7 +1407,7 @@
         },
         {
           "alt": "Vista móvil del dashboard administrativo",
-          "caption": "Admin responsivo móvil — gestiona listados desde cualquier lugar"
+          "caption": "Admin responsivo móvil - gestiona listados desde cualquier lugar"
         }
       ]
     },
@@ -1416,7 +1416,7 @@
       "items": [
         {
           "name": "Next.js 15 + TypeScript",
-          "reason": "Páginas de listados renderizadas en servidor con App Router. TypeScript en todo el codebase — sin sorpresas en runtime en el admin o la API."
+          "reason": "Páginas de listados renderizadas en servidor con App Router. TypeScript en todo el codebase - sin sorpresas en runtime en el admin o la API."
         },
         {
           "name": "next-intl",
@@ -1424,7 +1424,7 @@
         },
         {
           "name": "Prisma + PostgreSQL",
-          "reason": "Esquema relacional para propiedades, clientes, negocios y áreas. Prisma mantiene las migraciones seguras y tipadas — sin SQL raw en el codebase."
+          "reason": "Esquema relacional para propiedades, clientes, negocios y áreas. Prisma mantiene las migraciones seguras y tipadas - sin SQL raw en el codebase."
         },
         {
           "name": "Google OAuth",
@@ -1436,14 +1436,14 @@
         },
         {
           "name": "PWA + Service Worker",
-          "reason": "El sitio se instala en la pantalla de inicio como una app nativa. Los agentes de propiedades en el campo lo abren sin navegador — y los listados en caché cargan incluso con señal 4G débil en Laos."
+          "reason": "El sitio se instala en la pantalla de inicio como una app nativa. Los agentes de propiedades en el campo lo abren sin navegador - y los listados en caché cargan incluso con señal 4G débil en Laos."
         }
       ]
     },
     "cta": {
       "sectionLabel": "[ TRABAJEMOS JUNTOS ]",
       "heading": "¿Necesitas una plataforma como esta?",
-      "subtitle": "Construyo plataformas web para negocios en Vientiane — propiedades, turismo, servicios. Full-stack, multilingüe y construido para ser gestionado por el cliente, no un desarrollador.",
+      "subtitle": "Construyo plataformas web para negocios en Vientiane - propiedades, turismo, servicios. Full-stack, multilingüe y construido para ser gestionado por el cliente, no un desarrollador.",
       "talkButton": "Hablemos",
       "backToWork": "← Volver al Trabajo"
     }

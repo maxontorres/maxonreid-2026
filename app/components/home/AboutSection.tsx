@@ -14,11 +14,11 @@ export default function AboutSection() {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h2 className="text-4xl md:text-5xl font-bold leading-tight">{t('title')}</h2>
+            <h2 className="text-4xl md:text-5xl font-bold leading-tight font-display uppercase">{t('title')}</h2>
             <p className="text-xl text-[#E8E9EC] leading-relaxed">{t('intro')}</p>
             <p className="text-lg text-[#8A8FA0] leading-relaxed">{t('description')}</p>
 
-            <Link href="/about" className="inline-block py-3 px-6 rounded-lg bg-transparent border border-white/[0.06] text-[#628DFF] font-mono hover:bg-[#628DFF]/10 hover:border-[#628DFF] transition-all mt-2">
+            <Link href="/about" className="inline-block py-3 px-6 rounded-lg bg-transparent border border-white/[0.06] text-[#628DFF] font-display uppercase hover:bg-[#628DFF]/10 hover:border-[#628DFF] transition-all mt-2">
               {t('learnMore')}
             </Link>
           </div>

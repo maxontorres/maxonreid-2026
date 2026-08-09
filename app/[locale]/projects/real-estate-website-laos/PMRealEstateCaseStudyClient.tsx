@@ -194,7 +194,7 @@ export default function PMRealEstateCaseStudy() {
               href="https://www.pmlaos.com/en"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#628DFF] text-[#050608] px-6 py-3 rounded-lg font-semibold hover:bg-[#675DFF] transition-colors"
+              className="inline-flex items-center gap-2 bg-[#628DFF] text-[#050608] px-6 py-3 rounded-lg font-display uppercase hover:bg-[#675DFF] transition-colors"
             >
               {t('viewLive')}
               <span aria-hidden="true">→</span>
@@ -409,14 +409,14 @@ export default function PMRealEstateCaseStudy() {
             <div className="flex flex-wrap gap-4 justify-center">
               <Link
                 href="/#contact"
-                className="inline-flex items-center gap-2 bg-[#628DFF] text-[#050608] px-8 py-3 rounded-lg font-semibold hover:bg-[#675DFF] transition-colors"
+                className="inline-flex items-center gap-2 bg-[#628DFF] text-[#050608] px-8 py-3 rounded-lg font-display uppercase hover:bg-[#675DFF] transition-colors"
               >
                 {t('cta.talkButton')}
                 <span aria-hidden="true">→</span>
               </Link>
               <Link
                 href="/#work"
-                className="inline-flex items-center gap-2 border border-white/[0.06] text-[#8A8FA0] px-8 py-3 rounded-lg font-mono text-sm hover:border-[#628DFF]/50 hover:text-[#E8E9EC] transition-all"
+                className="inline-flex items-center gap-2 border border-white/[0.06] text-[#8A8FA0] px-8 py-3 rounded-lg font-display uppercase text-sm hover:border-[#628DFF]/50 hover:text-[#E8E9EC] transition-all"
               >
                 {t('cta.backToWork')}
               </Link>

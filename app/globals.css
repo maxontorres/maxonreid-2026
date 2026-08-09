@@ -99,6 +99,25 @@
     70% { transform: translate(1%, -1%); }
     90% { transform: translate(-1%, 1%); }
   }
+
+  @keyframes neon-glow-pulse {
+    0%, 100% {
+      text-shadow:
+        0 0 2px rgba(255, 255, 255, 0.95),
+        0 0 8px rgba(183, 215, 255, 0.85),
+        0 0 18px rgba(98, 141, 255, 0.75),
+        0 0 34px rgba(98, 141, 255, 0.55),
+        0 0 60px rgba(98, 141, 255, 0.35);
+    }
+    50% {
+      text-shadow:
+        0 0 3px rgba(255, 255, 255, 1),
+        0 0 11px rgba(183, 215, 255, 1),
+        0 0 24px rgba(98, 141, 255, 0.9),
+        0 0 46px rgba(98, 141, 255, 0.7),
+        0 0 80px rgba(98, 141, 255, 0.45);
+    }
+  }
 }
 
 @layer components {
@@ -167,6 +186,17 @@
       radial-gradient(ellipse 60% 60% at 65% 60%, rgba(103, 93, 255, 0.16) 0%, transparent 70%);
   }
 
+  /* Neon shine for highlighted headline text — white-hot core, saturated ice/electric-blue halo */
+  .text-glow-neon {
+    text-shadow:
+      0 0 2px rgba(255, 255, 255, 0.95),
+      0 0 8px rgba(183, 215, 255, 0.85),
+      0 0 18px rgba(98, 141, 255, 0.75),
+      0 0 34px rgba(98, 141, 255, 0.55),
+      0 0 60px rgba(98, 141, 255, 0.35);
+    animation: neon-glow-pulse 3s ease-in-out infinite;
+  }
+
   /* Diagonal light-streak sweep */
   .light-streak {
     position: absolute;
@@ -215,7 +245,8 @@
 @media (prefers-reduced-motion: reduce) {
   .grain-overlay,
   .glow-orb,
-  .light-streak {
+  .light-streak,
+  .text-glow-neon {
     animation: none;
   }
 }

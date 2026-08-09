@@ -106,7 +106,7 @@ export default function ProjectCard({ project, style }: ProjectCardProps) {
               </div>
             </div>
             <div
-              className="bg-gold text-[#050608] px-4 py-2 rounded-lg font-semibold flex items-center gap-2 hover:bg-[#675DFF] transition-colors text-sm"
+              className="bg-gold text-[#050608] px-4 py-2 rounded-lg font-display uppercase flex items-center gap-2 hover:bg-[#675DFF] transition-colors text-sm"
               aria-hidden="true"
             >
               {t('caseStudy')}

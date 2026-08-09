@@ -135,7 +135,7 @@ export default function ArticlesPage() {
                   role="tab"
                   aria-selected={activeCategory === cat.id}
                   onClick={() => setActiveCategory(cat.id)}
-                  className={`px-4 py-2 rounded-lg border font-mono text-sm transition-all flex items-center gap-2 ${
+                  className={`px-4 py-2 rounded-lg border font-display uppercase text-sm transition-all flex items-center gap-2 ${
                     activeCategory === cat.id
                       ? 'bg-[#628DFF]/10 border-[#628DFF] text-[#628DFF]'
                       : 'bg-transparent border-white/[0.06] text-[#8A8FA0] hover:border-[#628DFF]/50 hover:text-[#E8E9EC]'
@@ -189,7 +189,7 @@ export default function ArticlesPage() {
               </p>
               <button
                 onClick={() => { setSearchQuery(''); setActiveCategory('all'); }}
-                className="mt-2 px-5 py-2.5 rounded-lg border border-white/[0.06] font-mono text-sm text-[#8A8FA0] hover:border-[#628DFF]/50 hover:text-[#E8E9EC] transition-all"
+                className="mt-2 px-5 py-2.5 rounded-lg border border-white/[0.06] font-display uppercase text-sm text-[#8A8FA0] hover:border-[#628DFF]/50 hover:text-[#E8E9EC] transition-all"
               >
                 {t('noResults.clearFilters')}
               </button>

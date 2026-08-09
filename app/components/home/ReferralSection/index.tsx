@@ -23,7 +23,7 @@ export default function ReferralSection() {
         <span className="font-mono text-xs tracking-widest text-[#8A8FA0] mb-4 block">
           {t('label')}
         </span>
-        <h2 id="referral-heading" className="text-4xl md:text-5xl font-bold mb-4">
+        <h2 id="referral-heading" className="text-4xl md:text-5xl font-bold mb-4 font-display uppercase">
           {t('title')}{' '}
           <span className="text-[#628DFF]">{t('titleAlt')}</span>
         </h2>

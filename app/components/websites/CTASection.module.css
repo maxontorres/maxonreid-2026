@@ -60,7 +60,8 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-family: var(--font-body), 'DM Sans', sans-serif;
+  font-family: var(--font-michroma), sans-serif;
+  text-transform: uppercase;
   font-size: 1rem;
   font-weight: 500;
   color: #050608;
@@ -69,7 +70,7 @@
   padding: 16px 36px;
   border: 0.5px solid #628DFF;
   transition: background-color 0.2s ease, color 0.2s ease;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
 }
 
 .cta:hover {

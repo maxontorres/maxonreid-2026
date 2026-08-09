@@ -18,7 +18,7 @@ export default function BlogSection() {
         <div className="font-mono text-sm text-text-secondary tracking-[8px] font-semibold mb-4">
           {t('sectionLabel')} — {t('articleCount', { count: articles.length })}
         </div>
-        <h2 id="blog-heading" className="text-4xl md:text-5xl font-bold mb-4">
+        <h2 id="blog-heading" className="text-4xl md:text-5xl font-bold mb-4 font-display uppercase">
           {t('title')}
         </h2>
         <p className="text-xl text-text-secondary max-w-2xl mx-auto">

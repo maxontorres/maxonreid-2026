@@ -13,7 +13,7 @@ export default function ContactSection() {
       aria-labelledby="contact-heading"
     >
       <div className="text-center mb-12">
-        <h2 id="contact-heading" className="text-4xl md:text-5xl font-bold mb-4">
+        <h2 id="contact-heading" className="text-4xl md:text-5xl font-bold mb-4 font-display uppercase">
           {t('title')}
         </h2>
         <p className="text-xl text-[#8A8FA0] max-w-2xl mx-auto">
@@ -104,7 +104,7 @@ export default function ContactSection() {
               href="https://wa.me/8562052373435"
               target="_blank"
               rel="noopener"
-              className="w-full py-3 px-6 rounded-lg font-semibold transition-all bg-[#628DFF] hover:bg-[#675DFF] text-[#050608] flex items-center justify-center gap-2"
+              className="w-full py-3 px-6 rounded-lg font-display uppercase transition-all bg-[#628DFF] hover:bg-[#675DFF] text-[#050608] flex items-center justify-center gap-2"
             >
               <MessageCircle size={18} strokeWidth={2} aria-hidden="true" />
               {t('cta.whatsapp')}
@@ -112,7 +112,7 @@ export default function ContactSection() {
 
             <a
               href="tel:+8562052373435"
-              className="w-full py-3 px-6 rounded-lg font-semibold transition-all bg-white/[0.06] hover:bg-white/[0.1] text-[#E8E9EC] border border-white/[0.12] flex items-center justify-center gap-2"
+              className="w-full py-3 px-6 rounded-lg font-display uppercase transition-all bg-white/[0.06] hover:bg-white/[0.1] text-[#E8E9EC] border border-white/[0.12] flex items-center justify-center gap-2"
             >
               <Phone size={18} strokeWidth={2} aria-hidden="true" />
               {t('cta.callNow')}

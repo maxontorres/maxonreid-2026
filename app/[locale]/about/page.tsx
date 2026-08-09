@@ -116,7 +116,7 @@ export default async function AboutPage({
               
               <Link 
                 href="/cv" 
-                className="inline-flex items-center gap-3 px-8 py-4 bg-[#628DFF] text-[#050608] font-bold text-lg rounded-xl hover:bg-[#7EA1FF] hover:shadow-[0_8px_30px_rgba(98, 141, 255,0.4)] transition-all duration-300 hover:scale-105 hover:-translate-y-1 focus:outline-2 focus:outline-[#628DFF] focus:outline-offset-4 shadow-lg"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-[#628DFF] text-[#050608] font-display uppercase text-lg rounded-xl hover:bg-[#7EA1FF] hover:shadow-[0_8px_30px_rgba(98, 141, 255,0.4)] transition-all duration-300 hover:scale-105 hover:-translate-y-1 focus:outline-2 focus:outline-[#628DFF] focus:outline-offset-4 shadow-lg"
                 aria-label="View my full curriculum vitae"
               >
                 <FileText size={24} strokeWidth={2.5} aria-hidden="true" />

@@ -13,7 +13,10 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/)",
       "Bash(powershell -Command 'Get-Process -Name node -ErrorAction SilentlyContinue | Where-Object {$_.Path -like '\\\\''*'\\\\''} | Stop-Process -Force')",
       "Bash(pkill -f \"next dev\")",
-      "Bash(pkill -f \"next-server\")"
+      "Bash(pkill -f \"next-server\")",
+      "Bash(npx tsc *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
     ]
   }
 }

@@ -11,10 +11,10 @@ export default function CTASection() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('title')}</h2>
           <p className="text-xl text-[#8A8FA0] mb-8 max-w-2xl mx-auto">{t('subtitle')}</p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Link href="/contact" className="inline-block py-3 px-6 rounded-lg bg-[#628DFF] text-[#050608] font-semibold hover:bg-[#675DFF] transition-colors">
+            <Link href="/contact" className="inline-block py-3 px-6 rounded-lg bg-[#628DFF] text-[#050608] font-display uppercase hover:bg-[#675DFF] transition-colors">
               {t('contact')}
             </Link>
-            <Link href="/services" className="inline-block py-3 px-6 rounded-lg bg-transparent border border-white/[0.06] text-[#E8E9EC] font-semibold hover:border-[#628DFF] hover:text-[#628DFF] transition-all">
+            <Link href="/services" className="inline-block py-3 px-6 rounded-lg bg-transparent border border-white/[0.06] text-[#E8E9EC] font-display uppercase hover:border-[#628DFF] hover:text-[#628DFF] transition-all">
               {t('services')}
             </Link>
           </div>

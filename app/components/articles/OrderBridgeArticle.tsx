@@ -283,7 +283,7 @@ export default async function OrderBridgeArticle({
               href="/docs/projects/orderbridge/orderbridge-proposal.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border border-white/[0.06] text-text-secondary px-5 py-2.5 rounded-lg font-mono text-sm hover:border-gold/50 hover:text-text-primary transition-all"
+              className="inline-flex items-center gap-2 border border-white/[0.06] text-text-secondary px-5 py-2.5 rounded-lg font-display uppercase text-sm hover:border-gold/50 hover:text-text-primary transition-all"
             >
               {t('brief.downloadProposal')}
             </a>
@@ -587,21 +587,21 @@ export default async function OrderBridgeArticle({
                 href="https://orderbridge.maxontorres.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gold text-bg-dark px-6 py-3 rounded-lg font-semibold hover:bg-gold-strong transition-colors"
+                className="inline-flex items-center gap-2 bg-gold text-bg-dark px-6 py-3 rounded-lg font-display uppercase hover:bg-gold-strong transition-colors"
               >
                 {t('cta.viewLiveDemo')}
                 <span aria-hidden="true">→</span>
               </a>
               <Link
                 href="/projects/orderbridge"
-                className="inline-flex items-center gap-2 border border-white/[0.06] text-text-secondary px-6 py-3 rounded-lg font-mono text-sm hover:border-gold/50 hover:text-text-primary transition-all"
+                className="inline-flex items-center gap-2 border border-white/[0.06] text-text-secondary px-6 py-3 rounded-lg font-display uppercase text-sm hover:border-gold/50 hover:text-text-primary transition-all"
               >
                 {t('cta.fullCaseStudy')}
                 <span aria-hidden="true">↗</span>
               </Link>
               <Link
                 href="/articles"
-                className="inline-flex items-center gap-2 border border-white/[0.06] text-text-secondary px-6 py-3 rounded-lg font-mono text-sm hover:border-gold/50 hover:text-text-primary transition-all"
+                className="inline-flex items-center gap-2 border border-white/[0.06] text-text-secondary px-6 py-3 rounded-lg font-display uppercase text-sm hover:border-gold/50 hover:text-text-primary transition-all"
               >
                 {t('cta.allArticles')}
               </Link>

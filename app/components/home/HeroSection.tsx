@@ -7,7 +7,7 @@ import { useTypewriter } from './useTypewriter';
 export default function HeroSection() {
   const t = useTranslations('hero');
   const locale = useLocale();
-  
+
   const highlightTexts = t.raw('heroHighlights') as string[];
   const typewriterText = useTypewriter(highlightTexts, 80, 3000, 15);
 
@@ -22,26 +22,26 @@ export default function HeroSection() {
 
           {/* The Main Website Headline */}
           <h1 id="hero-heading" className="text-[52px] leading-tight my-1.5 font-black tracking-tight font-display">
-            {t('heroTitlePrefix')}{' '}
-            <span className="text-[#628DFF] inline-block min-w-[420px]">
+            <span className="text-white">{t('heroTitlePrefix')}</span>{' '}
+            <span className="text-[#E8E9EC] inline-block min-w-[420px] text-glow-neon">
               {typewriterText}
-              <span className="inline-block w-[3px] h-[1.1em] bg-[#628DFF] ml-[2px] align-middle animate-[blink_1s_step-end_infinite]"></span>
+              <span className="inline-block w-[3px] h-[1.1em] bg-[#E8E9EC] ml-[2px] align-middle animate-[blink_1s_step-end_infinite] shadow-[0_0_4px_rgba(255,255,255,0.9),0_0_10px_rgba(183,215,255,0.8),0_0_20px_rgba(98,141,255,0.6)]"></span>
             </span>
           </h1>
 
-          <p className="text-[#8A8FA0] max-w-[560px] mb-4.5">
+          {/* <p className="text-[#8A8FA0] max-w-[560px] mb-4.5">
             {t('heroSub')}
-          </p>
+          </p> */}
 
           <div className="flex gap-3.5 mt-4.5">
 
             {/* Start a Project */}
-            <a className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#628DFF] no-underline font-mono tracking-wide transition-all hover:bg-gradient-to-b hover:from-[#628DFF]/[0.06] hover:to-transparent hover:text-[#E8E9EC] hover:border-[#628DFF]" href="#contact">
+            <a className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#628DFF] no-underline font-display uppercase tracking-wide transition-all hover:bg-gradient-to-b hover:from-[#628DFF]/[0.06] hover:to-transparent hover:text-[#E8E9EC] hover:border-[#628DFF]" href="#contact">
               {t('ctaStart')}
             </a>
 
             {/* View my work */}
-            <a className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#E8E9EC] no-underline font-mono tracking-wide transition-all opacity-90 hover:bg-gradient-to-b hover:from-[#628DFF]/[0.06] hover:to-transparent hover:border-[#628DFF]" href="#work">
+            <a className="inline-block py-3 px-5 rounded-[10px] bg-transparent border border-white/[0.06] text-[#E8E9EC] no-underline font-display uppercase tracking-wide transition-all opacity-90 hover:bg-gradient-to-b hover:from-[#628DFF]/[0.06] hover:to-transparent hover:border-[#628DFF]" href="#work">
               {t('ctaView')}
             </a>
 

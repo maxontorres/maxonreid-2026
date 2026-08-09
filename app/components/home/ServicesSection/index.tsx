@@ -65,7 +65,7 @@ export default function ServicesSection() {
 
   return (
     <SectionContainer id="services" ariaLabelledBy="services-heading">
-      <h2 id="services-heading" className="text-4xl md:text-5xl font-bold text-center mb-4">
+      <h2 id="services-heading" className="text-4xl md:text-5xl font-bold text-center mb-4 font-display uppercase">
         {t('title')}
       </h2>
       <p className="text-xl text-text-secondary text-center max-w-2xl mx-auto mb-12">

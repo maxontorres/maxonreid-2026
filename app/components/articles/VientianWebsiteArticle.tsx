@@ -400,14 +400,14 @@ export default async function VientianWebsiteArticle({
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 bg-gold text-bg-dark px-6 py-3 rounded-lg font-semibold hover:bg-gold-strong transition-colors"
+                className="inline-flex items-center gap-2 bg-gold text-bg-dark px-6 py-3 rounded-lg font-display uppercase hover:bg-gold-strong transition-colors"
               >
                 {t('cta.contact')}
                 <span aria-hidden="true">→</span>
               </Link>
               <Link
                 href="/articles"
-                className="inline-flex items-center gap-2 border border-white/[0.06] text-text-secondary px-6 py-3 rounded-lg font-mono text-sm hover:border-gold/50 hover:text-text-primary transition-all"
+                className="inline-flex items-center gap-2 border border-white/[0.06] text-text-secondary px-6 py-3 rounded-lg font-display uppercase text-sm hover:border-gold/50 hover:text-text-primary transition-all"
               >
                 {t('cta.viewAll')}
               </Link>
