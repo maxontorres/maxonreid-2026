@@ -191,7 +191,7 @@ export default function OrderBridgeCaseStudy() {
               <span aria-hidden="true">↗</span>
             </Link>
             <a
-              href="https://github.com/maxonreid/orderbridge-api"
+              href="https://github.com/maxontorres/orderbridge-api"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border border-white/[0.06] text-[#8A8FA0] px-6 py-3 rounded-lg font-display uppercase text-sm hover:border-[#628DFF]/50 hover:text-[#E8E9EC] transition-all"

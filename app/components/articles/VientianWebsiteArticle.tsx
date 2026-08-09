@@ -44,8 +44,8 @@ export default async function VientianWebsiteArticle({
       url: SITE_URL,
       jobTitle: 'Full-Stack Developer & Web Consultant',
       sameAs: [
-        'https://github.com/maxonreid',
-        'https://linkedin.com/in/maxonreid',
+        'https://github.com/maxontorres',
+        'https://linkedin.com/in/maxontorres',
       ],
     },
     publisher: {

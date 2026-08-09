@@ -46,8 +46,8 @@ export default async function YangoUniversityArticle({
       url: SITE_URL,
       jobTitle: 'Full-Stack Developer & Educator',
       sameAs: [
-        'https://github.com/maxonreid',
-        'https://linkedin.com/in/maxonreid',
+        'https://github.com/maxontorres',
+        'https://linkedin.com/in/maxontorres',
       ],
     },
     publisher: {

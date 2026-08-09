@@ -12,13 +12,13 @@ export async function generateMetadata({ params }: CVPageProps): Promise<Metadat
   const localePath = `/${locale}/cv`;
 
   return {
-    title: "CV | Maximiliano Brito Torres - Fractional CTO & Technical Advisor",
+    title: "CV | Maximiliano Brito Torres - Software Developer & Consultant",
     description:
-      "Curriculum Vitae of Maximiliano Brito Torres, Fractional CTO and Technical Advisor with 8+ years of experience across Next.js, React, Node.js, Laravel, .NET, Django, and AWS.",
+      "Curriculum Vitae of Maximiliano Brito Torres, Software Developer & Consultant with 8+ years of experience across Next.js, React, Node.js, Laravel, .NET, Django, and AWS.",
     keywords: [
       "Maximiliano Brito Torres CV",
-      "Fractional CTO CV",
-      "Technical Advisor CV",
+      "Software Developer CV",
+      "Software Consultant CV",
       "Next.js developer resume",
       "React Node.js engineer",
       "Software engineer Laos",
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: CVPageProps): Promise<Metadat
     openGraph: {
       title: "CV | Maximiliano Brito Torres",
       description:
-        "Professional profile and experience of Maximiliano Brito Torres, Fractional CTO and Technical Advisor focused on technical strategy and modern web architecture.",
+        "Professional profile and experience of Maximiliano Brito Torres, a Software Developer & Consultant who builds and manages software projects.",
       url: localePath,
       siteName: "Maxon Torres",
       type: "profile",
@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: CVPageProps): Promise<Metadat
           url: "/og-image.jpg",
           width: 1200,
           height: 630,
-          alt: "Maximiliano Brito Torres CV and Fractional CTO / Technical Advisor profile",
+          alt: "Maximiliano Brito Torres CV and Software Developer & Consultant profile",
         },
       ],
     },
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: CVPageProps): Promise<Metadat
       card: "summary_large_image",
       title: "CV | Maximiliano Brito Torres",
       description:
-        "Curriculum Vitae and professional background of a Fractional CTO and Technical Advisor specializing in Next.js, React, Node.js, Laravel, .NET, and AWS.",
+        "Curriculum Vitae and professional background of a Software Developer & Consultant working across Next.js, React, Node.js, Laravel, .NET, and AWS.",
       images: ["/og-image.jpg"],
     },
     robots: {
@@ -74,7 +74,7 @@ export default async function CVPage({ params }: CVPageProps) {
         "@type": "Person",
         "@id": `${siteUrl}/#person`,
         name: "Maximiliano Brito Torres",
-        jobTitle: "Fractional CTO / Technical Advisor",
+        jobTitle: "Software Developer & Consultant",
         url: siteUrl,
         image: `${siteUrl}/cv-pic.png`,
         email: "mailto:hello@maxontorres.com",
@@ -84,7 +84,7 @@ export default async function CVPage({ params }: CVPageProps) {
           addressLocality: "Vientiane",
           addressCountry: "Laos",
         },
-        sameAs: ["https://www.linkedin.com/in/maxontorres/", "https://github.com/maxonreid"],
+        sameAs: ["https://www.linkedin.com/in/maxontorres/", "https://github.com/maxontorres"],
         knowsAbout: [
           "Next.js",
           "React",
@@ -94,8 +94,8 @@ export default async function CVPage({ params }: CVPageProps) {
           "Django",
           "AWS Serverless",
           "TypeScript",
-          "Technical Strategy",
-          "Software Architecture",
+          "Software Development",
+          "Project Management",
         ],
       },
       {
@@ -104,7 +104,7 @@ export default async function CVPage({ params }: CVPageProps) {
         url: `${siteUrl}/${locale}/cv`,
         name: "Curriculum Vitae | Maximiliano Brito Torres",
         description:
-          "Curriculum Vitae of Maximiliano Brito Torres, Fractional CTO and Technical Advisor with international experience in technical strategy, web architecture, and cloud applications.",
+          "Curriculum Vitae of Maximiliano Brito Torres, Software Developer & Consultant with international experience building web applications and managing software projects.",
         inLanguage: locale,
         about: {
           "@id": `${siteUrl}/#person`,

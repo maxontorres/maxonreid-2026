@@ -58,7 +58,7 @@ export default async function OrderBridgeArticle({
       name: 'Maximiliano Brito Torres',
       url: SITE_URL,
       jobTitle: 'Full-Stack Developer',
-      sameAs: ['https://github.com/maxonreid', 'https://linkedin.com/in/maxonreid'],
+      sameAs: ['https://github.com/maxontorres', 'https://linkedin.com/in/maxontorres'],
     },
     publisher: { '@type': 'Person', name: 'Maximiliano Brito Torres', url: SITE_URL },
     keywords: article.tags.join(', '),
@@ -80,15 +80,15 @@ export default async function OrderBridgeArticle({
   };
 
   const sourceReposWithUrls = [
-    { ...sourceRepos[0], url: 'https://github.com/maxonreid/orderbridge-api' },
-    { ...sourceRepos[1], url: 'https://github.com/maxonreid/orderbridge-dashboard/' },
-    { ...sourceRepos[2], url: 'https://github.com/maxonreid/mock-pos-server' },
+    { ...sourceRepos[0], url: 'https://github.com/maxontorres/orderbridge-api' },
+    { ...sourceRepos[1], url: 'https://github.com/maxontorres/orderbridge-dashboard/' },
+    { ...sourceRepos[2], url: 'https://github.com/maxontorres/mock-pos-server' },
   ];
 
   const portfolioReposWithUrls = [
-    { ...portfolioRepos[0], github: 'https://github.com/maxonreid/orderbridge-api' },
-    { ...portfolioRepos[1], github: 'https://github.com/maxonreid/orderbridge-dashboard/' },
-    { ...portfolioRepos[2], github: 'https://github.com/maxonreid/mock-pos-server' },
+    { ...portfolioRepos[0], github: 'https://github.com/maxontorres/orderbridge-api' },
+    { ...portfolioRepos[1], github: 'https://github.com/maxontorres/orderbridge-dashboard/' },
+    { ...portfolioRepos[2], github: 'https://github.com/maxontorres/mock-pos-server' },
   ];
 
   const demosWithUrls = [

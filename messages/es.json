@@ -9,15 +9,15 @@
   },
   "hero": {
     "brand": "MAXON TORRES",
-    "location": "[ VIENTIANE : LAOS PDR ] - CTO FRACCIONAL Y ASESOR TÉCNICO",
-    "heroTitle": "Ayudo a startups y equipos a <highlight>tomar las decisiones técnicas correctas</highlight>.",
-    "heroTitlePrefix": "Ayudo a startups y equipos a",
+    "location": "[ VIENTIANE : LAOS PDR ]  -  DESARROLLADOR DE SOFTWARE Y CONSULTOR",
+    "heroTitle": "Construyo software que <highlight>realmente funciona</highlight>.",
+    "heroTitlePrefix": "Construyo software que",
     "heroHighlights": [
-      "tomar las decisiones técnicas correctas",
-      "construir sistemas que no se caen",
-      "evitar errores de ingeniería costosos"
+      "realmente funciona",
+      "no se cae",
+      "hace que tu negocio funcione mejor"
     ],
-    "heroSub": "Liderazgo técnico estratégico para fundadores y equipos que necesitan criterio experto en arquitectura, proveedores y entregas - sin contratar un CTO de tiempo completo.",
+    "heroSub": "Construyo y administro software para negocios - sitios web, herramientas y automatizaciones - y me encargo de que siga funcionando una vez publicado. Sin tecnicismos, solo software que funciona.",
     "ctaStart": "INICIAR UN PROYECTO",
     "ctaView": "VER MI TRABAJO"
   },
@@ -58,9 +58,9 @@
   "aboutHome": {
     "label": "[ QUIÉN SOY ]",
     "title": "Acerca de Mí",
-    "intro": "Soy Maximiliano Brito Torres - CTO Fraccional y Asesor Técnico con base en Vientiane, Laos, ayudando a startups y pymes a tomar decisiones técnicas acertadas y entregar software confiable.",
-    "description": "Entro donde los negocios necesitan criterio técnico experto sin comprometerse a una contratación de tiempo completo - decisiones de arquitectura y tecnología, supervisión de proveedores y equipos de desarrollo, y trabajo práctico cuando es la decisión correcta. Desde plataformas internas hasta sistemas a gran escala, el enfoque siempre es arquitectura limpia y mantenibilidad a largo plazo.",
-    "imageAlt": "Maximiliano Brito Torres - CTO Fraccional y Asesor Técnico en Vientiane",
+    "intro": "Soy Maximiliano Brito Torres - desarrollador de software y consultor con base en Vientiane, Laos. Construyo software para negocios y me aseguro de que siga funcionando.",
+    "description": "Construyo sitios web, apps y herramientas internas para negocios, y también administro proyectos de software para una empresa de tecnología - planificando el trabajo, dándole seguimiento y asegurándome de que lo que se entrega realmente funcione. Desde herramientas pequeñas hasta plataformas completas, el enfoque siempre es software bien construido que se mantiene funcionando.",
+    "imageAlt": "Maximiliano Brito Torres - Desarrollador de Software y Consultor en Vientiane",
     "learnMore": "Más Sobre Mí",
     "stats": {
       "experience": "10+",
@@ -72,14 +72,14 @@
     }
   },
   "about": {
-    "heroLabel": "[ PERFIL DE ASESOR TÉCNICO ]",
+    "heroLabel": "[ PERFIL DE DESARROLLADOR DE SOFTWARE ]",
     "heroTitle": "Acerca de Mí",
-    "heroSubtitle": "CTO Fraccional y Asesor Técnico en Vientiane | Arquitectura Full-Stack, Automatización y Supervisión de Entregas | Construyendo software desde 2017",
+    "heroSubtitle": "Desarrollador de Software y Consultor en Vientiane | Construyendo y Administrando Proyectos de Software | Programando desde 2017",
     "bio": {
-      "title": "Liderazgo Técnico Estratégico, con Base en Ingeniería Real",
-      "p1": "Soy Maximiliano Torres, CTO Fraccional y Asesor Técnico con base en el Sudeste Asiático. Durante más de 8 años en México, Tailandia, China y Laos, he ayudado a negocios a tomar las decisiones técnicas correctas - arquitectura, herramientas, supervisión de proveedores y equipos - y sigo construyendo de forma práctica cuando el problema lo requiere.",
-      "p2": "Trabajo con fundadores y equipos pequeños que necesitan criterio técnico experto sin contratar un CTO de tiempo completo: elegir la arquitectura correcta, revisar y dirigir desarrolladores o agencias externas, y construir piezas críticas yo mismo cuando es necesario - desde dashboards internos hasta plataformas completas. El objetivo siempre son sistemas confiables que resuelvan problemas operativos reales, no decisiones tecnológicas de currículum.",
-      "p3": "Esa amplitud viene de trabajar en todo el stack - JavaScript/TypeScript, PHP/Laravel, Python/Django y .NET - además de tiempo enseñando TI y Diseño Web en universidades de China y Laos. Colaboro con clientes internacionales y equipos remotos, manteniendo entregas consistentes sin importar quién escriba el código."
+      "title": "Construyo Software, y Me Aseguro de que Siga Funcionando",
+      "p1": "Soy Maximiliano Torres, desarrollador de software y consultor con base en el Sudeste Asiático. Durante más de 8 años en México, Tailandia, China y Laos, he construido sitios web, apps y herramientas para negocios - y sigo escribiendo código con mis propias manos.",
+      "p2": "También trabajo como administrador de proyectos para una empresa de tecnología, desarrollando, dando mantenimiento y vigilando el software para que nada falle en silencio. Ya sea que esté construyendo algo nuevo o cuidando algo que ya existe, el objetivo es el mismo: software que funciona, explicado en términos claros que no requieren conocimientos técnicos.",
+      "p3": "Esa amplitud viene de trabajar en todo el stack - JavaScript/TypeScript, PHP/Laravel, Python/Django y .NET - además de tiempo enseñando TI y Diseño Web en universidades de China y Laos. Trabajo directamente con clientes y equipos remotos, y explico las cosas de la misma forma sencilla sin importar con quién hable."
     },
     "skills": {
       "title": "Tecnologías y Herramientas",
@@ -131,7 +131,7 @@
   "articles": {
     "heroLabel": "[ CONOCIMIENTO TÉCNICO ]",
     "heroTitle": "Blog y Artículos",
-    "heroSubtitle": "Análisis profundos sobre desarrollo web, patrones de arquitectura y buenas prácticas de ingeniería. Aprendidos de mi propia experiencia.",
+    "heroSubtitle": "Lo que he aprendido construyendo y manteniendo software real, explicado sin tecnicismos.",
     "searchPlaceholder": "Buscar artículos...",
     "sortBy": "Ordenar por:",
     "sortOptions": {
@@ -164,8 +164,8 @@
   },
   "services": {
     "title": "Servicios",
-    "subtitle": "Liderazgo técnico y entrega práctica para negocios en crecimiento.",
-    "subtitleSecondary": "De la estrategia técnica al código en producción, ayudo a fundadores y equipos a tomar las decisiones correctas y entregar sistemas confiables hechos para durar.",
+    "subtitle": "Construyo y cuido el software de negocios en crecimiento.",
+    "subtitleSecondary": "Desde la primera línea de código hasta años de mantenimiento después, te ayudo a tomar las decisiones correctas y a entregar software hecho para durar.",
     "deliverLabel": "Lo que entrego",
     "toolsLabel": "Herramientas:",
     "items": {
@@ -208,6 +208,19 @@
         ],
         "tools": "",
         "title": "Automatización e Integración"
+      },
+      "maintenance": {
+        "valueStatement": "Mantén tu software funcionando, día a día.",
+        "desc": "Doy mantenimiento a sitios y sistemas existentes, los monitoreo y me aseguro de que funcionen bien - para detectar problemas antes de que se conviertan en una emergencia.",
+        "details": [
+          "Mantenimiento y actualizaciones continuas",
+          "Monitoreo de disponibilidad y errores",
+          "Corrección de errores y pequeñas mejoras",
+          "Administración del proyecto para que nada se pase por alto",
+          "Un solo punto de contacto directo - sin filas de tickets"
+        ],
+        "tools": "",
+        "title": "Cuidado y Mantenimiento de Software"
       }
     }
   },
@@ -294,8 +307,8 @@
     }
   },
   "footer": {
-    "tagline": "CTO Fraccional y Asesoría Técnica",
-    "connect": "Estrategia técnica · Arquitectura · Sistemas y automatización · Remoto desde Vientiane, Laos.",
+    "tagline": "Desarrollador de Software y Consultor",
+    "connect": "Construyendo software · Administrando proyectos · Remoto desde Vientiane, Laos.",
     "copyright": "© {year} Maxon Torres. Todos los derechos reservados.",
     "builtWith": "Construido con Next.js & TypeScript"
   },

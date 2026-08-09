@@ -41,7 +41,7 @@ export async function generateMetadata({
           url: '/about-pic.jpg',
           width: 1200,
           height: 630,
-          alt: 'Maximiliano Brito Torres — Full Stack Developer',
+          alt: 'Maximiliano Brito Torres — Software Developer & Consultant',
         },
       ],
     },
@@ -77,10 +77,10 @@ export default async function AboutPage({
       name: 'Maximiliano Brito Torres',
       url: `${SITE_URL}/${locale}/about`,
       description:
-        'Fractional CTO and Technical Advisor based in Vientiane, Laos, specializing in technical strategy, architecture, and full-stack development.',
+        'Software Developer & Consultant based in Vientiane, Laos, building websites and web apps and managing software projects for businesses.',
       sameAs: [
         'https://www.linkedin.com/in/maxontorres/',
-        'https://github.com/maxonreid',
+        'https://github.com/maxontorres',
       ],
     },
   };

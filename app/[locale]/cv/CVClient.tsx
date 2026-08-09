@@ -107,7 +107,7 @@ export default function CVClient() {
             <div className="flex gap-6 items-start">
               <div className="flex-1">
                 <h1 className="text-3xl font-bold tracking-tight text-gray-900 mb-1">MAXIMILIANO BRITO TORRES</h1>
-                <p className="text-base font-medium text-gray-700 mb-3">Fractional CTO / Technical Advisor | Full-Stack Engineer — Next.js, React, Node.js</p>
+                <p className="text-base font-medium text-gray-700 mb-3">Software Developer & Consultant | Building and Managing Software Projects — Next.js, React, Node.js</p>
                 <address className="not-italic grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1 text-sm text-gray-600">
                   <span>Vientiane, Laos (GMT+7)</span>
                   <span>+856 20 52 373 435</span>
@@ -147,10 +147,9 @@ export default function CVClient() {
               Professional Summary
             </h2>
             <p className="text-gray-700 text-[0.98rem] leading-relaxed">
-              Full Stack Developer and Technical Advisor with 8+ years of international experience (Mexico, Thailand, China, Laos)
-              building scalable web architectures. Experience across JavaScript ecosystems (Next.js, React, Node.js), PHP Laravel, .NET, Python Django, and
-              AWS Serverless environments. Proven track record of transitioning traditional businesses into high-performance
-              digital entities, guiding technical strategy and delivery, and mentoring the next generation of technical talent (Yango University, China and ComCenter College, Laos).
+              Software Developer & Consultant with 8+ years of experience in Mexico, Thailand, China, and Laos, building websites, web apps, and
+              internal tools with Next.js, React, Node.js, PHP Laravel, .NET, Python Django, and AWS. I've helped traditional businesses move online with
+              software that actually works, managed the projects behind it, and taught the next generation of developers (Yango University, China and ComCenter College, Laos).
             </p>
           </section>
 

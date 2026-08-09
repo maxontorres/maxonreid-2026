@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import ServiceCard from './ServiceCard';
 import SectionContainer from '@/app/components/shared/SectionContainer';
-import { Globe, Monitor, Zap } from 'lucide-react';
+import { Globe, Monitor, Zap, ShieldCheck } from 'lucide-react';
 
 export default function ServicesSection() {
   const t = useTranslations('services');
@@ -61,6 +61,22 @@ export default function ServicesSection() {
       tools: t('items.automation.tools'),
       projectLink: '#projects',
     },
+    {
+      id: 4,
+      icon: <ShieldCheck size={24} />,
+      title: t('items.maintenance.title'),
+      valueStatement: t('items.maintenance.valueStatement'),
+      desc: t('items.maintenance.desc'),
+      details: [
+        t('items.maintenance.details.0'),
+        t('items.maintenance.details.1'),
+        t('items.maintenance.details.2'),
+        t('items.maintenance.details.3'),
+        t('items.maintenance.details.4'),
+      ],
+      tools: t('items.maintenance.tools'),
+      projectLink: '#contact',
+    },
   ];
 
   return (
@@ -77,7 +93,7 @@ export default function ServicesSection() {
         </p>
       )}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {services.map((service) => (
           <ServiceCard
             key={service.id}
