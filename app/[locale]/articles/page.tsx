@@ -63,7 +63,7 @@ export default function ArticlesPage() {
           <div className="font-mono text-sm text-[#8A8FA0] tracking-[8px] font-semibold mb-6">
             {t('heroLabel')} — {allArticles.length} {allArticles.length === 1 ? t('articleSingular') : t('articlePlural')}
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-[#E8E9EC] leading-none mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold text-[#E8E9EC] leading-none mb-6 font-display">
             {t('heroTitle').split(' & ')[0]}{' '}
             &{' '}
             <span className="text-[#628DFF]">{t('heroTitle').split(' & ')[1]}</span>
