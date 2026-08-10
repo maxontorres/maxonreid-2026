@@ -61,6 +61,22 @@ export default function WorkSection() {
       caseStudyUrl: '/projects/real-estate-website-laos',
       liveUrl: 'https://www.pmlaos.com/en',
     },
+    {
+      id: 4,
+      title: 'InOnOut',
+      year: '2026',
+      image: '/images/projects/inonout/inonout-cover.png',
+      images: [
+        '/images/projects/inonout/inonout-cover.png',
+        '/images/projects/inonout/inonout-courses.png',
+        '/images/projects/inonout/inonout-tutor-dashboard.png',
+      ],
+      desc: t('projects.inonout.desc'),
+      tags: ['Next.js 16', 'Supabase', 'TypeScript', 'Mux', 'Sanity'],
+      category: 'web',
+      caseStudyUrl: '/projects/inonout',
+      liveUrl: 'https://inonout.com',
+    },
   ];
 
   const categories = [

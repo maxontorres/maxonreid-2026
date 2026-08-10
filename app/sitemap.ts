@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/cv', priority: 0.8, freq: 'monthly' },
     { path: '/websites', priority: 0.8, freq: 'monthly' },
   ]
-  const projectSlugs = ['orderbridge', 'tourism-website-seo', 'real-estate-website-laos']
+  const projectSlugs = ['orderbridge', 'tourism-website-seo', 'real-estate-website-laos', 'inonout']
   const publishedArticles = articles.filter((a) => a.published)
 
   return [

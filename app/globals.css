@@ -120,6 +120,18 @@
   }
 }
 
+@layer base {
+  /* Every heading uses the same display font as the hero headline, except the
+     printable CV, which is a résumé document and keeps its own typography. */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-michroma), var(--font-display), sans-serif;
+  }
+
+  .cv-paper h1, .cv-paper h2, .cv-paper h3, .cv-paper h4, .cv-paper h5, .cv-paper h6 {
+    font-family: var(--font-manrope), var(--font-sans), sans-serif;
+  }
+}
+
 @layer components {
   .card-hover {
     @apply border border-white/[0.06] transition-all duration-300
@@ -355,3 +367,4 @@
   0%   { background-position: -200% 0; }
   100% { background-position:  200% 0; }
 }
+

@@ -43,6 +43,9 @@
       },
       "pmlaos": {
         "desc": "A trilingual EN/LO/ZH real estate listing platform for a Vientiane agency  -  with a full admin dashboard, property gallery, and Google OAuth-secured CMS."
+      },
+      "inonout": {
+        "desc": "A full-stack e-learning marketplace for the Lao market  -  students, teachers, and admins each get their own dashboard, courses stream through Mux, and payments are verified by hand because that's how commerce actually works locally, not through a generic payment gateway."
       }
     }
   },
@@ -861,6 +864,139 @@
       "sectionLabel": "[ WORK TOGETHER ]",
       "heading": "Have a similar integration problem?",
       "subtitle": "I build custom automation and integration systems for businesses tired of manual workflows. Fixed price, clean code, fast delivery.",
+      "talkButton": "Let's Talk",
+      "backToWork": "← Back to Work"
+    }
+  },
+  "inonoutCaseStudy": {
+    "breadcrumbHome": "Home",
+    "breadcrumbWork": "Work",
+    "tagline": "A full-stack e-learning marketplace for the Lao market  -  students, teachers, and admins each get their own dashboard, video courses stream through Mux, and payments are checked by hand because that's how commerce actually works there.",
+    "viewLiveSite": "View Live Site",
+    "outcomes": [
+      {
+        "value": "3",
+        "label": "User roles: student, teacher, admin"
+      },
+      {
+        "value": "~19K",
+        "label": "Lines of TypeScript"
+      },
+      {
+        "value": "35",
+        "label": "API route handlers"
+      },
+      {
+        "value": "148",
+        "label": "Commits over 3 months"
+      }
+    ],
+    "problem": {
+      "sectionLabel": "[ THE PROBLEM ]",
+      "p1": "The client needed an e-learning platform for the Lao market  -  bilingual from the start, not English with a translation bolted on later. Students needed to browse and buy video courses, teachers needed to build and sell them, and someone needed to keep both sides honest.",
+      "p2": "The harder problem was payments. Most e-learning platforms assume a card or a payment gateway. In Laos, everyday commerce runs on bank transfers by QR code and a photo of the receipt sent as proof. A generic Stripe-style checkout would have been a mismatch for how people there actually pay.",
+      "p3": "So the platform needed a manual verification step built in from day one  -  a real workflow, not",
+      "p3Highlight": "a payment gateway pretending to fit",
+      "p3End": "a market it wasn't built for."
+    },
+    "solution": {
+      "sectionLabel": "[ THE SOLUTION ]",
+      "p1": "InOnOut is a single Next.js 16 application on top of Supabase for the database, authentication, and file storage. Each user's role  -  student, teacher, or admin  -  is stored directly in their login token instead of a separate lookup table, which sidesteps a class of database security bugs that role tables are prone to. Mux handles video upload and playback for course content, and Sanity powers the bilingual marketing pages so the client can edit copy themselves without needing a developer.",
+      "archTitle": "ARCHITECTURE FLOW",
+      "archNodes": [
+        "Student /\nTeacher /\nAdmin",
+        "Next.js\nApp",
+        "Supabase ·\nMux · Sanity"
+      ],
+      "wsLabel": "Installable as a PWA, with the offline/update layer coordinated against the login-refresh flow so the two don't fight each other"
+    },
+    "howItWorks": {
+      "sectionLabel": "[ HOW IT WORKS ]",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Enrollment & Roles",
+          "desc": "A student signs up and can start browsing courses right away. A teacher's account is flagged for admin approval before they can publish anything. Each role sees a completely different dashboard from the same login system."
+        },
+        {
+          "step": "02",
+          "title": "Course Creation & Video",
+          "desc": "Teachers upload lesson videos, which Mux automatically converts into a format that plays smoothly on any device or connection, then serves it back through a private, secure link."
+        },
+        {
+          "step": "03",
+          "title": "Manual Payment Verification",
+          "desc": "A student pays by bank transfer and uploads a photo of the receipt. An admin checks it against the bank record and approves or rejects the enrollment by hand  -  slower than a card payment, but it matches how people actually pay in this market."
+        },
+        {
+          "step": "04",
+          "title": "Bilingual Content",
+          "desc": "Marketing pages, course descriptions, and site copy are managed in Sanity in both English and Lao, so the client can update wording themselves without touching code or waiting on a developer."
+        }
+      ]
+    },
+    "screenshots": {
+      "sectionLabel": "[ SCREENSHOTS ]",
+      "images": [
+        {
+          "alt": "InOnOut homepage and course catalog",
+          "caption": "Homepage  -  course catalog and marketing content"
+        },
+        {
+          "alt": "InOnOut course browsing page",
+          "caption": "Courses  -  browsing and enrollment"
+        },
+        {
+          "alt": "InOnOut teacher dashboard",
+          "caption": "Teacher dashboard  -  course creation and earnings"
+        }
+      ]
+    },
+    "techStack": {
+      "sectionLabel": "[ TECH STACK ]",
+      "items": [
+        {
+          "name": "Next.js 16 + React 19",
+          "reason": "One app instead of a split frontend/backend  -  simpler to build, deploy, and hand off to the client."
+        },
+        {
+          "name": "TypeScript + Tailwind CSS 4",
+          "reason": "Catches mistakes before they ship and keeps the styling consistent across three very different dashboards."
+        },
+        {
+          "name": "Supabase",
+          "reason": "Database, login, file storage, and access rules in one place, with Postgres underneath instead of a proprietary black box."
+        },
+        {
+          "name": "Mux",
+          "reason": "Handles video conversion and playback so courses load smoothly without the client needing their own video infrastructure."
+        },
+        {
+          "name": "Sanity",
+          "reason": "Lets the client edit bilingual marketing copy themselves, without a developer, after handoff."
+        },
+        {
+          "name": "Sentry",
+          "reason": "Flags errors in production before a student or teacher has to report them."
+        },
+        {
+          "name": "Cloudflare Turnstile",
+          "reason": "Blocks bot signups on the registration form without making real users solve puzzles."
+        },
+        {
+          "name": "Vitest",
+          "reason": "Automated tests around the payment-verification and role logic, the two places a bug would matter most."
+        },
+        {
+          "name": "Workbox / next-pwa",
+          "reason": "Makes the site installable like an app, useful on the patchier mobile connections common in the region."
+        }
+      ]
+    },
+    "cta": {
+      "sectionLabel": "[ WORK TOGETHER ]",
+      "heading": "Building a marketplace or platform of your own?",
+      "subtitle": "I build custom web platforms for businesses that need something built around how their market actually works, not a generic template. Fixed price, clean code, fast delivery.",
       "talkButton": "Let's Talk",
       "backToWork": "← Back to Work"
     }
