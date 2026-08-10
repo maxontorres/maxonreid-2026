@@ -14,16 +14,16 @@ export default function HeroSection() {
   return (
     <section className="py-24 px-0 pb-30 relative overflow-hidden" aria-labelledby="hero-heading">
       <div className="w-[92%] max-w-[1200px] mx-auto grid gap-9 grid-cols-1 lg:grid-cols-[1fr_420px] items-center">
-        <div className="max-w-[720px] hero-content">
+        <div className="max-w-[720px] hero-content order-2 lg:order-1">
           <div className="meta-label mb-2">{t('brand')}</div>
           <div className="meta-label mb-4">
             {t('location')}
           </div>
 
           {/* The Main Website Headline */}
-          <h1 id="hero-heading" className="text-[52px] leading-tight my-1.5 font-black tracking-tight font-display">
+          <h1 id="hero-heading" className="text-4xl sm:text-5xl md:text-[52px] leading-tight my-1.5 font-black tracking-tight font-display">
             <span className="text-white">{t('heroTitlePrefix')}</span>{' '}
-            <span className="text-[#E8E9EC] inline-block min-w-[420px] text-glow-neon">
+            <span className="text-[#E8E9EC] inline-block min-w-0 sm:min-w-[420px] text-glow-neon">
               {typewriterText}
               <span className="inline-block w-[3px] h-[1.1em] bg-[#E8E9EC] ml-[2px] align-middle animate-[blink_1s_step-end_infinite] shadow-[0_0_4px_rgba(255,255,255,0.9),0_0_10px_rgba(183,215,255,0.8),0_0_20px_rgba(98,141,255,0.6)]"></span>
             </span>
@@ -49,7 +49,7 @@ export default function HeroSection() {
         </div>
 
         <div
-          className={`${locale === 'lo' ? 'hidden lg:flex' : 'flex'} justify-center items-center`}
+          className={`${locale === 'lo' ? 'hidden lg:flex' : 'flex'} justify-center items-center order-1 lg:order-2`}
           aria-hidden="false"
         >
           <div className="relative w-full max-w-[360px]">

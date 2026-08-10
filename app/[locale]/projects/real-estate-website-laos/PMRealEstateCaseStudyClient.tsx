@@ -53,7 +53,7 @@ function Lightbox({
       </button>
 
       <div
-        className="max-w-5xl w-full mx-16 flex flex-col gap-4 items-center"
+        className="max-w-5xl w-full mx-4 sm:mx-16 flex flex-col gap-4 items-center"
         onClick={(e) => e.stopPropagation()}
       >
         <Image
@@ -216,7 +216,7 @@ export default function PMRealEstateCaseStudy() {
 
         {/* ── Outcomes ─────────────────────────────────────────────────────── */}
         <section className="py-20 w-[92%] max-w-[1200px] mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             {outcomes.map((o) => (
               <div
                 key={o.label}

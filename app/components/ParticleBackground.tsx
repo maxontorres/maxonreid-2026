@@ -17,7 +17,10 @@ interface Particle {
 
 const MIN_PARTICLES = 45;
 const MAX_PARTICLES = 110;
+const MIN_PARTICLES_MOBILE = 18;
+const MAX_PARTICLES_MOBILE = 40;
 const DENSITY_DIVISOR = 16000; // one particle per ~16000px^2 of viewport
+const MOBILE_BREAKPOINT = 768;
 const EDGE_MARGIN = 20;
 const REPEL_RADIUS = 130;
 const REPEL_STRENGTH = 0.2;
@@ -67,8 +70,11 @@ function createParticle(width: number, height: number): Particle {
 }
 
 function particleCountFor(width: number, height: number): number {
+  const isMobile = width < MOBILE_BREAKPOINT || window.matchMedia('(pointer: coarse)').matches;
+  const min = isMobile ? MIN_PARTICLES_MOBILE : MIN_PARTICLES;
+  const max = isMobile ? MAX_PARTICLES_MOBILE : MAX_PARTICLES;
   const scaled = Math.round((width * height) / DENSITY_DIVISOR);
-  return Math.min(MAX_PARTICLES, Math.max(MIN_PARTICLES, scaled));
+  return Math.min(max, Math.max(min, scaled));
 }
 
 export default function ParticleBackground() {
@@ -205,6 +211,14 @@ export default function ParticleBackground() {
 
     const handleResize = () => {
       resizeCanvas();
+      const targetCount = particleCountFor(cssWidth, cssHeight);
+      if (targetCount > particles.length) {
+        particles.push(
+          ...Array.from({ length: targetCount - particles.length }, () => createParticle(cssWidth, cssHeight))
+        );
+      } else if (targetCount < particles.length) {
+        particles.length = targetCount;
+      }
     };
 
     const handleVisibility = () => {
