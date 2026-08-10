@@ -106,7 +106,7 @@ export default async function VientianWebsiteArticle({
           </div>
 
           {/* Title */}
-          <h1 className="text-4xl md:text-5xl font-bold text-text-primary leading-tight mb-6" itemProp="headline">
+          <h1 className="text-4xl md:text-5xl font-bold text-text-primary leading-tight mb-6 font-display" itemProp="headline">
             {t('titleMain')} <span className="text-gold">{t('titleHighlight')}</span>
           </h1>
 
