@@ -48,12 +48,12 @@ export default function HeroSection() {
         </div>
 
         <div
-          className="flex justify-center items-center order-1 lg:order-2"
+          className="group flex justify-center items-center order-1 lg:order-2"
           aria-hidden="false"
         >
           <div className="relative w-full max-w-[360px]">
             {/* Ambient electric/violet glow */}
-            <div className="glow-orb glow-orb--duo -inset-6" />
+            <div className="glow-orb glow-orb--duo -inset-6 transition-transform duration-500 ease-out group-hover:scale-110" />
 
             <div className="relative rounded-2xl border border-white/[0.08] bg-[#0D0F16] p-2.5 shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
               <div className="relative aspect-[637/1079] rounded-xl overflow-hidden">
@@ -63,7 +63,7 @@ export default function HeroSection() {
                   fill
                   priority
                   sizes="(max-width: 1024px) 80vw, 360px"
-                  className="object-cover duotone-photo"
+                  className="object-cover duotone-photo transition-transform duration-500 ease-out group-hover:scale-[1.03]"
                 />
                 {/* Cool blue/violet color-grade tint */}
                 <div className="duotone-photo-tint" />
@@ -72,8 +72,8 @@ export default function HeroSection() {
               </div>
 
               {/* Corner accents — asymmetric electric/violet duo */}
-              <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-[#628DFF] rounded-tl-2xl pointer-events-none" />
-              <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-[#675DFF] rounded-br-2xl pointer-events-none" />
+              <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-[#628DFF] rounded-tl-2xl pointer-events-none transition-colors duration-300 group-hover:border-[#B7D7FF]" />
+              <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-[#675DFF] rounded-br-2xl pointer-events-none transition-colors duration-300 group-hover:border-[#B7D7FF]" />
             </div>
           </div>
         </div>
