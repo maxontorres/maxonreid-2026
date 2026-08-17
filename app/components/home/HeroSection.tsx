@@ -1,12 +1,11 @@
 'use client';
 
 import Image from 'next/image';
-import { useLocale, useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { useTypewriter } from './useTypewriter';
 
 export default function HeroSection() {
   const t = useTranslations('hero');
-  const locale = useLocale();
 
   const highlightTexts = t.raw('heroHighlights') as string[];
   const typewriterText = useTypewriter(highlightTexts, 80, 3000, 15);
@@ -49,7 +48,7 @@ export default function HeroSection() {
         </div>
 
         <div
-          className={`${locale === 'lo' ? 'hidden lg:flex' : 'flex'} justify-center items-center order-1 lg:order-2`}
+          className="flex justify-center items-center order-1 lg:order-2"
           aria-hidden="false"
         >
           <div className="relative w-full max-w-[360px]">
