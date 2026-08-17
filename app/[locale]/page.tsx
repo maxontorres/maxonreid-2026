@@ -9,7 +9,7 @@ import BlogSection from '@/app/components/home/BlogSection';
 import ServicesSection from '@/app/components/home/ServicesSection';
 import ReferralSection from '@/app/components/home/ReferralSection';
 import ContactSection from '@/app/components/home/ContactSection';
-import ReferralModal from '@/app/components/home/ReferralModal';
+// import ReferralModal from '@/app/components/home/ReferralModal'; // disabled: popup was too naggy
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://maxontorres.com';
 
@@ -123,7 +123,7 @@ export default async function HomePage({
         <ContactSection />
       </main>
       <Footer />
-      <ReferralModal />
+      {/* <ReferralModal /> */}
     </>
   );
 }
