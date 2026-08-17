@@ -124,11 +124,11 @@
   /* Every heading uses the same display font as the hero headline, except the
      printable CV, which is a résumé document and keeps its own typography. */
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-michroma), var(--font-display), sans-serif;
+    font-family: var(--font-michroma), sans-serif;
   }
 
   .cv-paper h1, .cv-paper h2, .cv-paper h3, .cv-paper h4, .cv-paper h5, .cv-paper h6 {
-    font-family: var(--font-manrope), var(--font-sans), sans-serif;
+    font-family: var(--font-manrope), sans-serif;
   }
 }
 
@@ -141,7 +141,7 @@
 
   /* Technical metadata / eyebrow labels — coordinates, timestamps, system tags */
   .meta-label {
-    font-family: var(--font-mono);
+    font-family: var(--font-space-mono), monospace;
     font-size: 0.6875rem;
     letter-spacing: 0.22em;
     text-transform: uppercase;
@@ -150,7 +150,7 @@
 
   /* Uppercase geometric display heading treatment */
   .heading-display {
-    font-family: var(--font-display);
+    font-family: var(--font-michroma), sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.02em;
     font-weight: 400;
@@ -284,7 +284,7 @@
 /* ── Article prose styles ─────────────────────────────────────────────────── */
 .prose-article {
   color: #8A8FA0;
-  font-family: var(--font-body), Georgia, serif;
+  font-family: var(--font-manrope), Georgia, serif;
   font-size: 1.0625rem;
   line-height: 1.8;
   max-width: 68ch;
