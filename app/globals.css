@@ -357,6 +357,19 @@
   font-family: "Noto Sans Lao", "Phetsarath OT", "Saysettha OT", Arial, sans-serif;
 }
 
+/* Lao headlines use the "Universe" display font, mirroring how Michroma is
+   the display font for Latin headlines. Body text stays on Noto Sans Lao. */
+:lang(lo) h1,
+:lang(lo) h2,
+:lang(lo) h3,
+:lang(lo) h4,
+:lang(lo) h5,
+:lang(lo) h6,
+:lang(lo) .font-display,
+:lang(lo) .heading-display {
+  font-family: var(--font-lao-universe), "Noto Sans Lao", "Phetsarath OT", "Saysettha OT", sans-serif;
+}
+
 /* ── Websites page scroll-reveal & shimmer animations ───────────────────── */
 @keyframes reveal-fade-up {
   from { opacity: 0; transform: translateY(24px); }

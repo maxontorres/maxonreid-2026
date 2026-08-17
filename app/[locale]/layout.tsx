@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Michroma, Manrope, Space_Mono, Noto_Sans_Lao } from "next/font/google";
+import localFont from "next/font/local";
 import { NextIntlClientProvider } from 'next-intl';
 import MetaPixel from '@/app/components/MetaPixel';
 import { getMessages } from 'next-intl/server';
@@ -29,6 +30,12 @@ const notoSansLao = Noto_Sans_Lao({
   variable: "--font-noto-sans-lao",
   subsets: ["lao"],
   weight: ["300", "400", "600", "700"],
+});
+
+const laoUniverse = localFont({
+  src: "../fonts/lao-universe/LaoUniverse-Regular.ttf",
+  variable: "--font-lao-universe",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -104,7 +111,7 @@ export default async function LocaleLayout({
         <script defer src="https://cloud.umami.is/script.js" data-website-id="8e2ec7e3-5bce-4088-b18c-966a6ba4f468"></script>
       </head>
       <body
-        className={`${michroma.variable} ${manrope.variable} ${spaceMono.variable} ${notoSansLao.variable} antialiased min-h-screen overflow-x-hidden`}
+        className={`${michroma.variable} ${manrope.variable} ${spaceMono.variable} ${notoSansLao.variable} ${laoUniverse.variable} antialiased min-h-screen overflow-x-hidden`}
         style={{
           backgroundColor: 'var(--bg-primary)',
           color: 'var(--text-primary)'
