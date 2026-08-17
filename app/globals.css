@@ -378,6 +378,15 @@
   font-family: var(--font-lao-universe), "Noto Sans Lao", "Phetsarath OT", "Saysettha OT", sans-serif;
 }
 
+/* Lao Universe only ships a Regular weight, and Lao script isn't designed
+   for negative tracking — reset the Latin-tuned font-black/tracking-tight
+   hero utilities so the browser doesn't synthesize a faux bold that
+   distorts the script's stacked vowel/tone marks. */
+:lang(lo) h1 {
+  letter-spacing: normal;
+  font-weight: 400;
+}
+
 /* ── Websites page scroll-reveal & shimmer animations ───────────────────── */
 @keyframes reveal-fade-up {
   from { opacity: 0; transform: translateY(24px); }
