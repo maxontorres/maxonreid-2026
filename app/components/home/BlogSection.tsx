@@ -28,13 +28,11 @@ export default function BlogSection() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {articles.map((article, index) => (
-          <div
+          <BlogCard
             key={article.id}
-            className="animate-[fadeInUp_0.6s_ease-out_forwards] opacity-0"
-            style={{ animationDelay: `${index * 120}ms` }}
-          >
-            <BlogCard article={article} />
-          </div>
+            article={article}
+            style={{ '--i': index } as React.CSSProperties}
+          />
         ))}
       </div>
 

@@ -2,6 +2,7 @@
 
 import { ReactNode } from 'react';
 import { Link } from '@/routing';
+import { useInView } from '@/app/hooks/useInView';
 
 interface Service {
   id: number;
@@ -19,9 +20,11 @@ interface ServiceCardProps {
   service: Service;
   deliverLabel?: string;
   toolsLabel?: string;
+  index?: number;
 }
 
-export default function ServiceCard({ service, deliverLabel = 'What I deliver', toolsLabel = 'Tools:' }: ServiceCardProps) {
+export default function ServiceCard({ service, deliverLabel = 'What I deliver', toolsLabel = 'Tools:', index = 0 }: ServiceCardProps) {
+  const { ref: revealRef, inView } = useInView({ threshold: 0.15, once: false });
   const cardContent = (
     <>
       <div className="flex items-start gap-4 mb-4">
@@ -56,18 +59,28 @@ export default function ServiceCard({ service, deliverLabel = 'What I deliver', 
     </>
   );
 
-  const baseClass = `block bg-white/[0.02] card-hover rounded-xl p-6${service.optional ? ' opacity-80 hover:opacity-100' : ''}`;
+  const baseClass = `block bg-white/[0.02] card-hover rounded-xl p-6 reveal-3d-item ${inView ? 'reveal-3d-visible' : 'reveal-3d-hidden'}${service.optional ? ' opacity-80 hover:opacity-100' : ''}`;
+  const revealStyle = { '--i': index } as React.CSSProperties;
 
   if (service.projectLink && service.projectLink.startsWith('/')) {
     return (
-      <Link href={service.projectLink} className={baseClass}>
+      <Link
+        href={service.projectLink}
+        ref={revealRef as React.RefObject<HTMLAnchorElement>}
+        style={revealStyle}
+        className={baseClass}
+      >
         {cardContent}
       </Link>
     );
   }
 
   return (
-    <article className={baseClass}>
+    <article
+      ref={revealRef as React.RefObject<HTMLElement>}
+      style={revealStyle}
+      className={baseClass}
+    >
       {cardContent}
     </article>
   );

@@ -52,6 +52,7 @@
   gap: 1px;
   background-color: rgba(255, 255, 255, 0.06);
   border: 0.5px solid rgba(255, 255, 255, 0.06);
+  perspective: 1400px;
 }
 
 .card {
@@ -61,6 +62,8 @@
   flex-direction: column;
   gap: 24px;
   transition: background-color 0.25s ease;
+  transform-style: preserve-3d;
+  will-change: transform, opacity, filter;
 }
 
 .card:hover {
@@ -147,24 +150,54 @@
 }
 
 /* ── Scroll-reveal animations ───────────────────────── */
-.cardHidden {
+.headerHidden {
   opacity: 0;
-  transform: translateY(24px);
+  transform: translateY(32px);
 }
 
-.cardVisible {
-  animation: reveal-fade-up 0.6s ease-out both;
-  animation-delay: calc(var(--i, 0) * 120ms);
+.headerVisible {
+  animation: reveal-fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 @keyframes reveal-fade-up {
   from {
     opacity: 0;
-    transform: translateY(24px);
+    transform: translateY(32px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.cardHidden {
+  opacity: 0;
+  transform: translateY(80px) scale(0.82) rotateX(10deg);
+  filter: blur(10px);
+}
+
+.cardVisible {
+  animation: reveal-epic 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: calc(var(--i, 0) * 160ms);
+}
+
+@keyframes reveal-epic {
+  0% {
+    opacity: 0;
+    transform: translateY(80px) scale(0.82) rotateX(10deg);
+    filter: blur(10px);
+    box-shadow: 0 0 0 rgba(98, 141, 255, 0);
+  }
+  55% {
+    opacity: 1;
+    filter: blur(0);
+    box-shadow: 0 0 70px rgba(98, 141, 255, 0.25);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotateX(0);
+    filter: blur(0);
+    box-shadow: 0 0 0 rgba(98, 141, 255, 0);
   }
 }
 
@@ -189,9 +222,19 @@
 
 /* ── Reduced motion ─────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
+  .headerHidden {
+    opacity: 1;
+    transform: none;
+  }
+
+  .headerVisible {
+    animation: none;
+  }
+
   .cardHidden {
     opacity: 1;
     transform: none;
+    filter: none;
   }
 
   .cardVisible {

@@ -4,80 +4,16 @@ import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import ProjectCard from './ProjectCard';
 import SectionContainer from '@/app/components/shared/SectionContainer';
+import { projects as projectsData } from '@/app/lib/projects';
 
 export default function WorkSection() {
   const [activeFilter, setActiveFilter] = useState('all');
   const t = useTranslations('work');
 
-  const projects = [
-    {
-      id: 1,
-      title: 'OrderBridge',
-      year: '2026',
-      image: '/images/projects/orderbridge/orderbridge-cover.png',
-      images: [
-        '/images/projects/orderbridge/orderbridge-cover.png',
-        '/images/projects/orderbridge/orderbridge-dashboard.png',
-        '/images/projects/orderbridge/orderbridge-mock-pos.png',
-        '/images/projects/orderbridge/orderbridge-simulator.png',
-      ],
-      desc: t('projects.orderbridge.desc'),
-      tags: ['React', 'Node.js', 'PostgreSQL', 'WebSockets', 'OAuth 2.0'],
-      category: 'automation',
-      caseStudyUrl: '/projects/orderbridge',
-      liveUrl: 'https://orderbridge.maxontorres.com',
-    },
-    {
-      id: 2,
-      title: 'Travel Agency Website',
-      year: '2026',
-      image: '/images/projects/laomaitravel/hero-section.png',
-      images: [
-        '/images/projects/laomaitravel/hero-section.png',
-        '/images/projects/laomaitravel/destinations.png',
-        '/images/projects/laomaitravel/umami-main-dashboard.png',
-        '/images/projects/laomaitravel/umami-locations.png',
-      ],
-      desc: t('projects.laomaitravel.desc'),
-      tags: ['Next.js 15', 'TypeScript', 'next-intl', 'Umami', 'Resend'],
-      category: 'web',
-      caseStudyUrl: '/projects/tourism-website-seo',
-      liveUrl: 'https://laomaitravel.com',
-    },
-    {
-      id: 3,
-      title: 'PM Real Estate Laos',
-      year: '2026',
-      image: '/images/projects/pmlaos/pmlaos.com_homepage.png',
-      images: [
-        '/images/projects/pmlaos/pmlaos.com_homepage.png',
-        '/images/projects/pmlaos/Listings_Gallery_Multiple_Properties.png',
-        '/images/projects/pmlaos/www.pmlaos.com_individual_listing_full_page.png',
-        '/images/projects/pmlaos/www.pmlaos.com_admin_main_dashboard.png',
-      ],
-      desc: t('projects.pmlaos.desc'),
-      tags: ['Next.js 15', 'TypeScript', 'next-intl', 'Prisma', 'Google OAuth'],
-      category: 'web',
-      caseStudyUrl: '/projects/real-estate-website-laos',
-      liveUrl: 'https://www.pmlaos.com/en',
-    },
-    {
-      id: 4,
-      title: 'InOnOut',
-      year: '2026',
-      image: '/images/projects/inonout/inonout-cover.png',
-      images: [
-        '/images/projects/inonout/inonout-cover.png',
-        '/images/projects/inonout/inonout-courses.png',
-        '/images/projects/inonout/inonout-tutor-dashboard.png',
-      ],
-      desc: t('projects.inonout.desc'),
-      tags: ['Next.js 16', 'Supabase', 'TypeScript', 'Mux', 'Sanity'],
-      category: 'web',
-      caseStudyUrl: '/projects/inonout',
-      liveUrl: 'https://inonout.com',
-    },
-  ];
+  const projects = projectsData.map((project) => ({
+    ...project,
+    desc: t(`projects.${project.slug}.desc`),
+  }));
 
   const categories = [
     { id: 'all',         label: t('categories.all') },
@@ -126,7 +62,7 @@ export default function WorkSection() {
           <ProjectCard
             key={project.id}
             project={project}
-            style={{ animationDelay: `${index * 0.1}s` }}
+            style={{ '--i': index } as React.CSSProperties}
           />
         ))}
       </div>

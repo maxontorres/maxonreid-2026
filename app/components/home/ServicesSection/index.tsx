@@ -94,12 +94,13 @@ export default function ServicesSection() {
       )}
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {services.map((service) => (
+        {services.map((service, index) => (
           <ServiceCard
             key={service.id}
             service={service}
             deliverLabel={deliverLabel}
             toolsLabel={toolsLabel}
+            index={index}
           />
         ))}
       </div>

@@ -33,7 +33,7 @@ export default function SocialProofSection() {
     >
       <div className={styles.inner}>
 
-        <header className={styles.header}>
+        <header className={`${styles.header} ${inView ? styles.headerVisible : styles.headerHidden}`}>
           <p className={styles.sectionLabel}>{t('label')}</p>
           <h2 id="social-proof-heading" className={styles.title}>
             {t('title')}

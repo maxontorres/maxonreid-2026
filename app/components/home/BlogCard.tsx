@@ -6,22 +6,31 @@ import { useTranslations, useLocale } from 'next-intl';
 import { ArrowRight } from 'lucide-react';
 
 import type { Article } from '@/app/lib/articles';
+import { useInView } from '@/app/hooks/useInView';
 
 interface BlogCardProps {
   article: Article;
+  style?: React.CSSProperties;
 }
 
-export default function BlogCard({ article }: BlogCardProps) {
+export default function BlogCard({ article, style }: BlogCardProps) {
   const locale = useLocale();
   const t = useTranslations('blog');
   const tMeta = useTranslations('articlesMeta');
+  const { ref: revealRef, inView } = useInView({ threshold: 0.15, once: false });
 
   const slug = article.slug as 'teaching-web-development-china-yango-university' | 'how-i-built-orderbridge';
   const title = tMeta(`${slug}.title`);
   const excerpt = tMeta(`${slug}.excerpt`);
-  
+
   return (
-    <Link href={`/${locale}/articles/${article.slug}`} className="block group">
+    <Link
+      href={`/${locale}/articles/${article.slug}`}
+      id={`blog-card-${article.slug}`}
+      ref={revealRef as React.RefObject<HTMLAnchorElement>}
+      style={style}
+      className={`block group reveal-3d-item ${inView ? 'reveal-3d-visible' : 'reveal-3d-hidden'}`}
+    >
       <article className="relative bg-white/[0.02] card-hover rounded-xl overflow-hidden" tabIndex={0}>
       <div className="relative aspect-video overflow-hidden">
         <Image

@@ -2,9 +2,24 @@
 
 import { Mail, MapPin, Link2, MessageCircle, Phone } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { useInView } from '@/app/hooks/useInView';
+
+function useRevealProps(index: number) {
+  const { ref, inView } = useInView({ threshold: 0.15, once: false });
+  return {
+    ref: ref as React.RefObject<HTMLDivElement>,
+    style: { '--i': index } as React.CSSProperties,
+    className: `reveal-3d-item ${inView ? 'reveal-3d-visible' : 'reveal-3d-hidden'}`,
+  };
+}
 
 export default function ContactSection() {
   const t = useTranslations('contact.home');
+  const mailReveal = useRevealProps(0);
+  const locationReveal = useRevealProps(1);
+  const connectReveal = useRevealProps(2);
+  const phoneReveal = useRevealProps(3);
+  const ctaReveal = useRevealProps(4);
 
   return (
     <section
@@ -23,7 +38,11 @@ export default function ContactSection() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="space-y-6">
-          <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 flex gap-4 hover:bg-white/[0.03] transition-colors">
+          <div
+            ref={mailReveal.ref}
+            style={mailReveal.style}
+            className={`bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 flex gap-4 hover:bg-white/[0.03] transition-colors ${mailReveal.className}`}
+          >
             <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#628DFF]/10 flex items-center justify-center text-[#628DFF]">
               <Mail size={20} strokeWidth={2} aria-hidden="true" />
             </div>
@@ -37,7 +56,11 @@ export default function ContactSection() {
             </div>
           </div>
 
-          <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 flex gap-4 hover:bg-white/[0.03] transition-colors">
+          <div
+            ref={locationReveal.ref}
+            style={locationReveal.style}
+            className={`bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 flex gap-4 hover:bg-white/[0.03] transition-colors ${locationReveal.className}`}
+          >
             <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#628DFF]/10 flex items-center justify-center text-[#628DFF]">
               <MapPin size={20} strokeWidth={2} aria-hidden="true" />
             </div>
@@ -50,7 +73,11 @@ export default function ContactSection() {
             </div>
           </div>
 
-          <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 flex gap-4 hover:bg-white/[0.03] transition-colors">
+          <div
+            ref={connectReveal.ref}
+            style={connectReveal.style}
+            className={`bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 flex gap-4 hover:bg-white/[0.03] transition-colors ${connectReveal.className}`}
+          >
             <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#628DFF]/10 flex items-center justify-center text-[#628DFF]">
               <Link2 size={20} strokeWidth={2} aria-hidden="true" />
             </div>
@@ -76,7 +103,11 @@ export default function ContactSection() {
             </div>
           </div>
 
-          <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 flex gap-4 hover:bg-white/[0.03] transition-colors">
+          <div
+            ref={phoneReveal.ref}
+            style={phoneReveal.style}
+            className={`bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 flex gap-4 hover:bg-white/[0.03] transition-colors ${phoneReveal.className}`}
+          >
             <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#628DFF]/10 flex items-center justify-center text-[#628DFF]">
               <Phone size={20} strokeWidth={2} aria-hidden="true" />
             </div>
@@ -91,7 +122,11 @@ export default function ContactSection() {
           </div>
         </div>
 
-        <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-8 flex flex-col justify-between gap-8">
+        <div
+          ref={ctaReveal.ref}
+          style={ctaReveal.style}
+          className={`bg-white/[0.02] border border-white/[0.06] rounded-xl p-8 flex flex-col justify-between gap-8 ${ctaReveal.className}`}
+        >
           <div className="space-y-3">
             <h3 className="text-2xl font-bold">{t('card.title')}</h3>
             <p className="text-[#8A8FA0]">

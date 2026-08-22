@@ -100,6 +100,23 @@
     90% { transform: translate(-1%, 1%); }
   }
 
+  @keyframes reveal-3d-enter {
+    0% {
+      opacity: 0;
+      transform: translateY(64px) scale(0.86) rotateX(8deg);
+      filter: blur(8px);
+    }
+    55% {
+      opacity: 1;
+      filter: blur(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1) rotateX(0);
+      filter: blur(0);
+    }
+  }
+
   @keyframes neon-glow-pulse {
     0%, 100% {
       text-shadow:
@@ -252,6 +269,25 @@
     mix-blend-mode: color;
     pointer-events: none;
   }
+
+  /* Shared scroll-triggered "3D entrance" for cards/sections across the
+     homepage — fly-in with a blur-to-focus pull, paired with useInView.
+     Stagger via inline `--i` (index). */
+  .reveal-3d-item {
+    transform-style: preserve-3d;
+    will-change: transform, opacity, filter;
+  }
+
+  .reveal-3d-hidden {
+    opacity: 0;
+    transform: translateY(64px) scale(0.86) rotateX(8deg);
+    filter: blur(8px);
+  }
+
+  .reveal-3d-visible {
+    animation: reveal-3d-enter 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: calc(var(--i, 0) * 140ms);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -259,6 +295,16 @@
   .glow-orb,
   .light-streak,
   .text-glow-neon {
+    animation: none;
+  }
+
+  .reveal-3d-hidden {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+
+  .reveal-3d-visible {
     animation: none;
   }
 }

@@ -3,9 +3,11 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/routing';
+import { useInView } from '@/app/hooks/useInView';
 
 export default function AboutSection() {
   const t = useTranslations('aboutHome');
+  const { ref: imageRef, inView: imageInView } = useInView({ threshold: 0.35, once: false });
 
   return (
     <section className="py-24 px-0" id="about">
@@ -24,14 +26,19 @@ export default function AboutSection() {
           </div>
 
           <div className="flex justify-center lg:justify-end">
-            <div className="relative">
+            <div
+              ref={imageRef as React.RefObject<HTMLDivElement>}
+              className="relative overflow-visible"
+            >
               <Image
                 src="/profile.jpg"
                 alt={t('imageAlt')}
                 width={500}
                 height={600}
                 priority
-                className="w-full max-w-md rounded-2xl shadow-2xl"
+                className={`w-full max-w-md rounded-2xl shadow-2xl transition-transform duration-700 ease-out motion-reduce:transition-none ${
+                  imageInView ? 'scale-110' : 'scale-100'
+                }`}
               />
             </div>
           </div>

@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { MessageCircle } from 'lucide-react';
+import { useInView } from '@/app/hooks/useInView';
 
 export default function ReferralSection() {
   const t = useTranslations('referral');
@@ -11,6 +12,10 @@ export default function ReferralSection() {
     t('steps.1'),
     t('steps.2'),
   ];
+
+  const { ref: stepsRef, inView: stepsInView } = useInView({ threshold: 0.15, once: false });
+  const { ref: optionARef, inView: optionAInView } = useInView({ threshold: 0.15, once: false });
+  const { ref: optionBRef, inView: optionBInView } = useInView({ threshold: 0.15, once: false });
 
   return (
     <section
@@ -35,7 +40,11 @@ export default function ReferralSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
         {/* ── LEFT — Steps + CTA ── */}
-        <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-8 flex flex-col gap-8">
+        <div
+          ref={stepsRef as React.RefObject<HTMLDivElement>}
+          style={{ '--i': 0 } as React.CSSProperties}
+          className={`bg-white/[0.02] border border-white/[0.06] rounded-xl p-8 flex flex-col gap-8 reveal-3d-item ${stepsInView ? 'reveal-3d-visible' : 'reveal-3d-hidden'}`}
+        >
           <div>
             <div className="font-mono text-xs text-[#8A8FA0] tracking-widest mb-5">
               {t('stepsLabel')}
@@ -75,7 +84,11 @@ export default function ReferralSection() {
           </div>
 
           {/* Option A */}
-          <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 hover:bg-white/[0.03] transition-colors flex-1">
+          <div
+            ref={optionARef as React.RefObject<HTMLDivElement>}
+            style={{ '--i': 1 } as React.CSSProperties}
+            className={`bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 hover:bg-white/[0.03] transition-colors flex-1 reveal-3d-item ${optionAInView ? 'reveal-3d-visible' : 'reveal-3d-hidden'}`}
+          >
             <div className="flex justify-between items-start mb-4">
               <span className="font-mono text-[0.6rem] tracking-widest text-[#4b5563] dark:text-[#8A8FA0]">
                 {t('optionA.label')}
@@ -103,7 +116,11 @@ export default function ReferralSection() {
           </div>
 
           {/* Option B */}
-          <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 hover:bg-white/[0.03] transition-colors flex-1">
+          <div
+            ref={optionBRef as React.RefObject<HTMLDivElement>}
+            style={{ '--i': 2 } as React.CSSProperties}
+            className={`bg-white/[0.02] border border-white/[0.06] rounded-xl p-6 hover:bg-white/[0.03] transition-colors flex-1 reveal-3d-item ${optionBInView ? 'reveal-3d-visible' : 'reveal-3d-hidden'}`}
+          >
             <div className="flex justify-between items-start mb-4">
               <span className="font-mono text-[0.6rem] tracking-widest text-[#4b5563] dark:text-[#8A8FA0]">
                 {t('optionB.label')}

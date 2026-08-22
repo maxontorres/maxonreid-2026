@@ -4,9 +4,11 @@ import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/routing';
+import { useInView } from '@/app/hooks/useInView';
 
 interface Project {
   id: number;
+  slug: string;
   title: string;
   year: string;
   image: string;
@@ -33,6 +35,7 @@ export default function ProjectCard({ project, style }: ProjectCardProps) {
       ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
       : false
   );
+  const { ref: revealRef, inView } = useInView({ threshold: 0.15, once: false });
 
   const images = project.images.length > 0 ? project.images : [project.image];
 
@@ -51,7 +54,13 @@ export default function ProjectCard({ project, style }: ProjectCardProps) {
   }, [isHovered, images.length]);
 
   return (
-    <Link href={project.caseStudyUrl} style={style} className="block h-full">
+    <Link
+      href={project.caseStudyUrl}
+      id={`work-card-${project.slug}`}
+      ref={revealRef as React.RefObject<HTMLAnchorElement>}
+      style={style}
+      className={`block h-full reveal-3d-item ${inView ? 'reveal-3d-visible' : 'reveal-3d-hidden'}`}
+    >
       <article
         className="bg-white/[0.02] card-hover rounded-xl overflow-hidden cursor-pointer group h-full"
         onMouseEnter={() => setIsHovered(true)}

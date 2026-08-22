@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 import HeroSection from '@/app/components/home/HeroSection';
+import ConstellationScene from '@/app/components/home/ConstellationSceneLoader';
 import WorkSection from '@/app/components/home/WorkSection';
 import AboutSection from '@/app/components/home/AboutSection';
 import SocialProofSection from '@/app/components/home/SocialProofSection';
@@ -112,6 +113,7 @@ export default async function HomePage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
       <Header />
+      <ConstellationScene />
       <main>
         <HeroSection />
         <AboutSection />

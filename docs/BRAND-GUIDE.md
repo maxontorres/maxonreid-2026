@@ -237,6 +237,8 @@ All of the above respect `@media (prefers-reduced-motion: reduce)` — `.grain-o
 
 Don't add a second, competing ambient background effect to a page — this one is meant to be the only one running at all times.
 
+**Homepage exception:** the homepage (`/`) runs `app/components/home/ConstellationScene` instead — a full 3D scroll-driven constellation that extends this same motif into real depth, with 3 hub nodes linking to featured project case studies. `ParticleBackground` detects the homepage route (via `usePathname`) and bails out before mounting its canvas there, so exactly one ambient effect still runs per page — it's just a per-route choice of *which* one on the homepage specifically. Every other route keeps the 2D particle field unchanged.
+
 ---
 
 ## 6. Layout & component conventions

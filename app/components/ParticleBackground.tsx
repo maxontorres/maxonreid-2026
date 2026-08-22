@@ -1,6 +1,8 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import { usePathname } from 'next/navigation';
+import { routing } from '@/routing';
 
 interface Particle {
   x: number;
@@ -79,8 +81,18 @@ function particleCountFor(width: number, height: number): number {
 
 export default function ParticleBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const pathname = usePathname();
+  // Homepage runs the 3D ConstellationScene instead — never stack two ambient
+  // background effects on the same page. `next/navigation`'s usePathname (not
+  // next-intl's) is required here since this component renders outside
+  // NextIntlClientProvider, so the locale prefix must be stripped manually.
+  const isHomepage =
+    pathname === '/' ||
+    routing.locales.some((locale) => pathname === `/${locale}` || pathname === `/${locale}/`);
 
   useEffect(() => {
+    if (isHomepage) return;
+
     const canvas = canvasRef.current;
     if (!canvas) return;
 
@@ -248,7 +260,9 @@ export default function ParticleBackground() {
       document.removeEventListener('visibilitychange', handleVisibility);
       if (rafId !== null) cancelAnimationFrame(rafId);
     };
-  }, []);
+  }, [isHomepage]);
+
+  if (isHomepage) return null;
 
   return (
     <canvas

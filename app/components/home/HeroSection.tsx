@@ -3,17 +3,22 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { useTypewriter } from './useTypewriter';
+import { useInView } from '@/app/hooks/useInView';
 
 export default function HeroSection() {
   const t = useTranslations('hero');
 
   const highlightTexts = t.raw('heroHighlights') as string[];
   const typewriterText = useTypewriter(highlightTexts, 80, 3000, 15);
+  const { ref: revealRef, inView } = useInView({ threshold: 0.1, once: true });
 
   return (
     <section className="py-24 px-0 pb-30 relative overflow-hidden" aria-labelledby="hero-heading">
       <div className="w-[92%] max-w-[1200px] mx-auto grid gap-9 grid-cols-1 lg:grid-cols-[1fr_420px] items-center">
-        <div className="max-w-[720px] hero-content order-2 lg:order-1">
+        <div
+          ref={revealRef as React.RefObject<HTMLDivElement>}
+          className={`max-w-[720px] hero-content order-2 lg:order-1 reveal-3d-item ${inView ? 'reveal-3d-visible' : 'reveal-3d-hidden'}`}
+        >
           <div className="meta-label mb-2">{t('brand')}</div>
           <div className="meta-label mb-4">
             {t('location')}
